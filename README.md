@@ -1,6 +1,6 @@
 # VamosLasPlantas
 
-Nosotros ofrecemos al publico una varidad de plantas, semillas y vegetales y todo aquellos articulos que sean referidos al tema , ya sea macetas y otros articulos referidos o necesarios para mantener o embellecer un jardin. Apuntamos al publico que tenga aprecio por las plantas, personas que solo les interese embellecer o decorar, y tambien para quellos toman como propia la cuasa ambiental.
+Nosotros ofrecemos al publico una varidad de plantas, semillas y vegetales y todo aquellos articulos que sean referidos al tema , ya sea macetas, abonos y otros articulos referidos o necesarios para mantener o embellecer un jardin. Apuntamos al publico que tenga aprecio por las plantas, personas que solo les interese embellecer o decorar, y tambien para quellos toman como propia la cuasa ambiental.
 Queremos que vistas tu casa de verde! 
 
  Algunos sitios de referencia:
@@ -12,3 +12,7 @@ https://floryservice.com.ar/?gclid=CjwKCAjw1JeJBhB9EiwAV612y-4RtHWjD6Qaw6wddrliB
 https://www.highgarden.com.ar/?https://highgarden.com.ar/contact.html&gclid=CjwKCAjw1JeJBhB9EiwAV612y5j7yNm5axyYKTMuNXB23eUDYlmtBRpirDhT3EgOtdxzUFT6zOQreRoCGygQAvD_BwE
 
 https://plantasfaitful.com.ar/
+
+https://florar.com.ar/67-stock-disponible?gclid=CjwKCAjw1JeJBhB9EiwAV612y-YlCdiJhciDYPcFC9bSV9bWQhmyVAv3k_ajNOrVheZXsLeRPZl24hoC0rIQAvD_BwE
+
+https://en.biotiendaplantas.com.ar/?gclid=CjwKCAjw1JeJBhB9EiwAV612y1nZhkvS0w8eZPQHcXwp537rBnpHjwtpWWntXWE-tqg8rtxbLeOuWxoCF4AQAvD_BwE
