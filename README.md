@@ -1,9 +1,12 @@
 # VamosLasPlantas
 
-Nosotros ofrecemos al público una variedad de plantas, semillas y vegetales y todos aquellos artículos referidos al tema, desde macetas, abonos, hasta otros artículos relacionados o necesarios para mantener o embellecer un jardín. Apuntamos a un público que tenga aprecio por las plantas, a personas que les interese embellecer o decorar, y también a aquellos que sienten como propia la causa ambiental.
+Nosotros ofrecemos al público una variedad de plantas, semillas, vegetales y todos los artículos relacionados; desde macetas y abonos, hasta accesorios y herramientas para embellecer su jardin y/o el interior de su hogar. 
+
+Apuntamos a un público que tenga aprecio por las plantas, a personas que les interese decorar, dando vida a un ambiente y también a aquellos que sienten como propia la causa ambiental: que deseen cultivar y hacer crecer sus propias plantas o huertas.
+
 ¡Queremos que vistas tu casa de verde! 
 
-Somos un grupo de 4 personas multifacéticas, con intereses diversos que buscamos la manera de darle luz, calidez y vida a tu hogar, siempre con una mirada verde. 
+Somos un grupo de 4 personas multifacéticas con intereses diversos que buscamos la manera de facilitarte todo lo que necesitás para darle luz, calidez y vida a tu hogar, siempre con una mirada verde y sustentable.
 
 
 Algunos sitios de referencia:
