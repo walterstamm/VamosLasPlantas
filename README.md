@@ -24,3 +24,13 @@ https://florar.com.ar/67-stock-disponible?gclid=CjwKCAjw1JeJBhB9EiwAV612y-YlCdiJ
 https://en.biotiendaplantas.com.ar/?gclid=CjwKCAjw1JeJBhB9EiwAV612y1nZhkvS0w8eZPQHcXwp537rBnpHjwtpWWntXWE-tqg8rtxbLeOuWxoCF4AQAvD_BwE
 
 https://www.viverotrevelin.com.ar/ofertas.php
+
+
+
+Links del Proyecto
+GitHub:
+https://github.com/walterstamm/VamosLasPlantas
+
+Tablero de Trabajo:
+
+https://trello.com/b/MEsyLwSj/sprint-2-vamos-las-plantas
