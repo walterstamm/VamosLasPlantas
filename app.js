@@ -21,5 +21,13 @@ app.get("/login", function (req, res){
     res.sendFile (path.resolve (__dirname, "./views/login.html"))
 });
 
+app.get("/login", function (req, res){
+    res.sendFile (path.resolve (__dirname, "./views/productCart.html"))
+});
+
+app.get("/login", function (req, res){
+    res.sendFile (path.resolve (__dirname, "./views/productDetail.html"))
+});
+
 
 
