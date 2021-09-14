@@ -1,0 +1,22 @@
+{
+  "name": "vamoslasplantas",
+  "version": "1.0.0",
+  "description": "Nosotros ofrecemos al público una variedad de plantas, semillas, vegetales y todos los artículos relacionados; desde macetas y abonos, hasta accesorios y herramientas para embellecer su jardin y/o el interior de su hogar.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walterstamm/VamosLasPlantas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walterstamm/VamosLasPlantas/issues"
+  },
+  "homepage": "https://github.com/walterstamm/VamosLasPlantas#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
