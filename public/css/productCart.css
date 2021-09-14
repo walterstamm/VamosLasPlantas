@@ -5,6 +5,22 @@
     font-family: "Roboto", sans-serif;
   }
 header{
+    height: 40vh;
     background-color: #7fbf90;
 }
 
+header div img{
+    max-width: 25vh;
+}
+
+.main-conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
