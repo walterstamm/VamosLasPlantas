@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="css/style_jenny.css">
+    <link rel="stylesheet" href="css/styles_login.css">
+
 </head>
     <header>
         <img src="/images/logo.png" width="60" alt="Logo de MyPlants">
@@ -31,16 +32,27 @@
     <form action="/" method="GET" class= "alta-login">
 
         <div class ="altausuario-login">
+
             <div class="usuario-login">
                 <label for="usuario" ></label>
                 <input type= "text" name="usuario" placeholder="Nombre de usuario"> 
             </div>
+
             <div class="password-login">
                 <label for="password" ></label>
                 <input type="password" name="password" placeholder="Elegí tu contraseña">
             </div>
+            
+            <div class="recordarcontraseña-login">
+            <input type = "checkbox" name = "recordarcontraseña" value= "recordarcontraseña">Recordar Contraseña
+            </div>
+
+            <div class="olvidemiclave-login">
+                <li><a href="#">Olvide mi clave</a></li>
+            </div>
+
                 <button type="submit" class="boton-login" >Enviar </button>
-                <button type="reset" class="boton-login" >Borrar </button>
+                <button type="reset" class="boton-borrar" >Borrar </button>
 
         </div>
     
