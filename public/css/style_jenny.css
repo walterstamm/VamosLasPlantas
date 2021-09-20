@@ -1,7 +1,10 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
   }
+
+
 
   header{
     background-color: #7fbf90;
@@ -9,24 +12,32 @@
     font-weight: bold;
     position: fixed;
     top: 0px;
-    width: 100%
+    width: 100%;
+
   }
 
-  body {
-    font-family: "Roboto", sans-serif;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column
-  }
 
-  img {
-    border-radius: 50%;
-  }
+.logo-slogan {
 
-  section {
-    background-color: #ffffff;
-    display: flex;
+}
 
+.login-cart{
 
+}
+
+.buscador{}
+
+.register-plants-accesories{
+
+}
+
+  main   {
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+
+    
 
   }
