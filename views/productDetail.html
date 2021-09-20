@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <title>ProductDetail</title>
 </head>
 <body>
@@ -18,8 +21,14 @@
     </header>
     <main>
         <section>
-            <h1>Lavanda</h1>
-                <img src="images/lavanda.jpeg" width="360" alt="Lavanda">
+            
+            <div class="contenedor-logo">
+            <div></div>
+                <h1>Lavanda</h1>
+                <img  class= "logo1" src="images/LogosinFondo.png" width="5%" alt="Logo">
+            </div>
+
+                <img src="images/lavanda.jpeg" width="100%" alt="Lavanda">
             </section> 
         <section>
             <div class="contenedor-caracteristicas">
@@ -55,16 +64,21 @@
         <p>Son plantas muy resistentes al calor y a las altas tempraturas.</p>
         <p>No suelen tener problemas fitosanitarios.</p>
         <p>Su aroma ahuyenta pulgones y otros insectos.</p>
+        <h4>Precio: $1500</h4>
     </div>
+    
     </section>
     
     </main>
     <footer>
-        <button name="Carrito" type="button">
+        <button class="boton1" name="Carrito" type="button"><i class="fab fa-opencart"></i>
             Agregar al carrito </button>
-        <button name="Comprar" type="button">
+        <button class="boton2" name="Comprar" type="button"><i class="fas fa-credit-card"></i>
             Comprar ahora
         </button>
+        <div class="banner">
+            <img src="images/banner-plantas.jpg" width="100%" alt="Banner">
+        </div>
     </footer>
 </body>
 
