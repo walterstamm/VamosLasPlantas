@@ -7,13 +7,26 @@
     background-color: #7fbf90;
     text-align: center;
     font-weight: bold;
+    position: fixed;
+    top: 0px;
+    width: 100%
   }
 
   body {
     font-family: "Roboto", sans-serif;
-    background-color: #7fbf90;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column
   }
 
   img {
-border-radius: 50%;
+    border-radius: 50%;
+  }
+
+  section {
+    background-color: #ffffff;
+    display: flex;
+
+
+
   }
