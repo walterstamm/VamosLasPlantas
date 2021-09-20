@@ -65,6 +65,7 @@ h1 {
     font-size: 36px;
     
 }
+
 footer {
     text-align: center;
     padding-top: 8%;
@@ -130,7 +131,18 @@ button:hover {
   .banner {
     display: none;
    }
-  
+  .contenedor-logo{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  }
+  .logo1 {
+      align-self: center;
+  }
+  h4 {
+      text-align: center; 
+      margin-top: 2%;
+  }
 @media (min-width: 768px) {
     h1 {
         font-size: 50px;
@@ -158,6 +170,10 @@ button:hover {
    .banner {
     display: none;
    }
+   h4 {
+    text-align: center;
+    font-size: 24px;
+}
 }
 @media (min-width: 1200px) {
     h1 {
@@ -188,5 +204,9 @@ button:hover {
     .banner {
         display: block;
         margin-top: 2%;
+    }
+    h4 {
+        text-align: left;
+        font-size: 24px;
     }
 }
