@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+header{
+    height: 40vh;
+    background-color: #7fbf90;
+    
+}
+
+header div img{
+    max-width: 25vh;
+}
+
+.div-img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+}
+.conteiner{
+    
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;  
+}
+
+.iconos-header{
+        text-align: center;
+        margin: auto;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vestí tu casa de verde con MyPlants!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style_jenny.css">
+</head>
+    <header>
+        <img src="/images/logo.png" width="60" alt="Logo de MyPlants">
+        <div class="buscador">
+            <input type="text" name="buscar" placeholder="Buscá lo que necesites">
+            <i class="fa fa-search"></i>
+        </div>    
+        <p>Comprá con tarjeta de crédito y en cuotas!</p>
+        <nav>
+            <ul>
+                <li><a href="#">Plantas</a></li>
+                <li><a href="#">Accesorios</a></li>
+            </ul>
+            <ul>
+                <li><a href="/register.html">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                <li><a href="/login.html">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="/productCart.html">Mi Carrito <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <section class="formulariocuenta">
+        <form action="/" method="GET">
+             <div class="nombreApellido" >
+                 <input type="text" name="nombreApellido" placeholder="Nombre y apellido">
+             </div>
+             <div class="nombreDeUsuario">
+                 <input type="text" name="nombreDeUsuario" placeholder="Nombre de usuario">
+             </div>
+             <div class="correoelectronico">
+                 <input type="email" name="email" placeholder="E-mail">
+             </div>
+             <div class="fechaNacimiento">
+                 <h4>Fecha de nacimiento</h4>
+                 <input type="date" name="fechaNacimiento">
+             </div>
+             <div class="Domicilio">
+                 <input type="text" name="Domicilio" placeholder="Domicilio">
+             </div>
+             <div class = "avatar">
+                 <h4>Elige tu avatar</h4>
+                 <input type = "file">
+             </div>
+             <div class = "contraseñaregister"> 
+                 <input type= "Password" placeholder="Contraseña">
+                 <input type= "Password" placeholder="ConfirmarContraseña">
+             </div>
+             <div class = "botonesregister">
+                <button type = "submit" class="boton-register">ENVIAR</button>
+                 <button type = "reset" class="boton-register">BORRAR</button>                 
+             </div>  
+         </section>
+</body>
+</html>
