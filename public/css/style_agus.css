@@ -138,6 +138,7 @@ button:hover {
   }
   .logo1 {
       align-self: center;
+      width: 10%;
   }
   h4 {
       text-align: center; 
@@ -174,6 +175,10 @@ button:hover {
     text-align: center;
     font-size: 24px;
 }
+.logo1 {
+    align-self: center;
+    width: 8%;
+}
 }
 @media (min-width: 1200px) {
     h1 {
@@ -208,5 +213,9 @@ button:hover {
     h4 {
         text-align: left;
         font-size: 24px;
+    }
+    .logo1 {
+        align-self: center;
+        width: 5%;
     }
 }
