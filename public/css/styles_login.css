@@ -61,6 +61,7 @@ h2 {
     position: relative; 
     right: 13%;   
     margin-bottom: 5px; 
+  
 }
 
 .olvidemiclave-login {
@@ -168,17 +169,18 @@ p{
     transform: translate(-50%);
   }
   
-  a {
+  .olvidemiclave-login {
     display: block;
     color: rgb(23, 121, 19);
     text-decoration: none;
     position: relative;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 27%;
     /*vertical-align: middle;*/
   }
   
-  a::after{
+  .olvidemiclave-login::after{
     content: "";
     background: #90f1aa;
       mix-blend-mode: exclusion;
@@ -190,7 +192,7 @@ p{
       transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }
   
-  a:hover::after{
+  .olvidemiclave-login:hover::after{
       height: calc(100% + 8px)
   }
   
