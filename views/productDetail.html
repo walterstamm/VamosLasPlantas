@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="css/style_agus.css">
+    <link rel="stylesheet" href="css/style_product.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
@@ -15,19 +15,43 @@
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <title>ProductDetail</title>
 </head>
+
 <body>
     <header>
-        
+            <div class = "logo-slogan">
+                <div class="logo">
+                <img src="/images/LogosinFondo.png" width="60" alt="Logo de MyPlants"> 
+                </div>
+                <div class = "nombre-website">MyPlants</div>
+                <div class= "slogan">Comprá con tarjeta de crédito y en cuotas!</div>
+            </div>
+        <nav>   
+            <div class= "login-cart-register">
+                <div class= "navegador">
+                    <img src="/images/avatar.png" width="30" alt="avatar">
+                    <a href="/login.html">Ingresá</a>
+                </div>
+                <div class= "navegador">
+                    <img src="/images/cart.jpeg" width="30" alt="cart">
+                    <a href="/productCart.html">Mi Carrito</a>
+                </div>
+                <div class= "navegador">
+                    <img src="/images/register.png" width="30" alt="register">
+                    <a href="/register.html">Registrate</a>
+                </div>
+            </div>
+        </nav>
+            <div class="search-container">
+                <input type="text" name="buscar" placeholder="Buscá..." class = "search-input">
+                <a href="#" class="search-btn">
+                <i class="fa fa-search"></i></a>
+            </div> 
+        </section>
     </header>
+
     <main>
         <section>
-            
-            <div class="contenedor-logo">
-            <div></div>
-                <h1>Lavanda</h1>
-                <img  class= "logo1" src="images/LogosinFondo.png" width="5%" alt="Logo">
-            </div>
-
+            <h1>Lavanda</h1>
                 <img src="images/lavanda.jpeg" width="100%" alt="Lavanda">
             </section> 
         <section>
@@ -60,10 +84,11 @@
     <section>
         <div class="contenedor-descripcion">
         <h2 class="contenedor-palabra-descripcion">Descripción</h2>
-        <p> Hermosas plantas de lavanda, ideales para la siembra en los hogares.</p>
-        <p>Son plantas muy resistentes al calor y a las altas tempraturas.</p>
-        <p>No suelen tener problemas fitosanitarios.</p>
-        <p>Su aroma ahuyenta pulgones y otros insectos.</p>
+        <div class="parrafo"> Hermosas plantas de lavanda, ideales para la siembra en los hogares.
+            Son plantas muy resistentes al calor y a las altas tempraturas.
+            No suelen tener problemas fitosanitarios.
+            Su aroma ahuyenta pulgones y otros insectos. 
+        </div>
         <h4>Precio: $1500</h4>
     </div>
     
@@ -71,8 +96,8 @@
     
     </main>
     <footer>
-        <button class="boton1" name="Carrito" type="button"><i class="fab fa-opencart"></i>
-            Agregar al carrito </button>
+        <div class= "boton1">
+        <a href="/productCart.html">Agregar al carrito</a><i class="fab fa-opencart"></i></div>
         <button class="boton2" name="Comprar" type="button"><i class="fas fa-credit-card"></i>
             Comprar ahora
         </button>

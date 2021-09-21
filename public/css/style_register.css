@@ -1,40 +1,12 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-  }
-/*header{
-    height: 40vh;
-    background-color: #7fbf90;
-    
-}
-
-header div img{
-    max-width: 25vh;
-}
-
-.div-img{
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    padding: auto;
-} 
-.conteiner{
-    
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-around;  
-}
-
-.iconos-header{
-        text-align: center;
-        margin: auto;
-}
-*/
 
 
 /* Jenny Css*/ 
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 header{
     background-color: #90f1aa;
     text-align: center;
@@ -91,6 +63,7 @@ p{
     position: relative;
     padding-top: 1em;
     padding-bottom: 1em;
+    vertical-align: middle;
   }
   
   a::after{
@@ -165,82 +138,151 @@ p{
   animation: hoverShake 0.15s linear 3;
   }
   
+  /*end of search container style*/
 
-  .img-tabla img{
-    width: 10vw;
-    height: 10vh;
-  }
-
-  .contendor-tabla{
-    width: 80vw;
-  }
-
-  table {
-    table-layout: fixed;
-    width: 100%;
-    padding: 10%;
-    border-collapse: collapse;
-    border: 3px solid;
-  }
-
-  thead th:nth-child(1) {
-    width: 12%;
+  *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
   
-  thead th:nth-child(2) {
-    width: 22%;
+  body {
+    font-family: 'Nunito', sans-serif;
+    color: #384047;
   }
   
-  thead th:nth-child(3) {
-    width: 22%;
+  form {
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    padding-top: 2em;
   }
   
-  thead th:nth-child(4) {
-    width: 22%;
-  }
-
-  thead th:nth-child(5){
-    width: 22%;
-  }
-
-  th, td {
-    padding: 20px;
-  }
-
-  td {
-    letter-spacing: 1px;
-  }
-  
-  tbody td {
+  h1 {
+    margin: 0 0 30px 0;
     text-align: center;
   }
-  thead tr {
-    background-image: url(/images/fondoTabla.jpg);
-    background-size: cover;
-  background-position: center;
-  }
-  tfoot th {
-    text-align: right;
-  }
-  tfoot td{
-    text-align: right;
-  }
-
-   tfoot {
   
-    color: black;
-    text-shadow: 1px 1px 1px black;
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  textarea,
+  select {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
   }
-
   
-
-/* Cambial colo de fondo de las filas de manera alternada */
-  tbody tr:nth-child(odd) {
-    background-color: #90f1aa;
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin: 0 4px 8px 0;
   }
   
-  tbody tr:nth-child(even) {
-    background-color: white;
+  select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
   }
+  
+  /*button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #4bc970;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #3ac162;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+  }*/
 
-  /*end of search container style*/
+  button {
+    border: 0;
+    background: #4BC970;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 #075c3b;
+    color: white;
+    cursor: pointer;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 12px 20px;
+    transition: all .1s linear;
+    width: 100%;
+    position: relative;
+    left: 0%;
+  }
+  
+  button:hover {
+    background-color: #075c3b;
+    color: white;
+    font-weight: bold;
+  }
+  
+  button:active {
+    box-shadow: 0 2px 0 #075c3b;
+    transform: translateY(3px);
+  }
+  
+  fieldset {
+    margin-bottom: 30px;
+    border: none;
+  }
+  
+  legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  label.light {
+    font-weight: 300;
+    display: inline;
+  }
+  
+  .number {
+    background-color: #5fcf80;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 100%;
+  }
+  
+  @media screen and (min-width: 480px) {
+  
+    form {
+      max-width: 480px;
+    }
+  
+  }

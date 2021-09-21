@@ -14,8 +14,6 @@
     position: relative;
     top: 0px;
     width: 100%;
-
-
   }
 
   main   {
@@ -37,6 +35,7 @@
   font-size: large;
   padding-bottom: 2em;
 }
+
 .logo-slogan {
   display: flex;
   align-items:center;
@@ -90,7 +89,6 @@ a{
   position: relative;
   padding-top: 1em;
   padding-bottom: 1em;
-  vertical-align: middle;
 }
 
 a::after{
