@@ -29,5 +29,10 @@ app.get("/productDetail.html", function (req, res){
     res.sendFile (path.resolve (__dirname, "./views/productDetail.html"))
 });
 
+app.get("/accesories.html", function (req, res){
+    res.sendFile (path.resolve (__dirname, "./views/accesories.html"))
+});
+
+
 
 
