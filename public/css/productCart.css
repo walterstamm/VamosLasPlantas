@@ -232,6 +232,16 @@ p{
     text-shadow: 1px 1px 1px black;
   }
 
+  caption {
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    font-style: italic;
+    caption-side: top;
+    color: #666;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+ 
   
 
 /* Cambial colo de fondo de las filas de manera alternada */
