@@ -2,14 +2,23 @@
 * {
     margin: 0px;
     padding: 0px;
-  }
+}
 
 body {
-    font-family: "Roboto", sans-serif;
-    background-color: #7fbf90;
+    font-family: 'Nunito', sans-serif;
+    background-color: #e8eeef;
     display: flex;
     flex-direction: column
   }
+
+.altausuario-login {
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    padding-top: 2em;
+}
 
 .altausuario-login div input{
     width: 60%;
@@ -17,8 +26,10 @@ body {
     border-radius: 5px;
 }
 
-.altausuario-login {
-    padding: 10px;
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+
 }
 
 .usuario-login {    
@@ -26,7 +37,7 @@ body {
     border-radius: 5px;
     justify-content: center;
     text-align: center;
-    margin: auto;
+    margin-bottom: 15px;
     display: flex;  
     padding: 7px;
     font-size: 15px;
@@ -38,7 +49,7 @@ body {
     border-radius: 5px;
     justify-content: center;
     text-align: center;
-    margin: auto;
+    margin-bottom: 15px;
     display: flex;  
     padding: 7px;
     font-size: 15px;
@@ -46,21 +57,22 @@ body {
 }
 
 .recordarcontraseña-login {
-    left: 68%;
-    font-size: 20px; 
+    font-size: 15px;
+    position: relative; 
+    right: 13%;   
+    margin-bottom: 5px; 
 }
 
 .olvidemiclave-login {
     list-style-type: none;
     text-decoration: none;
-    color: white;
-    font-size: 20px;
+    font-size: 15px;
     position: relative;
-    /*left: 66%;*/
-    text-align: right;
+    left: 56%;
+    /*text-align: right;*/
 }
 
-.boton-login, .boton-borrar {
+/*.boton-login, .boton-borrar {
     background-color: #093f10;
     color: white;
     border: none;
@@ -70,13 +82,34 @@ body {
     width: 60%;
     position: relative;
     left: 20%;
+}*/
+
+.boton-login, .boton-borrar {
+  border: 0;
+  background: #4BC970;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #075c3b;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+  width: 60%;
+  position: relative;
+  left: 20%;
 }
 
-
 .boton-login:hover {
-    background-color: #075c3b;
-    color: white;
-    font-weight: bold;
+  background-color: #075c3b;
+  color: white;
+  font-weight: bold;
+}
+
+button:active {
+  box-shadow: 0 2px 0 #075c3b;
+  transform: translateY(3px);
 }
 
 .boton-borrar:hover {

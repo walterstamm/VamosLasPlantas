@@ -1,6 +1,12 @@
 
 
 /* Jenny Css*/ 
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 header{
     background-color: #90f1aa;
     text-align: center;
