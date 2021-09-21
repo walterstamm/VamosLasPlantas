@@ -1,0 +1,84 @@
+/*---------styles del login (inicio)--------*/
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #7fbf90;
+    display: flex;
+    flex-direction: column
+  }
+
+.altausuario-login div input{
+    width: 60%;
+    border-color: white;
+    border-radius: 5px;
+}
+
+.altausuario-login {
+    padding: 10px;
+}
+
+.usuario-login {    
+    width: 100%;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    display: flex;  
+    padding: 7px;
+    font-size: 15px;
+    height: 3em;
+}
+
+.password-login {
+    width: 100%;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    display: flex;  
+    padding: 7px;
+    font-size: 15px;
+    height: 3em;
+}
+
+.recordarcontraseña-login {
+    left: 68%;
+    font-size: 20px; 
+}
+
+.olvidemiclave-login {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 66%;
+}
+
+.boton-login,.boton-borrar {
+    background-color: #1259c3;
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 60%;
+    position: relative;
+    left: 20%;
+}
+
+.boton-login:hover {
+    background-color: #0022AA;
+    color: white;
+    font-weight: bold;
+}
+
+.boton-borrar:hover {
+    background-color: #0022AA;
+    color: white;
+    font-weight: bold;
+}
