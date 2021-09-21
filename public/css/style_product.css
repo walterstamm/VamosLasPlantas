@@ -144,9 +144,147 @@ button:hover {
       text-align: center; 
       margin-top: 2%;
   }
+
+  /* Jenny Css*/ 
+  header{
+    background-color: #90f1aa;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    top: 0px;
+    width: 100%;
+  }
+  img {
+    border-radius: 50%;
+  }
+
+.nombre-website{
+  font-weight: bold;
+  font-size: large;
+  padding-bottom: 2em;
+}
+.logo-slogan {
+  display: flex;
+  align-items:center;
+  flex-direction: column;
+  color: #134d22;
+  justify-content: center;
+  padding-bottom: 2em;
+  padding-top: 2em;
+
+}
+
+.login-cart-register{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  box-sizing: content-box;
+  padding-bottom: 2em;
+ 
+}
+
+.search-container{
+  padding-top: 1em;
+  border-radius: 10%;
+  padding-bottom: 2em;
+}
+/* start of link styles*/
+p{
+    position: absolute;
+    transform: translate(-50%);
+  }
+  
+  a {
+    display: block;
+    color: rgb(23, 121, 19);
+    text-decoration: none;
+    position: relative;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    vertical-align: middle;
+  }
+  
+  a::after{
+    content: "";
+    background: #90f1aa;
+      mix-blend-mode: exclusion;
+    width: calc(100% + 20px);
+    height: 0;
+    position: absolute;
+    bottom: -4px;
+    left: -10px;
+      transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+  
+  a:hover::after{
+      height: calc(100% + 8px)
+  }
+  
+  /* end of link styles*/
+  
+  /*start of search container style*/
+  .search-container{
+    background: #fff;
+    height: 30px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.8s;
+    /*box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    inset -7px -7px 10px 0px rgba(0,0,0,.1),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+   text-shadow:  0px 0px 6px rgba(255,255,255,.3),
+              -4px -4px 6px rgba(116, 125, 136, .2);
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);*/
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+  }
+  
+  .search-container:hover > .search-input{
+    width: 400px;
+  }
+  
+  .search-container .search-input{
+    background: transparent;
+    border: none;
+    outline:none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.8s;
+  
+  }
+  
+  .search-container .search-btn .fas{
+    color: #5cbdbb;
+  }
+  
+  @keyframes hoverShake {
+  0% {transform: skew(0deg,0deg);}
+  25% {transform: skew(5deg, 5deg);}
+  75% {transform: skew(-5deg, -5deg);}
+  100% {transform: skew(0deg,0deg);}
+  }
+  
+  .search-container:hover{
+  animation: hoverShake 0.15s linear 3;
+  }
+  
+  /*end of search container style*/
+
+
+
 @media (min-width: 768px) {
     h1 {
         font-size: 50px;
+        text-align: center;
     }
     h2 {
         font-size: 36px;
@@ -154,7 +292,7 @@ button:hover {
     table {
         font-size: 20px;
     }
-    p {
+    .parrafo {
         font-size: 20px;
     }
     .contenedor-caracteristicas{
@@ -175,11 +313,12 @@ button:hover {
     text-align: center;
     font-size: 24px;
 }
-.logo1 {
+/*.logo1 {
     align-self: center;
     width: 8%;
+}*/
 }
-}
+
 @media (min-width: 1200px) {
     h1 {
         font-size: 50px;
