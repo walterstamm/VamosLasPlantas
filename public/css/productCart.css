@@ -91,7 +91,6 @@ p{
     position: relative;
     padding-top: 1em;
     padding-bottom: 1em;
-    vertical-align: middle;
   }
   
   a::after{
@@ -166,4 +165,82 @@ p{
   animation: hoverShake 0.15s linear 3;
   }
   
+
+  .img-tabla img{
+    width: 10vw;
+    height: 10vh;
+  }
+
+  .contendor-tabla{
+    width: 80vw;
+  }
+
+  table {
+    table-layout: fixed;
+    width: 100%;
+    padding: 10%;
+    border-collapse: collapse;
+    border: 3px solid;
+  }
+
+  thead th:nth-child(1) {
+    width: 12%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 22%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 22%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 22%;
+  }
+
+  thead th:nth-child(5){
+    width: 22%;
+  }
+
+  th, td {
+    padding: 20px;
+  }
+
+  td {
+    letter-spacing: 1px;
+  }
+  
+  tbody td {
+    text-align: center;
+  }
+  thead tr {
+    background-image: url(/images/fondoTabla.jpg);
+    background-size: cover;
+  background-position: center;
+  }
+  tfoot th {
+    text-align: right;
+  }
+  tfoot td{
+    text-align: right;
+  }
+
+   tfoot {
+  
+    color: black;
+    text-shadow: 1px 1px 1px black;
+  }
+
+  
+
+/* Cambial colo de fondo de las filas de manera alternada */
+  tbody tr:nth-child(odd) {
+    background-color: #90f1aa;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: white;
+  }
+
   /*end of search container style*/
