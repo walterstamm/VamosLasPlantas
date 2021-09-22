@@ -6,7 +6,6 @@
   }
 
 
-
   header{
     background-color: #90f1aa;
     text-align: center;
@@ -36,6 +35,11 @@
   padding-bottom: 2em;
 }
 
+.slogan {
+  color: rgba(255, 123, 0, 0.952);
+  font-weight: 400;
+}
+
 .logo-slogan {
   display: flex;
   align-items:center;
@@ -44,7 +48,7 @@
   justify-content: center;
   padding-bottom: 2em;
   padding-top: 2em;
-
+  text-transform: uppercase;
 }
 
 .login-cart-register{
@@ -54,6 +58,7 @@
   justify-content: space-evenly;
   box-sizing: content-box;
   padding-bottom: 2em;
+  text-transform: uppercase;
  
 }
 
@@ -61,8 +66,6 @@
   padding-top: 1em;
   border-radius: 10%;
   padding-bottom: 2em;
-
-
 }
 
 .plants-accesories{
@@ -77,39 +80,81 @@
 }
 
 /* start of link styles*/
+
 p{
   position: absolute;
   transform: translate(-50%);
 }
 
-a{
-  display: block;
-  color: rgb(23, 121, 19);
+a {
+  color: #134d22;
+}
+
+
+
+/* ------efectos del nombre el sitio---------*/ 
+
+.nombre-website a {
+	position: relative;
+	display: inline-block;
+	font-family: "Great Vibes", serif;
+	font-size: calc(0.2em + 2vw);
+	text-decoration: none;
+	color: rgb(var(--link-color));
+}
+
+.nombre-website a:hover::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+
+	/* Adjust height and bottom values to work with selected font */
+	height: .05em;
+	bottom: .1em;
+
+	/* Create gradient */
+	background-image: linear-gradient(
+		to right,
+		transparent 0%,
+		rgba(var(--link-color), .6) 30%,
+		rgba(var(--link-color), .7) 50%,
+		rgba(var(--link-color), .6) 70%,
+		transparent 100%
+	);
+
+	/* Set-up fade-in animation */
+	opacity: 0;
+	animation: fadeIn 400ms ease-out forwards;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+	100% {
+		opacity: 1;
+	}
+}
+
+.navegador a {
+  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 3px 3px;
+  color: #000;
   text-decoration: none;
-  position: relative;
-  padding-top: 1em;
-  padding-bottom: 1em;
 }
 
-a::after{
-  content: "";
-  background: #90f1aa;
-	mix-blend-mode: exclusion;
-  width: calc(100% + 20px);
-  height: 0;
-  position: absolute;
-  bottom: -4px;
-  left: -10px;
-	transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+.navegador a:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
 }
 
-a:hover::after{
-	height: calc(100% + 8px)
-}
+/* ------ fin de efectos de botones del navegador---------*/ 
 
-/* end of link styles*/
-
-/*start of search container style*/
+/* ------efectos de BARRA BUSCADOR ---------*/ 
 .search-container{
   background: #fff;
   height: 30px;
@@ -120,14 +165,7 @@ a:hover::after{
   align-items: center;
   cursor: pointer;
   transition: 0.8s;
-  /*box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-  inset -7px -7px 10px 0px rgba(0,0,0,.1),
- 7px 7px 20px 0px rgba(0,0,0,.1),
- 4px 4px 5px 0px rgba(0,0,0,.1);
- text-shadow:  0px 0px 6px rgba(255,255,255,.3),
-            -4px -4px 6px rgba(116, 125, 136, .2);
-text-shadow: 2px 2px 3px rgba(255,255,255,0.5);*/
-box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
             -4px -4px 6px 0 rgba(116, 125, 136, .2), 
   inset -4px -4px 6px 0 rgba(255,255,255,.2),
   inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
@@ -163,12 +201,76 @@ box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
 animation: hoverShake 0.15s linear 3;
 }
 
-/*end of search container style*/
+/* ------fin de efectos de BARRA BUSCADOR ---------*/ 
+
+
+/* ------efectos de categorias PLANTAS y ACCESORIOS---------*/ 
+.categorias a{
+  display: block;
+  color: rgb(23, 121, 19);
+  text-decoration: none;
+  position: relative;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.categorias a::after{
+  content: "";
+  background: #90f1aa;
+	mix-blend-mode: exclusion;
+  width: calc(100% + 20px);
+  height: 0;
+  position: absolute;
+  bottom: -4px;
+  left: -10px;
+	transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.categorias a:hover::after{
+	height: calc(100% + 8px)
+}
+
+/* ------efectos de categorias PLANTAS y ACCESORIOS---------*/ 
 
 
 @media (min-width: 1200px) {
 
-  
-
 }
 
+/* ------ fin de efectos del nombre el sitio---------*/ 
+
+
+/*
+.navegador a{
+  display: block;
+  color: rgb(11, 75, 9);
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.navegador a:after{
+  content: "";
+  background-color: white;
+  opacity: 0.2;
+	mix-blend-mode: normal;
+  width: calc(100% + 20px);
+  height: 0;
+  position: absolute;
+  bottom: -4px;
+  left: -10px;
+	transition: all .3s cubic-bezier(0, 0.5, 1, 0.5);
+}
+
+.navegador a:hover::after{
+	height: calc(100% + 8px)
+}
+
+*/
+
+
+/* end of link styles*/
+
+/* ------ fin de efectos de botones del navegador---------*/ 
