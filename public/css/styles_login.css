@@ -253,3 +253,14 @@ p{
   }
   
   /*end of search container style*/
+
+footer {
+  background: #90f1aa;
+  padding: 15px;
+  
+  }
+
+.redes-sociales, .wapp, .envios {
+  font-size: 25px;
+}
+
