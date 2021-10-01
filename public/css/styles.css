@@ -1,0 +1,623 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+
+  header{
+    background-color: #90f1aa;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    top: 0px;
+    width: 100%;
+  }
+
+  main   {
+
+    position: relative;
+    text-align: center;
+    width: 100%;
+    color: #318547;
+    box-sizing: content-box;
+
+  }
+
+  img {
+    border-radius: 50%;
+  }
+
+.nombre-website{
+  font-weight: bold;
+  font-size: large;
+  padding-bottom: 2em;
+}
+
+.slogan {
+  color: rgba(255, 123, 0, 0.952);
+  font-weight: 400;
+}
+
+.logo-slogan {
+  display: flex;
+  align-items:center;
+  flex-direction: column;
+  color: #134d22;
+  justify-content: center;
+  padding-bottom: 2em;
+  padding-top: 2em;
+  text-transform: uppercase;
+}
+
+.login-cart-register{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  box-sizing: content-box;
+  padding-bottom: 2em;
+  text-transform: uppercase;
+ 
+}
+
+
+
+.plants-accesories{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  padding-top: 4em;
+  text-align: center;
+
+}
+
+/* start of link styles*/
+
+p{
+  position: absolute;
+  transform: translate(-50%);
+}
+
+a {
+  color: #134d22;
+}
+
+
+
+/* ------efectos del nombre el sitio---------*/ 
+
+.nombre-website a {
+	position: relative;
+	display: inline-block;
+	font-family: "Great Vibes", serif;
+	font-size: calc(0.2em + 2vw);
+	text-decoration: none;
+	color: rgb(var(--link-color));
+}
+
+.nombre-website a:hover::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+
+	/* Adjust height and bottom values to work with selected font */
+	height: .05em;
+	bottom: .1em;
+
+	/* Create gradient */
+	background-image: linear-gradient(
+		to right,
+		transparent 0%,
+		rgba(var(--link-color), .6) 30%,
+		rgba(var(--link-color), .7) 50%,
+		rgba(var(--link-color), .6) 70%,
+		transparent 100%
+	);
+
+	/* Set-up fade-in animation */
+	opacity: 0;
+	animation: fadeIn 400ms ease-out forwards;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+	100% {
+		opacity: 1;
+	}
+}
+
+.navegador a {
+  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 3px 3px;
+  color: #000;
+  text-decoration: none;
+}
+
+.navegador a:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+}
+
+/* ------ fin de efectos de botones del navegador---------*/ 
+
+/* ------efectos de BARRA BUSCADOR ---------*/ 
+
+.search-container{
+    padding-top: 1em;
+    border-radius: 10%;
+    padding-bottom: 2em;
+  }
+.search-container{
+  background: #fff;
+  height: 30px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.8s;
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+            -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+  inset -4px -4px 6px 0 rgba(255,255,255,.2),
+  inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+
+.search-container:hover > .search-input{
+  width: 400px;
+}
+
+.search-container .search-input{
+  background: transparent;
+  border: none;
+  outline:none;
+  width: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.8s;
+
+}
+
+.search-container .search-btn .fas{
+  color: #5cbdbb;
+}
+
+@keyframes hoverShake {
+0% {transform: skew(0deg,0deg);}
+25% {transform: skew(5deg, 5deg);}
+75% {transform: skew(-5deg, -5deg);}
+100% {transform: skew(0deg,0deg);}
+}
+
+.search-container:hover{
+animation: hoverShake 0.15s linear 3;
+}
+
+/* ------fin de efectos de BARRA BUSCADOR ---------*/ 
+
+
+/* ------efectos de categorias PLANTAS y ACCESORIOS---------*/ 
+.categorias a{
+  display: block;
+  color: rgb(23, 121, 19);
+  text-decoration: none;
+  position: relative;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.categorias a::after{
+  content: "";
+  background: #90f1aa;
+	mix-blend-mode: exclusion;
+  width: calc(100% + 20px);
+  height: 0;
+  position: absolute;
+  bottom: -4px;
+  left: -10px;
+	transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.categorias a:hover::after{
+	height: calc(100% + 8px)
+}
+/* ------FIN  de efectos de categorias PLANTAS y ACCESORIOS---------*/ 
+
+/* ------menu de hamburguesa mobile---------*/ 
+
+.burger-menu {
+  text-align: center;
+}
+.burger-menu i {
+  background-color: rgb(23, 121, 19);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+}
+
+/* ------FIN menu de hamburguesa mobile---------*/ 
+
+
+/* ------MEDIA QUERIES: definicion de elementos que aparecen y desaparecen segun la resolucion---------*/ 
+
+@media (min-width: 361px) {
+
+  .burger-menu {
+    text-align: center;
+    display: none;
+  }
+  .burger-menu i {
+    background-color: rgb(23, 121, 19);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    display: none;
+  }
+  
+  }
+
+
+
+@media (max-width: 360px) {
+div .login-cart-register {
+display: none;
+}
+
+.burger-menu {
+  text-align: center;
+}
+.burger-menu i {
+  background-color: rgb(23, 121, 19);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+}
+
+}
+
+/* ------ PRODUCT CART ---------*/ 
+.contenedor-caracteristicas {
+    padding-left: 2%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    margin-left: 2%; 
+    margin-top: 3%;
+    margin-bottom: 5%;
+    width: 95%;
+    background-color: rgba(203, 245, 199, 0.5);
+    border-radius: 15%;
+    margin-right: 50%;
+
+}
+.contenedor-descripcion {
+    padding-left: 2%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    margin-left: 2%; 
+    margin-top: 3%;
+    width: 95%;
+    background-color: rgba(203, 245, 199, 0.5);
+    border-radius: 15%;
+    margin-right: 50%;
+}
+.contenedor-palabra-caracteristicas {
+    padding: 2%;
+    /*margin: 2%;*/
+    width: 100%;
+    text-align: center;
+
+}
+.contenedor-palabra-descripcion {
+    padding: 2%;
+   /* margin: 2%;*/
+    width: 100%;
+    text-align: center;
+
+}
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+
+h1 {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    
+}
+/* ------ H1 REGISTER ---------*/ 
+h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+/* ------ H1 REGISTER ---------*/ 
+footer {
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 25%;
+    background-color: #7fbf90;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+/* ------ END PRODUCT CART ---------*/ 
+
+/* ------ REGISTER ---------*/ 
+
+form {
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    padding-top: 2em;
+  }
+
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  textarea,
+  select {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+  }
+  
+  select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+  }
+  
+
+  button {
+    border: 0;
+    background: #4BC970;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 #075c3b;
+    color: white;
+    cursor: pointer;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 12px 20px;
+    transition: all .1s linear;
+    width: 100%;
+    position: relative;
+    left: 0%;
+  }
+  
+  button:hover {
+    background-color: #075c3b;
+    color: white;
+    font-weight: bold;
+  }
+  
+  button:active {
+    box-shadow: 0 2px 0 #075c3b;
+    transform: translateY(3px);
+  }
+  
+  fieldset {
+    margin-bottom: 30px;
+    border: none;
+  }
+  
+  legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  label.light {
+    font-weight: 300;
+    display: inline;
+  }
+  
+  .number {
+    background-color: #5fcf80;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 100%;
+  }
+  
+  @media screen and (min-width: 480px) {
+  
+    form {
+      max-width: 480px;
+    }
+  
+  }
+
+
+
+.altausuario-login {
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    padding-top: 2em;
+}
+
+.altausuario-login div input{
+    width: 60%;
+    border-color: white;
+    border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+.usuario-login {    
+    width: 100%;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15px;
+    display: flex;  
+    padding: 7px;
+    font-size: 15px;
+    height: 3em;
+}
+
+.password-login {
+    width: 100%;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15px;
+    display: flex;  
+    padding: 7px;
+    font-size: 15px;
+    height: 3em;
+}
+
+.recordarcontraseña-login {
+    font-size: 15px;
+    position: relative; 
+    right: 13%;   
+    margin-bottom: 5px; 
+}
+
+.olvidemiclave-login {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+    left: 56%;
+    /*text-align: right;*/
+}
+
+.olvidemiclave-login {
+    display: block;
+    color: rgb(23, 121, 19);
+    text-decoration: none;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 27%;
+  }
+
+  .olvidemiclave-login::after{
+    content: "";
+    background: #90f1aa;
+      mix-blend-mode: exclusion;
+    width: calc(100% + 20px);
+    height: 0;
+    position: absolute;
+    bottom: -4px;
+    left: -10px;
+      transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+
+  .olvidemiclave-login:hover::after{
+    height: calc(100% + 8px)
+}
+
+  
+
+/*.boton-login, .boton-borrar {
+    background-color: #093f10;
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 60%;
+    position: relative;
+    left: 20%;
+}*/
+
+.boton-login, .boton-borrar {
+  border: 0;
+  background: #4BC970;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #075c3b;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+  width: 60%;
+  position: relative;
+  left: 20%;
+}
+
+.boton-login:hover {
+  background-color: #075c3b;
+  color: white;
+  font-weight: bold;
+}
+
+.boton-login, .boton-borrar:active {
+  box-shadow: 0 2px 0 #075c3b;
+  transform: translateY(3px);
+}
+
+.boton-borrar:hover {
+    background-color: #075c3b;
+    color: white;
+    font-weight: bold;
+}
+

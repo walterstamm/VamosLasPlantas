@@ -229,13 +229,66 @@ animation: hoverShake 0.15s linear 3;
 .categorias a:hover::after{
 	height: calc(100% + 8px)
 }
+/* ------FIN  de efectos de categorias PLANTAS y ACCESORIOS---------*/ 
 
-/* ------efectos de categorias PLANTAS y ACCESORIOS---------*/ 
+/* ------menu de hamburguesa mobile---------*/ 
+
+.burger-menu {
+  text-align: center;
+}
+.burger-menu i {
+  background-color: rgb(23, 121, 19);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+}
+
+/* ------FIN menu de hamburguesa mobile---------*/ 
 
 
-@media (min-width: 1200px) {
+/* ------MEDIA QUERIES: definicion de elementos que aparecen y desaparecen segun la resolucion---------*/ 
+
+@media (min-width: 361px) {
+
+  .burger-menu {
+    text-align: center;
+    display: none;
+  }
+  .burger-menu i {
+    background-color: rgb(23, 121, 19);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    display: none;
+  }
+  
+  }
+
+
+
+@media (max-width: 360px) {
+div .login-cart-register {
+display: none;
+}
+
+.burger-menu {
+  text-align: center;
+}
+.burger-menu i {
+  background-color: rgb(23, 121, 19);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+}
 
 }
+
 
 /* ------ fin de efectos del nombre el sitio---------*/ 
 
