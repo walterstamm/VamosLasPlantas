@@ -360,7 +360,7 @@ h1 {
 }
 
 form {
-    max-width: 300px;
+    max-width: 80%;
     margin: 10px auto;
     padding: 10px 20px;
     background: #f4f7f8;
@@ -541,6 +541,8 @@ form {
     font-size: 15px;
     position: relative;
     left: 56%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     /*text-align: right;*/
 }
 
@@ -628,7 +630,13 @@ footer {
   display: flex;
   flex-direction: row;
   padding: 10px 0px;
+  font-size: 15px;
 }
+
+footer i {
+  font-size: 25px;
+}
+
 .redes-sociales,.wapp,.envios {
   width: 33%;
   
