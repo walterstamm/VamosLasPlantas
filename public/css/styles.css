@@ -37,7 +37,7 @@
 
 .slogan {
   color: rgba(255, 123, 0, 0.952);
-  font-weight: 400;
+  font-weight: bolder;
 }
 
 .logo-slogan {
@@ -347,16 +347,17 @@ h1 {
     font-size: 36px;
     
 }
-/* ------ H1 REGISTER ---------*/ 
-h1 {
-    margin: 0 0 30px 0;
-    text-align: center;
-  }
-/* ------ H1 REGISTER ---------*/ 
 
 /* ------ END PRODUCT CART ---------*/ 
 
-/* ------ REGISTER ---------*/ 
+/* ---------- REGISTER (INICIO)---------------*/ 
+
+.register {
+  margin: 0 0 30px 0;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bolder;
+}
 
 form {
     max-width: 300px;
@@ -415,6 +416,7 @@ form {
     cursor: pointer;
     font: inherit;
     margin: 0;
+    margin-bottom: 15px;
     outline: 0;
     padding: 12px 20px;
     transition: all .1s linear;
@@ -439,16 +441,19 @@ form {
     border: none;
   }
   
-  legend {
-    font-size: 1.4em;
+  .compra-register {
+    font-size: 1.0em;
     margin-bottom: 10px;
+    font-weight: bolder;
   }
   
   label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 8px;    
+    font-size: 20px;
+    font-weight: bolder;
   }
-  
+   
   label.light {
     font-weight: 300;
     display: inline;
@@ -476,7 +481,9 @@ form {
   
   }*/ /*lo comente xq desconfigura parte del login y register*/
 
+/* --------------- REGISTER (INICIO)---------------------*/ 
 
+/*----------------- LOGIN (INICIO)-----------------------*/
 
 .altausuario-login {
     max-width: 400px;
@@ -492,10 +499,11 @@ form {
     border-radius: 5px;
 }
 
-h2 {
+.bienvenido {
   text-align: center;
   margin-bottom: 20px;
-
+  font-size: 26px;
+  font-weight: bolder;
 }
 
 .usuario-login {    
@@ -610,6 +618,10 @@ h2 {
     font-weight: bold;
 }
 
+/*------------- LOGIN (FIN)-------------------*/
+
+/*------------- FOOTER (INICIO)--------------------*/
+
 footer {
   text-align: center;
   background-color: #7fbf90;
@@ -619,6 +631,9 @@ footer {
 }
 .redes-sociales,.wapp,.envios {
   width: 33%;
+  
 }
+
+/*------------- FOOTER (FIN)---------------------*/
 
 
