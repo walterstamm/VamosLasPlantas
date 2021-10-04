@@ -1,17 +1,17 @@
 /*---------styles del login (inicio)--------*/
-* {
+/** {
     margin: 0px;
     padding: 0px;
 }
-
-body {
+*/
+/*body {
     font-family: 'Nunito', sans-serif;
     background-color: #e8eeef;
     display: flex;
     flex-direction: column
   }
-
-.altausuario-login {
+*/
+/*.altausuario-login {
     max-width: 400px;
     margin: 10px auto;
     padding: 10px 20px;
@@ -25,8 +25,8 @@ body {
     border-color: white;
     border-radius: 5px;
 }
-
-h2 {
+*/
+/*h2 {
   text-align: center;
   margin-bottom: 20px;
 
@@ -70,8 +70,8 @@ h2 {
     font-size: 15px;
     position: relative;
     left: 56%;
-    /*text-align: right;*/
-}
+    /*text-align: right;
+}*/
 
 /*.boton-login, .boton-borrar {
     background-color: #093f10;
@@ -84,7 +84,7 @@ h2 {
     position: relative;
     left: 20%;
 }*/
-
+/*
 .boton-login, .boton-borrar {
   border: 0;
   background: #4BC970;
@@ -106,8 +106,8 @@ h2 {
   background-color: #075c3b;
   color: white;
   font-weight: bold;
-}
-
+}*/
+/*
 button:active {
   box-shadow: 0 2px 0 #075c3b;
   transform: translateY(3px);
@@ -118,8 +118,11 @@ button:active {
     color: white;
     font-weight: bold;
 }
+*/
+
 
 /* Jenny Css*/ 
+/*
 header{
     background-color: #90f1aa;
     text-align: center;
@@ -163,8 +166,9 @@ header{
   border-radius: 10%;
   padding-bottom: 2em;
 }
+*/
 /* start of link styles*/
-p{
+/*p{
     position: absolute;
     transform: translate(-50%);
   }
@@ -177,9 +181,9 @@ p{
     padding-top: 10px;
     padding-bottom: 10px;
     max-width: 27%;
-    /*vertical-align: middle;*/
-  }
-  
+    /*vertical-align: middle;
+  }*/
+  /*
   .olvidemiclave-login::after{
     content: "";
     background: #90f1aa;
@@ -195,11 +199,11 @@ p{
   .olvidemiclave-login:hover::after{
       height: calc(100% + 8px)
   }
-  
+  */
   /* end of link styles*/
   
   /*start of search container style*/
-  .search-container{
+  /*.search-container{
     background: #fff;
     height: 30px;
     border-radius: 30px;
@@ -215,7 +219,7 @@ p{
    4px 4px 5px 0px rgba(0,0,0,.1);
    text-shadow:  0px 0px 6px rgba(255,255,255,.3),
               -4px -4px 6px rgba(116, 125, 136, .2);
-  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);*/
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
   box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
               -4px -4px 6px 0 rgba(116, 125, 136, .2), 
     inset -4px -4px 6px 0 rgba(255,255,255,.2),
@@ -251,16 +255,17 @@ p{
   .search-container:hover{
   animation: hoverShake 0.15s linear 3;
   }
-  
+  */
+
   /*end of search container style*/
 
-footer {
+/*footer {
   background: #90f1aa;
   padding: 15px;
   
-  }
+}
 
 .redes-sociales, .wapp, .envios {
   font-size: 25px;
-}
+}*/
 

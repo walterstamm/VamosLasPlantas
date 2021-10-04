@@ -2,7 +2,7 @@
 
 /* Jenny Css*/ 
 
-* {
+/* * {
   margin: 0px;
   padding: 0px;
 }
@@ -17,8 +17,8 @@ header{
   }
   img {
     border-radius: 50%;
-  }
-
+  }*/
+/*
 .nombre-website{
   font-weight: bold;
   font-size: large;
@@ -50,8 +50,9 @@ header{
   border-radius: 10%;
   padding-bottom: 2em;
 }
+*/
 /* start of link styles*/
-p{
+/*p{
     position: absolute;
     transform: translate(-50%);
   }
@@ -84,7 +85,8 @@ p{
   
   /* end of link styles*/
   
-  /*start of search container style*/
+  /*start of search container style*/ 
+/*
   .search-container{
     background: #fff;
     height: 30px;
@@ -102,7 +104,7 @@ p{
    text-shadow:  0px 0px 6px rgba(255,255,255,.3),
               -4px -4px 6px rgba(116, 125, 136, .2);
   text-shadow: 2px 2px 3px rgba(255,255,255,0.5);*/
-  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+  /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
               -4px -4px 6px 0 rgba(116, 125, 136, .2), 
     inset -4px -4px 6px 0 rgba(255,255,255,.2),
     inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
@@ -136,16 +138,18 @@ p{
   
   .search-container:hover{
   animation: hoverShake 0.15s linear 3;
-  }
+  } 
+  */
   
   /*end of search container style*/
 
-  *, *:before, *:after {
+  /**, *:before, *:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
   
+  */
   body {
     font-family: 'Nunito', sans-serif;
     color: #384047;
@@ -164,7 +168,7 @@ p{
     margin: 0 0 30px 0;
     text-align: center;
   }
-  
+  /*
   input[type="text"],
   input[type="password"],
   input[type="date"],
@@ -217,7 +221,7 @@ p{
     margin-bottom: 10px;
   }*/
 
-  button {
+  /*button {
     border: 0;
     background: #4BC970;
     border-radius: 4px;
@@ -244,13 +248,13 @@ p{
     box-shadow: 0 2px 0 #075c3b;
     transform: translateY(3px);
   }
-  
-  fieldset {
+  */
+  /*fieldset {
     margin-bottom: 30px;
     border: none;
-  }
+  }*/
   
-  legend {
+  /*legend {
     font-size: 1.4em;
     margin-bottom: 10px;
   }
@@ -277,12 +281,12 @@ p{
     text-align: center;
     text-shadow: 0 1px 0 rgba(255,255,255,0.2);
     border-radius: 100%;
-  }
+  }*/
   
-  @media screen and (min-width: 480px) {
+  /*@media screen and (min-width: 480px) {
   
     form {
       max-width: 480px;
     }
   
-  }
+  }*/

@@ -1,3 +1,4 @@
+/*
 * {
     margin: 0px;
     padding: 0px;
@@ -60,7 +61,7 @@
   padding-bottom: 2em;
   text-transform: uppercase;
  
-}
+} 
 
 .search-container{
   padding-top: 1em;
@@ -79,20 +80,20 @@
 
 }
 
-/* start of link styles*/
+ start of link styles
 
 p{
   position: absolute;
   transform: translate(-50%);
 }
-
+ 
 a {
   color: #134d22;
 }
 
 
 
-/* ------efectos del nombre el sitio---------*/ 
+------efectos del nombre el sitio--------- 
 
 .nombre-website a {
 	position: relative;
@@ -109,11 +110,11 @@ a {
 	position: absolute;
 	width: 100%;
 
-	/* Adjust height and bottom values to work with selected font */
+	Adjust height and bottom values to work with selected font 
 	height: .05em;
 	bottom: .1em;
 
-	/* Create gradient */
+	Create gradient 
 	background-image: linear-gradient(
 		to right,
 		transparent 0%,
@@ -123,12 +124,13 @@ a {
 		transparent 100%
 	);
 
-	/* Set-up fade-in animation */
+	 Set-up fade-in animation 
 	opacity: 0;
 	animation: fadeIn 400ms ease-out forwards;
 }
 
-/* Fade-in animation */
+Fade-in animation 
+
 @keyframes fadeIn {
 	100% {
 		opacity: 1;
@@ -152,9 +154,9 @@ a {
   text-decoration: none;
 }
 
-/* ------ fin de efectos de botones del navegador---------*/ 
+------ fin de efectos de botones del navegador--------- 
 
-/* ------efectos de BARRA BUSCADOR ---------*/ 
+------efectos de BARRA BUSCADOR ---------
 .search-container{
   background: #fff;
   height: 30px;
@@ -201,10 +203,10 @@ a {
 animation: hoverShake 0.15s linear 3;
 }
 
-/* ------fin de efectos de BARRA BUSCADOR ---------*/ 
+-----fin de efectos de BARRA BUSCADOR ---------
 
 
-/* ------efectos de categorias PLANTAS y ACCESORIOS---------*/ 
+------efectos de categorias PLANTAS y ACCESORIOS---------
 .categorias a{
   display: block;
   color: rgb(23, 121, 19);
@@ -229,9 +231,9 @@ animation: hoverShake 0.15s linear 3;
 .categorias a:hover::after{
 	height: calc(100% + 8px)
 }
-/* ------FIN  de efectos de categorias PLANTAS y ACCESORIOS---------*/ 
+ ------FIN  de efectos de categorias PLANTAS y ACCESORIOS--------- 
 
-/* ------menu de hamburguesa mobile---------*/ 
+------menu de hamburguesa mobile--------- 
 
 .burger-menu {
   text-align: center;
@@ -245,10 +247,10 @@ animation: hoverShake 0.15s linear 3;
   padding: 10px;
 }
 
-/* ------FIN menu de hamburguesa mobile---------*/ 
+-----FIN menu de hamburguesa mobile---------
 
 
-/* ------MEDIA QUERIES: definicion de elementos que aparecen y desaparecen segun la resolucion---------*/ 
+------MEDIA QUERIES: definicion de elementos que aparecen y desaparecen segun la resolucion---------
 
 @media (min-width: 361px) {
 
@@ -290,10 +292,8 @@ display: none;
 }
 
 
-/* ------ fin de efectos del nombre el sitio---------*/ 
+------ fin de efectos del nombre el sitio--------- 
 
-
-/*
 .navegador a{
   display: block;
   color: rgb(11, 75, 9);
@@ -321,9 +321,8 @@ display: none;
 	height: calc(100% + 8px)
 }
 
-*/
 
+end of link styles
 
-/* end of link styles*/
-
-/* ------ fin de efectos de botones del navegador---------*/ 
+ ------ fin de efectos de botones del navegador--------
+ */
