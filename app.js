@@ -33,6 +33,11 @@ app.get("/accesories.html", function (req, res){
     res.sendFile (path.resolve (__dirname, "./views/accesories.html"))
 });
 
+app.get("/index.html", function (req, res){
+    res.sendFile (path.resolve (__dirname, "./views/index.html"))
+});
+
+
 
 
 
