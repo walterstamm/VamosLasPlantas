@@ -35,9 +35,11 @@ app.get("/accesories.html", function (req, res){
 
 app.get("/index.html", function (req, res){
     res.sendFile (path.resolve (__dirname, "./views/index.html"))
-});
+    });
+
+/*res.render("pages/index.html");});*/
 
 
-
+app.set("view engine", "ejs");
 
 
