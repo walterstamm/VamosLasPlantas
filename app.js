@@ -2,15 +2,24 @@ const express =  require ("express");
 
 const app = express ();
 
-const path = require ("path");
+//const path = require ("path");
 
-app.listen(3090, () =>  console.log ("Levantando servidor http://localhost:3090"));
+const mainRoutes=require('./routes/mainRoutes');
 
-const publicFolder = path.resolve (__dirname, "./public");
-app.use(express.static(publicFolder));
+app.use(express.static('./public'));
+
+
+//const publicFolder = path.resolve (__dirname, "./public");
+//app.use(express.static(publicFolder));
 
 app.set("view engine", "ejs");
 
+app.use('/', mainRoutes);
+
+app.listen(3090, () =>  console.log ("Levantando servidor http://localhost:3090"));
+
+
+/*
 app.get("/", function (req, res){
     res.render("pages/index.ejs");})
 
@@ -35,7 +44,12 @@ app.get("/accesories.ejs", function (req, res){
  app.get("/nuevosProd.ejs", function (req, res){
     res.render("pages/nuevosProd.ejs");})
 
-/*
+
+
+
+
+
+    /*
 app.get("/index.html", function (req, res){
     res.sendFile (path.resolve (__dirname, "./views/index.html"))
     }); 
