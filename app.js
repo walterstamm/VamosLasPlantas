@@ -32,6 +32,9 @@ app.get("/product.ejs", function (req, res){
 app.get("/accesories.ejs", function (req, res){
     res.render("pages/accesories.ejs");})
 
+ app.get("/nuevosProd.ejs", function (req, res){
+    res.render("pages/nuevosProd.ejs");})
+
 /*
 app.get("/index.html", function (req, res){
     res.sendFile (path.resolve (__dirname, "./views/index.html"))

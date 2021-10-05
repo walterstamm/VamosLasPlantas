@@ -217,6 +217,13 @@ a:hover::after{
     padding-bottom: 2em;
   }*/
 
+/* Styles para form Nuevos Prod*/
+
+.form-nuevosProd{
+  padding: 1em;
+}
+
+
 .search-container{
   background: #fff;
   height: 30px;

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+
+</head>
+<body>
+<header>
+    <%- include('../partials/header'); %>
+</header>
+
+<main>
+    <form action="index.ejs" method="post">
+  
+    <div class="register">Nuevo Producto</div>
+    
+    <fieldset>
+     <div class="form-nuevosProd">
+      <label for="name">Nombre del Producto:</label>
+      <input type="text" id="name" name="nombreProd">
+    </div>
+
+    <div class="form-nuevosProd">
+      <label for="mail">Descripcion</label>
+      <input type="email" id="mail" name="descripcionProd">
+    </div>
+
+    <div class="form-nuevosProd">
+      <label for="image">Imagen</label>
+      <input type="file" name="image" id="imagenProd" accept=".jpg,.png" multiple>
+    </div>
+    <div class="form-nuevosProd">
+      <label for="categoria">Categoria</label>
+      <select name="categorias" id="categorias">
+          <option value="Semillas">Semillas</option>
+          <option value="Decoracion">Decoracion</option>
+          <option value="Jardineria">Jardineria</option>
+          <option value="Plantas-Artificiales">Plantas Artificiales</option>
+          <option value="sustratos">Sustratos</option>
+          <option value="Macetas">Macetas</option>
+          <option value="Herramientas">Herramientas</option>
+      </select>
+    </div>
+      
+    <div class="form-nuevosProd">
+        <label for="precio">Precio</label>
+        <input type="number" id="precio" name="precio" min="1">
+    </div>
+
+      
+
+      <button type="submit">Cargar</button>
+          
+    </fieldset>
+  </form>
+</main> 
+</body>
