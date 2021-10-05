@@ -42,12 +42,13 @@
 .nombre-website{
   font-weight: bold;
   font-size: large;
-  padding-bottom: 2em;
+  padding-bottom: 0em;
 }
 
 .slogan {
   color: rgba(255, 123, 0, 0.952);
   font-weight: bolder;
+  padding-bottom: 0.5em;
 }
 
 .logo-slogan {
@@ -56,7 +57,7 @@
   flex-direction: column;
   color: #134d22;
   justify-content: center;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   padding-top: 2em;
   text-transform: uppercase;
 }
@@ -78,7 +79,7 @@
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: .1em;
-  padding-top: 4em;
+  padding-top: 2em;
   text-align: center;
 
 }
@@ -226,11 +227,10 @@ a:hover::after{
 
 .search-container{
   background: #fff;
-  height: 30px;
+  height: 20px;
   border-radius: 30px;
-  padding: 10px 20px;
-  padding-top: 1em;
-  padding-bottom: 2em;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -244,7 +244,7 @@ a:hover::after{
 
 
 .search-container:hover > .search-input{
-  width: 400px;
+  width: 300px;
 }
 
 .search-container .search-input{
@@ -276,6 +276,8 @@ animation: hoverShake 0.15s linear 3;
 /* ------fin de efectos de BARRA BUSCADOR ---------*/ 
 
 /* ------efectos de categorias PLANTAS y ACCESORIOS---------*/ 
+
+/*
 .categorias a{
   display: block;
   color: rgb(23, 121, 19);
@@ -301,7 +303,84 @@ animation: hoverShake 0.15s linear 3;
 .categorias a:hover::after{
 	height: calc(100% + 8px);
 
+} 
+
+.categorias a {
+  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 3px 3px;
+  color: #000;
+  text-decoration: none;
 }
+
+.categorias a:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+}
+
+*/
+
+.main-index {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 2em;
+
+}
+
+.plants-accesories ul {
+  list-style:none;
+
+}
+
+.categorias a {
+  margin: 10%;
+  text-align: center;
+
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 30px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  position: relative;
+
+  background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+  box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+  text-align: center;
+
+
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.categorias a:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.categorias a:focus {
+  outline: none;
+}
+
+
+
 /* ------FIN  de efectos de categorias PLANTAS y ACCESORIOS---------*/ 
 
 /* ------Comienzo de efectos de "tabla" ---------*/ 
@@ -430,28 +509,57 @@ tbody tr:nth-child(even) {
     margin: 10px 0px 20px 0px;
     padding: 10px;
     display: none;
-    
   }
+
+
 
   
   }
 
 @media (max-width: 360px) {
-div .login-cart-register {
+
+.login-cart-register {
 display: none;
 
 }
 
+.slogan {
+  display: none;
+}
+
+.logo-slogan {
+  margin: auto;
+}
+
 .burger-menu {
   text-align: center;
+  margin: auto;
 }
 .burger-menu i {
   background-color: rgb(23, 121, 19);
   border-radius: 5px;
   color: #fff;
   font-size: 20px;
-  margin: 10px 0px 20px 0px;
-  padding: 10px;
+  margin: 10px 10px 10px 10px;
+ 
+}
+
+
+
+.logo-slogan-hamburguesa {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: baseline;
+}
+
+.nombre-website {
+  display: none
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -680,7 +788,7 @@ form {
     justify-content: space-between;
     width: 100%;
 }
-.logo1 {
+  .logo1 {
     align-self: center;
     width: 10%;
 }
