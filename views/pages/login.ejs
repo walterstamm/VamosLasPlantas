@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <%- include('../partials/head'); %>
+</head>
+
+<!--<header>
+    <div class = "logo-slogan">
+        <div class="logo">
+        <img src="/images/LogosinFondo.png" width="60" alt="Logo de MyPlants"> 
+        </div>
+        <div class = "nombre-website">MyPlants</div>
+        <div class= "slogan">Comprá con tarjeta de crédito y en cuotas!</div>
+    </div>
+<nav>   
+    <div class= "login-cart-register">
+        <div class= "navegador">
+            <img src="/images/avatar.png" width="30" alt="avatar">
+            <a href="/login.ejs">Ingresá</a>
+        </div>
+        <div class= "navegador">
+            <img src="/images/cart.jpeg" width="30" alt="cart">
+            <a href="/productCart.ejs">Mi Carrito</a>
+        </div>
+        <div class= "navegador">
+            <img src="/images/register.png" width="30" alt="register">
+            <a href="/register.ejs">Registrate</a>
+        </div>
+    </div>
+</nav>
+    <div class="search-container">
+        <input type="text" name="buscar" placeholder="Buscá..." class = "search-input">
+        <a href="#" class="search-btn">
+        <i class="fa fa-search"></i></a>
+    </div> 
+</section>
+</header> -->
+
+<header>
+    <%- include('../partials/header'); %>
+</header>
+
+<body>
+    <form action="/" method="GET" class= "alta-login">
+
+        <div class ="altausuario-login">
+
+            <div class="bienvenido"> Bienvenido! Ingresá tus datos</div>
+
+            <div class="usuario-login">
+                <label for="usuario" ></label>
+                <input type= "text" name="usuario" placeholder="Usuario"> 
+            </div>
+
+            <div class="password-login">
+                <label for="password" ></label>
+                <input type="password" name="password" placeholder="Contraseña">
+            </div>
+            
+            <div class="recordarcontraseña-login">
+            <input type = "checkbox" name = "recordarcontraseña" value= "recordarcontraseña">Recordar Contraseña
+            </div>
+
+            <div class="olvidemiclave-login"> 
+                <li><a href="#">Olvide mi clave</a></li>
+            </div>
+
+                <button type="submit" style="margin:10px" class="boton-login" >Enviar </button>
+                <button type="reset" style="margin:10px" class="boton-borrar" >Borrar </button>
+
+        </div>
+    
+        </form>    
+</body>
+
+<footer>
+    <%- include('../partials/footer'); %>
+</footer>
+
+</html>

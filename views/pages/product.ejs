@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>ProductDetail</title>
+</head>-->
+
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body>
+
+<header>
+    <%- include('../partials/header'); %>
+</header>
+
+    <main>
+        <section>
+            <h1>Lavanda</h1>
+                <img src="images/lavanda.jpeg" width="100%" alt="Lavanda">
+            </section> 
+        <section>
+            <div class="contenedor-caracteristicas">
+            <h2 class="contenedor-palabra-caracteristicas">Caracteristicas</h2>
+<table> 
+    <tr>
+        <td class="nombre-especie"><strong>Nombre de especie</strong></td>
+        <td class="nombre">Lavanda dentada</td>
+    </tr>
+    <tr>
+        <td><strong>Tipo de planta</strong></td>
+        <td>Aromatica</td>
+    </tr>
+    <tr>
+        <td><strong>Cantidad de plantas</strong></td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td><strong>Altura</strong></td>
+        <td>35cm</td>
+    </tr>
+    <tr>
+        <td><strong>Ambiente</strong></td>
+        <td>Interior o exterior</td>
+    </tr>
+</table>
+</div> 
+    </section>  
+    <section>
+        <div class="contenedor-descripcion">
+        <h2 class="contenedor-palabra-descripcion">Descripción</h2>
+        <div class="parrafo"> Hermosas plantas de lavanda, ideales para la siembra en los hogares.
+            Son plantas muy resistentes al calor y a las altas tempraturas.
+            No suelen tener problemas fitosanitarios.
+            Su aroma ahuyenta pulgones y otros insectos. 
+        </div>
+        <h4>Precio: $1500</h4>
+    </div>
+    
+    </section>
+    <section>
+        <div class="botones-compra">  
+            <button class="boton1" name="Agregar" type="button" ><i class="fab fa-opencart"></i>
+                    Agregar al carrito
+                </button>
+    
+            
+                <button class="boton2" name="Comprar" type="button" ><i class="fas fa-credit-card"></i>
+                    Comprar ahora
+                </button>
+            </div> 
+    </section>
+    </main>
+    <footer> 
+        <%- include('../partials/footer'); %>
+    </footer>
+</body>
+
+</html>

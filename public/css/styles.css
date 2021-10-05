@@ -13,10 +13,20 @@
     position: relative;
     top: 0px;
     width: 100%;
+    padding-bottom: 1em;
   }
 
   main   {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    color: #318547;
+    box-sizing: content-box;
 
+  }
+
+  .main-index  {
+    background-color: white;
     position: relative;
     text-align: center;
     width: 100%;
@@ -266,22 +276,24 @@ animation: hoverShake 0.15s linear 3;
   position: relative;
   padding-top: 1em;
   padding-bottom: 1em;
+  background: white
 }
 
 .categorias a::after{
   content: "";
-  background: #90f1aa;
+
 	mix-blend-mode: exclusion;
   width: calc(100% + 20px);
   height: 0;
   position: absolute;
   bottom: -4px;
   left: -10px;
-	transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+	transition: all .3s cubic-bezier(0.111, 0.6, 0.89, 0.48);
 }
 
 .categorias a:hover::after{
-	height: calc(100% + 8px)
+	height: calc(100% + 8px);
+
 }
 /* ------FIN  de efectos de categorias PLANTAS y ACCESORIOS---------*/ 
 
@@ -348,19 +360,21 @@ tfoot td{
 }
 
  tfoot {
-
-  color: black;
-  text-shadow: 1px 1px 1px black;
+  font-family: 'Source Sans Pro', sans-serif; 
+  color: #075c3b;
+  text-shadow: 1px 1px 1px #366d58;
 }
 
 caption {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  position: relative;
+  color: #075c3b;
   padding: 20px;
   font-style: italic;
   caption-side: top;
-  color: #666;
   text-align: center;
   letter-spacing: 1px;
+  text-shadow: 2px 2px 2px whitesmoke;
 }
 
 /* Cambial colo de fondo de las filas de manera alternada */
@@ -892,22 +906,41 @@ h2 {
   
 }*/
 
+.pie {
+display: flex;
+flex-direction: row;
+text-align: center;
+justify-content: space-around;
+box-sizing: border-box;
+font-family: 'Source Sans Pro', sans-serif;
+position: relative;
+color: #075c3b;
+
+}
+
 footer {
   text-align: center;
   background-color: #7fbf90;
   display: flex;
   flex-direction: row;
   padding: 10px 0px;
-  font-size: 15px;
+  font-size: 10px;
+  justify-content: space-around;
+  box-sizing: content-box;
+  padding-bottom: 2em;
+  text-transform: uppercase;
 }
 
 footer i {
-  font-size: 25px;
+  padding: 0.5em;
+  font-size: 15px;
 }
 
 .redes-sociales,.wapp,.envios {
   width: 33%;
-  font-size: 25px;
+  
+
+
   
 }
 
