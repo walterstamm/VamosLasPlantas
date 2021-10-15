@@ -513,16 +513,12 @@ tbody tr:nth-child(even) {
     padding: 10px;
     display: none;
   }
-<<<<<<< HEAD
-=======
 
   .sidenav {
     display: none;
   }
 
-  
->>>>>>> 47bda52cd58dbe364a5fc5b870288519577d46d3
-  }
+ }
 
 @media (max-width: 360px) {
 
@@ -576,7 +572,7 @@ body {
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #111;
+  background-color: #90f1aa;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -586,7 +582,7 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #134d22;
   display: block;
   transition: 0.3s;
 }
