@@ -102,6 +102,17 @@ a {
   color: #134d22;
   text-decoration: none;
   position: relative;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+
+}
+
+
+.categorias a {
+  display: block;
+  color: #134d22;
+  text-decoration: none;
+  position: relative;
   padding-top: 1em;
   padding-bottom: 1em;
 
@@ -343,7 +354,6 @@ animation: hoverShake 0.15s linear 3;
 .categorias a {
   margin: 10%;
   text-align: center;
-
   width: 200px;
   font-size: 16px;
   font-weight: 600;
@@ -355,12 +365,9 @@ animation: hoverShake 0.15s linear 3;
   border: none;
   background-size: 300% 100%;
   position: relative;
-
   background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
   box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
   text-align: center;
-
-
   border-radius: 50px;
   -moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
@@ -483,7 +490,8 @@ tbody tr:nth-child(even) {
   text-align: center;
 }
 .burger-menu i {
-  background-color: rgb(23, 121, 19);
+  background-color: #318547;
+  opacity: 80%;
   border-radius: 5px;
   color: #fff;
   font-size: 20px;
@@ -563,6 +571,8 @@ align-items: baseline;
 body {
   max-width: 100%;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 /*----EL QUILOMBO DEL BURGUER MENU-(INICIO)--*/
 .sidenav {
@@ -1042,9 +1052,27 @@ h4 {
 }
 
 body {
+  
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.register-body {
   background-color: #e8eeef;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.login-body {
+  background-color: #e8eeef;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
