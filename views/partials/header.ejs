@@ -10,7 +10,7 @@
             <div class= "slogan">Comprá con tarjeta de crédito y en cuotas!</div>
         </div>
         <div class="burger-menu">
-            <a href="#"><i class="fa fa-bars burger"></i></a>
+            <span onclick="openNav()"><i class="fa fa-bars burger"></i></span> 
         </div>
     </div>
     <nav>   
@@ -28,6 +28,27 @@
                 <a href="/register">Registrate</a>
             </div>
         </div>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/login">INGRESA</a>
+    <a href="/cart">MI CARRITO</a>
+    <a href="/register">REGISTRATE</a>
+</div>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.body.style.backgroundColor = "white";
+    }
+    </script>
     </nav>
         <div class="search-container">
             <input type="text" name="buscar" placeholder="Buscá..." class = "search-input">
