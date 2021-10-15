@@ -1,4 +1,4 @@
-Retrospectiva 
+Retrospectiva - Sprint 2 -
 
 Comenzar a hacer:
     --> Dedicarle más tiempo.
@@ -39,6 +39,27 @@ Continuar haciendo:
     --> Comprometiendonos como lo venimos haciendo.
     --> Unificar criterios en cuanto a la estetica, diseño y tipografias de la web.
     --> Agregando contenido a la web para hacerla más completa y amigable a la vez.
+
+Hacer menos:
+    --> Postergar decisiones o resoluciones de tareas a realizar. 
+
+Dejar de hacer:
+    --> Administrar de forma erronea los tiempos.
+
+    Retrospectiva - Sprint 4 -
+
+Comenzar a hacer:
+    --> Explicar en detalle lo que cada uno hizo en las reuniones así nadie se pierde de ningún aprendizaje.
+
+Hacer más:
+    --> Entrar a Trello cada vez que uno completa la tarea y ponerla como completa ahí en vez de informarlo en el grupo de Whatsapp solamente.
+
+Continuar haciendo:
+    --> Trabajando en equipo.
+    --> Comprometiendonos como lo venimos haciendo.
+    --> Unificar criterios en cuanto a la estetica, diseño y tipografias de la web.
+    --> Comunicación.
+    --> Generar nuevas ideas.
 
 Hacer menos:
     --> Postergar decisiones o resoluciones de tareas a realizar. 
