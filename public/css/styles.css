@@ -816,6 +816,7 @@ form {
     font: inherit;
     margin: 0;
     margin-bottom: 15px;
+    margin-top: 15px;
     outline: 0;
     padding: 12px 20px;
     transition: all .1s linear;
@@ -908,6 +909,10 @@ h4 {
     }
   
   }*/ /*lo comente xq desconfigura parte del login y register*/
+
+  .user_nombre {
+    border: dotted 5px red;
+  }
 
 /* --------------- REGISTER (INICIO)---------------------*/ 
 
