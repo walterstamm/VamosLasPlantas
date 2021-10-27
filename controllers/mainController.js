@@ -11,12 +11,6 @@ const controller={
     login:(req,res)=>{
         return res.render('login');
     },
-    nuevosProd:(req,res)=>{
-        return res.render('nuevosProd');
-    },
-    product:(req,res)=>{
-        return res.render('product');
-    },
 }
 
 module.exports=controller;
