@@ -12,9 +12,7 @@
 </header>
 
     <main>
-            <% product.forEach (element=> {%>             
-                
-
+            <% product && product.forEach (element=> {%>             
                 <section>
                     <h1><%= element.producto %> </h1>
                     <img src= <%= element.imagen%> width="100%" alt="Planta">
