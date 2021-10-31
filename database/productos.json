@@ -8,12 +8,12 @@
   "categoria": "Opuntia edwardsii V.E. Grant & K.A. Grant"
  },
  {
-  "id": 2,
-  "producto": "Scott Valley Phacelia",
+  "id": "2",
+  "producto": "Scott",
   "descripcion": "Hydrophyllaceae",
-  "imagen": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAKbSURBVDjLfVPfS1NhGH7O2THJubmtWUZrYNGFzELRsggLFSUJqosuxaCiy7rsHwiJiDYvCykvC68qIiSsXVgU1NTIZkpZmgulnL82d35+ve+3TTCqb7zfe87O9zzv8/74FCEE/rcSicQ9y7K6TNPUyIO8NMMw2N9X/kUwNjZWQYA+n893trS0DDqB4DiQpwnj9/swOPgU2t/Ao6OjJxgcDAZ3ud1uTH+dA0d3HAFHOEQkYBOZruvQksmkbtv2FjJ5qCiTfTqd/lMyFhfTROSgvaNT/qcxOBQKY2lpWUYX/BOsUkjjF4qJgL8Cjx89RKS2Xkbnb1IBszL4al+CjilQFNrzm/RsqysruHHpoIw4kngNVrvz5Om8ApbKUfmgP7ANqqpCIVMLxs9MIJx8xNoDjfJZFGqgsgJ6JwIVLpdrk6kFz+v2yHl88PZj3j2Fu0sxmZZUYBbao6gKXJq2EV16ToE8r5xlIhSswZP3NzFjeaUKScAbF4RT4IjV28tk/l+yF2E6VH3HQjBiodK7DzVVTVjNZZD+/oYIM7IrkkAt5Mn2eTI/C+F6A+2Rc7Cp77Zjg0cotTyL/aGjWDPWcfnZMTSY3XmCkhIN1y/UyfaYpoVsVkf/lCHB335NkRKaD1Jj2iZW9FXU7W7GmpnF0PodaFTJW/H48+PFQSEf8Hg81Tk7B8u2sMMbJrAtyX4szyBQXoXE7EuMp5Komz+DTXeht7f3CpGcOtR0pDU23o2coVMNDMrXwN5gBIf3dODtzCsMTwyj/mcntuqeiQ2CWCxWSS1baGlpQ7nHQ6NsQ3OpRBrNRKPR8tpraqYx3FoWnxyaMxy0pXrEJ8ZtXCaSvkj2bmDgQUNx/gv34iN/zxoCLybjWHfQvNAjpou43xdyww7T9h6SAAAAAElFTkSuQmCC",
-  "precio": "$81.49",
-  "categoria": "Phacelia greenei J.T. Howell"
+  "categoria": "Semillas",
+  "precio": "978",
+  "imagen": ""
  },
  {
   "id": 3,
@@ -40,20 +40,20 @@
   "categoria": "Chamaelirium luteum (L.) A. Gray"
  },
  {
-  "id": 6,
+  "id": "6",
   "producto": "Robust Lobelia",
   "descripcion": "Campanulaceae",
-  "imagen": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJeSURBVDjLzVNbSJNRHBd660Go597qJQrEl4qgCIoopyk0ZstN0G22EZu1dAuEbA/Otb0Iu+jciinsaUiI7uJgF4cojkIdXtYG0TbYFuk86Ly0+e3X+QY9CCZEL33we/nOOb//+V1ODYCaf0HN/0FQed3TRrFFQVgwvUrCKLvJkfw5KcuekZJYRH62t5PDJ3xy8JhL9hubN4v3HwqqBPQAj6KIGR8wPw+srADJJLC+DiYcwqbTicL4OHYcDmxbR5EZGkLmTT92b98t7ty41cwSfMJ7GzA1BbhcwNoasLwMTEyA6e1FRipFVixGQSTCD4EAn5uaENfpkOx+CVJ/PcMS1FVUymjlnRag05BKofrNzoLhcpHlcPC9oQF+txvT09PYGBjAV3EXSN213Pblel7VA6r3HNXrYd72A5OTQC4HLC3hm8GAgNeLTEcHwuEwgsEgYj0qfBy1lV1mi+tYCmVpV22ps9N9pFYDCwvA6ir8fj8SiQRCoRC1ZB3xeBw+n48urUJHZWi12rPHIjlsE9Qe8FrdJZW6SrAxPIxYLEatcUGj0UCv11dlRKNRGI3GDyf2YP9RS+3eA47/98Z8Ps9OAtV7ULh0tcViseyl02l4PB4MDg6eXI7dO/cuOKmhXqo/RU212+3YuniFx66ZzWayRpOyWq2QSCR/btgX3tObsy9eZRcXFxEIBDAyMrJnMpmIm6YRiUQgl8vtlOD8qTV10PKwBOxtWDnswbGxMczNzbEEUCgUZ04loBptMpkMfX19jeO0jQYaK53aKhQKGT6fP/NXj0mpVEIgYOt//P8vZQLgm35VBV4AAAAASUVORK5CYII=",
-  "precio": "$89.77",
-  "categoria": "Lobelia robusta Graham var. portoricensis (A. DC.) McVaugh"
+  "categoria": "Semillas",
+  "precio": "8977",
+  "imagen": "./images/plantas/product1635718688087.jpg"
  },
  {
-  "id": 7,
-  "producto": "Virginia Goldenrod",
+  "id": "7",
+  "producto": "ROJA",
   "descripcion": "Asteraceae",
-  "imagen": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFuSURBVBgZBcG/S1RxAADwz3teyp3XFUUWNVSoRGQR3dLQIESBbUZt9gekm9XW2lRbNDv0gxbJWoJoCcT+ABskTgcDDwLpOD19d+/73rfPJ4kAANaejUx03t5eBZIIgKe34r3JB7OTVVvZuzf9lderiKIoip7MLba+xY24H4v4N36PC635uSgFIJ2/Pz7ppH19w66aHk/nqQCfk8LU1BWJAyMyo3Y1bV2nwpeh8nxxthg+Vm+ZUFVKHDjhK1UqlJeK52E61LOkasOhRDAic8EWKp/qxaupmdOO6Fi3bVyiEAQdA6Th7tjMGYcyDTcdtWlUoqYtypHmjy/atadrX6JpU5QaMhDlSPNTFX9kMj0H6rr+gYFCjnSw3XNZ2y9dPfT1lUq5UkA6+Phb3TU3NJArHFeKhtTkSBc+rC//0NBQVbNmwphzGu5oCztUGDz8udydbSrlVmI9eSkIirzYKZokESw+yl+EdtgL75eWAID/yIWfXhcZhKEAAAAASUVORK5CYII=",
-  "precio": "$61.05",
-  "categoria": "Solidago gracillima Torr. & A. Gray"
+  "categoria": "Semillas",
+  "precio": "615",
+  "imagen": ""
  },
  {
   "id": 8,
@@ -96,14 +96,6 @@
   "id": 12
  },
  {
-  "producto": "verde",
-  "descripcion": "linda plnta",
-  "categoria": "sustratos",
-  "precio": "123123123",
-  "imagen": "./product1635715256541.jfif",
-  "id": 13
- },
- {
   "producto": "platis",
   "descripcion": "planta linda",
   "categoria": "Jardineria",
@@ -118,5 +110,21 @@
   "precio": "2345",
   "imagen": "./images/plantas/product1635713361996.jpg",
   "id": 15
+ },
+ {
+  "id": 16,
+  "producto": "sgedrfg",
+  "descripcion": "gdfg",
+  "categoria": "sustratos",
+  "precio": "346457",
+  "imagen": "./images/plantas/product1635718587307.jpg"
+ },
+ {
+  "id": 17,
+  "producto": "gonza",
+  "descripcion": "fedwsg",
+  "categoria": "sustratos",
+  "precio": "6698",
+  "imagen": "./images/plantas/product1635719221448.jpg"
  }
 ]
