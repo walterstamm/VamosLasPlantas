@@ -5,7 +5,9 @@ const productsModel=new JsonModel('productos');
 
 const controller={
     index:(req,res)=>{
-        return res.render('product')
+        let product = productsModel.all();
+
+        return res.render('product', {product})
     },
     nuevosProd:(req,res)=>{
         return res.render('nuevosProd');
