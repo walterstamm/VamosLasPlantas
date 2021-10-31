@@ -16,7 +16,34 @@ const controller={
         let productId=productsModel.save(req.body);
 
         res.redirect('/product');//faltaria redireccionar con el ID del nuevo producto cargado
+    },
+    detalleProduct: (req, res) => {
+        let productoBuscado = productsModel.find(req.query.id);
+        return res.render('product',{product: productoBuscado} ); 
+    },
+    
+    
+    
+    
+    editProducts: (req, res)=> {
+        return res.render('update'); 
+    }, 
+
+    update(item) {
+        let items = this.readJsonFile();
+
+        let updatedItems = items.map(currentItem => {
+            if (currentItem.id == item.id) {
+                return currentItem = item;
+            }
+            return currentItem;
+        });
+        
+        this.writeJsonFile(updatedItems);
+
+        return item.id;
     }
 }
+
 
 module.exports=controller;

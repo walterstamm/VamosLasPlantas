@@ -20,10 +20,13 @@ const storage=multer.diskStorage({
 const upload=multer({storage});
 
 
-router.get('/',controller.index);
+/*1*/ router.get('/',controller.index);
 
-router.get('/nuevosProd',controller.nuevosProd);
+/*2*/ router.get('/nuevosProd',controller.nuevosProd);
 
-router.post('/nuevosProd',upload.single('image'),controller.guardarNuevo);
+/*3*/ router.get('/protudcts/:id', controller.detalleProduct);
 
+/*4*/ router.post('/nuevosProd',upload.single('image'),controller.guardarNuevo);
+
+/*5*/ router.get('/products/:id/edit', controller.editProduct);
 module.exports=router;
