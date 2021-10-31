@@ -24,27 +24,6 @@ const controller={
         return res.render('product',{product: productoBuscado} ); 
     },
     
-    
-    
-    
-    editProducts: (req, res)=> {
-        return res.render('update'); 
-    }, 
-
-    update(item) {
-        let items = this.readJsonFile();
-
-        let updatedItems = items.map(currentItem => {
-            if (currentItem.id == item.id) {
-                return currentItem = item;
-            }
-            return currentItem;
-        });
-        
-        this.writeJsonFile(updatedItems);
-
-        return item.id;
-    }
 }
 
 
