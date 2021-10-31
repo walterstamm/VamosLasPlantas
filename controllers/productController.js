@@ -14,7 +14,7 @@ const controller={
     },
     //el metodo file de req osea req.file esta disponible gracias a multer y la ////configuracion hecha en las routes
     guardarNuevo:(req,res)=>{
-        req.body.image=req.file?req.file.filename:'';
+        req.body.imagen=req.file?req.file.filename:'';
         let productId=productsModel.save(req.body);
 
         res.redirect('/product');//faltaria redireccionar con el ID del nuevo producto cargado

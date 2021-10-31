@@ -11,7 +11,7 @@ const storage=multer.diskStorage({
     //desarrollando como va a ser el nombre de los archivos
     //intentando tomar el valor que trae del droPDOWNlIST
     filename:(req,file,cb)=>{
-        const newFilename='product'+Date.now()+path.extname(file.originalname);
+        const newFilename='./product'+Date.now()+path.extname(file.originalname);
         cb(null,newFilename);
 
     }
@@ -26,7 +26,7 @@ const upload=multer({storage});
 
 /*3*/ router.get('/product/:id', controller.detalleProduct);
 
-/*4*/ router.post('/nuevosProd',upload.single('image'),controller.guardarNuevo);
+/*4*/ router.post('/nuevosProd',upload.single('imagen'),controller.guardarNuevo);
 
-/*5*/ router.get('/products/:id/edit', controller.editProduct);
+/*5*/// router.get('/products/:id/edit', controller.editProduct);
 module.exports=router;

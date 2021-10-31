@@ -78,5 +78,29 @@
   "imagen": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAKkSURBVDjLjZLfS5pRGMf7N3bxslsvtsWuJBi0i4UNRrtYIeIumuwHbAgvXa0mMWGjMDebmSzTQtNuXGZLZr5ZXRQUJjm1jWmGhT9Wr/1UQnQX351zNkbt3cUOPBzO4Xk+z/f5ntMAoOF87O/vc6VSiSd7sFAoiLu7u2ImkwkmEgl+eXmZ+zv/wmFvb6+JFPqPjo5wfHyM09NTHB4eolgsIp1OIxwO+30+X9M/ASSJI+GnRWdnZ6CQxcVFCIKAnZ0d5HI5BhkbG/NbrVZOAiBSeVEUUS6XWXcKqdd/oFavMxW0OJvNIhQKobe3l5cAUqlUkCZSSKVSQXQzC8uoB0M2NyLxDMhoSCaTiMVi0Gq1QQmAmCQeHBwwqbSrZdQNVygN53wBVv83VKtVbGxsMCUajUaUANbW1kRiIra3t1Gr1WAeccMeymNkroTBme8MsL6+jmg0CqVSKQUQw4JbW1usAx0jGk/j3YcvMPhySKaKyOfzDDA1NYW2tjbpCOR56DszwPT0NOLxOE5OTpihVPrk5CRWV1eh0+mgUCikJtrtds5sNs8tLCxgdnYWTqcT5A42m43tA46X4C1qPH57F6pXNyu3n1/TXQB4PJ52h8MR0+v1fgqIRCJYWlpif+G91wi99wECm8P4XBRgmn8Kpekq5M8uGVmx2+1uJ1EbHx9HV1cXp1KpoFar0draipaWFtx/fQszyUHMfDWDLmP4EUzhJxRQZQCXy8Xmo7ObTCYYDAZYLBb09PSA53nceXEdnzbtOL8+JoYp4Jd8Oic1jbq8srJC/zwCgQC8Xi8mJiZwQ3sZA4IGfUInK+4LdV5U0N3djY6ODvo81GE0NzdDLpejsbERMpkMVxQc7hlleCM8ZJ3pTs9/PPifIMn9JMpU9u+9n97/BG848JbqijsUAAAAAElFTkSuQmCC",
   "precio": "$41.02",
   "categoria": "Cotoneaster salicifolius Franch."
+ },
+ {
+  "producto": "plantas",
+  "descripcion": "interior",
+  "categoria": "sustratos",
+  "precio": "123",
+  "imagen": "./images/plantas/product1635713928934.jpg",
+  "id": 11
+ },
+ {
+  "producto": "verde",
+  "descripcion": "plantas",
+  "categoria": "sustratos",
+  "precio": "4444444",
+  "imagen": "./product1635715237261.jfif",
+  "id": 12
+ },
+ {
+  "producto": "verde",
+  "descripcion": "linda plnta",
+  "categoria": "sustratos",
+  "precio": "123123123",
+  "imagen": "./product1635715256541.jfif",
+  "id": 13
  }
 ]
