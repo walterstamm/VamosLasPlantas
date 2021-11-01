@@ -232,6 +232,10 @@ a:hover::after{
 
 /* Styles para form Nuevos Prod*/
 
+.form-prodId {
+  display: none;
+}
+
 .form-nuevosProd{
   padding: 1em;
 }

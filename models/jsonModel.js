@@ -81,7 +81,7 @@ class JsonModel {
         return item.id;
     }
 
-    /** Elimina el documento en la colección */
+    /** Elimina el documento en la colección */ 
     destroy(id) {
         let items = this.readJsonFile();
         

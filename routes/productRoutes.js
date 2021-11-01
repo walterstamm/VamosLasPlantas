@@ -26,8 +26,12 @@ const upload=multer({storage});
 
 /*3*/ router.get('/product/:id', controller.detalleProduct);
 
-/*4*/ router.post('/nuevosProd',upload.single('imagen'),controller.guardarNuevo);
+/*4*/ router.post('/products',upload.single('imagen'),controller.guardarNuevo);
 
 /*5*/ router.get('/product/:id/edit', controller.editProduct);
+
+/*6 router.put('/products',upload.single('imagen'), controller.modifcarProd);*/
+
+/*7*/ router.delete('/product/:id', controller.destroy);
 
 module.exports=router;
