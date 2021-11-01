@@ -118,5 +118,13 @@
   "precio": "2345",
   "imagen": "./images/plantas/product1635713361996.jpg",
   "id": 15
+ },
+ {
+  "producto": "verde",
+  "descripcion": "linda plnta",
+  "categoria": "Macetas",
+  "precio": "789",
+  "imagen": "./images/plantas/product1635733755285.jfif",
+  "id": 16
  }
 ]
