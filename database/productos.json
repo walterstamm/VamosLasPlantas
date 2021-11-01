@@ -1,29 +1,5 @@
 [
  {
-  "id": 1,
-  "producto": "Edwards' Pricklypear",
-  "descripcion": "Cactaceae",
-  "imagen": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAIESURBVDjLvVO/a9tAFD5ZdWwZg11w2iR1idMhxhm8ZOlS3K1rlwwZRD2EQCd7KIUOpmvoj7E4BBxElw72kMFLh5osBkEp3fwXlMY4TlRJtk4/7kffqW6wcDMFevDxTu/u+/S9d3cS5xzdZMTQDcet6xY6nc7jIAh2AU9830eAz4BP9Xr9dH6f9K8S2u22IL8rFovb6XQaEULQeDxGuq5/A5EXjUbjdMFBt9tdA9I+YAewWiqVbieTSWRZVigg5uVyebvf7+/C9kUBUN7P5/OvM5kMopQiz/OQYRhoZj/MpVIpkd+r1WoJyB02m019XmBH2J1OpwhjfEUEN1fRtm1UqVRipmk+6/V6ghYRCCHIruuGfxQk4URE8S3WJ5MJyuVyYv40coywsT0cDv+cbSyGHMcJhRRFCcEYQ5IkoWw2i0ajkRA4ifQABI4Gg0FYyszNV4AMeDQr4TtAATwEnEBjDxeOsaadvYnJSGEUYRFdj2PGmTLxOSaEKZ7LMCVccWzy8svBJo6U8Pz458pWPlF1A97aXE1UL2zS2rgbr54bQevBnXj114XfKkDevPQO/pIjDuofz94TymU3YNQnXMYeozRgUAKjxGdyABH6KLsOfaV/2MKRt7B39OPe+nJcPbeIVlheUg0j0AorS6p5GWj31xKqZRJtfSOlAvntPPnaq/xfX+NvE6ltVjnyz4AAAAAASUVORK5CYII=",
-  "precio": "$40.69",
-  "categoria": "Opuntia edwardsii V.E. Grant & K.A. Grant"
- },
- {
-  "id": 2,
-  "producto": "Scott Valley Phacelia",
-  "descripcion": "Hydrophyllaceae",
-  "imagen": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAKbSURBVDjLfVPfS1NhGH7O2THJubmtWUZrYNGFzELRsggLFSUJqosuxaCiy7rsHwiJiDYvCykvC68qIiSsXVgU1NTIZkpZmgulnL82d35+ve+3TTCqb7zfe87O9zzv8/74FCEE/rcSicQ9y7K6TNPUyIO8NMMw2N9X/kUwNjZWQYA+n893trS0DDqB4DiQpwnj9/swOPgU2t/Ao6OjJxgcDAZ3ud1uTH+dA0d3HAFHOEQkYBOZruvQksmkbtv2FjJ5qCiTfTqd/lMyFhfTROSgvaNT/qcxOBQKY2lpWUYX/BOsUkjjF4qJgL8Cjx89RKS2Xkbnb1IBszL4al+CjilQFNrzm/RsqysruHHpoIw4kngNVrvz5Om8ApbKUfmgP7ANqqpCIVMLxs9MIJx8xNoDjfJZFGqgsgJ6JwIVLpdrk6kFz+v2yHl88PZj3j2Fu0sxmZZUYBbao6gKXJq2EV16ToE8r5xlIhSswZP3NzFjeaUKScAbF4RT4IjV28tk/l+yF2E6VH3HQjBiodK7DzVVTVjNZZD+/oYIM7IrkkAt5Mn2eTI/C+F6A+2Rc7Cp77Zjg0cotTyL/aGjWDPWcfnZMTSY3XmCkhIN1y/UyfaYpoVsVkf/lCHB335NkRKaD1Jj2iZW9FXU7W7GmpnF0PodaFTJW/H48+PFQSEf8Hg81Tk7B8u2sMMbJrAtyX4szyBQXoXE7EuMp5Komz+DTXeht7f3CpGcOtR0pDU23o2coVMNDMrXwN5gBIf3dODtzCsMTwyj/mcntuqeiQ2CWCxWSS1baGlpQ7nHQ6NsQ3OpRBrNRKPR8tpraqYx3FoWnxyaMxy0pXrEJ8ZtXCaSvkj2bmDgQUNx/gv34iN/zxoCLybjWHfQvNAjpou43xdyww7T9h6SAAAAAElFTkSuQmCC",
-  "precio": "$81.49",
-  "categoria": "Phacelia greenei J.T. Howell"
- },
- {
-  "id": 3,
-  "producto": "Northern Panicgrass",
-  "descripcion": "Poaceae",
-  "imagen": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJ3SURBVDjLpVJdSJNhFD7bp7Js6qaUDqmxEFfRQFmZ00wjXYK2kgX+h114Ed5siZf9aIWFUSLRReVFgUElGVkURDCkKI3NlKIaRYmWmJmSue3b+9f5DGuBBNoHLwfe7zw/57yPSggB//NFLQcUKHG4BCEuESbt6uUQCDncqNm3x4gEbtVSR5jbuStGEPoaHSRibV7yCDxMWhH8HsHpCd6n7J8E9mPDLsGZmzN27tHJze2z23aUIbAcCTITfM+Y0qMiDQd7gNJSQdnd6MudZZEEhYd9Y5VbpFRZ9kJmlG/OdOGNdC0+58wNg03ijFZxTnGJhJZKjt1RuBCHXFmV9QfszccmbXf/9Lfc2MeTZkvBytFiw/h1Q/Z6xkhTuS3eyCh1qeQDdT0Kya/FUC3am7yjt769aCjMp4Lv7yzoyNeZHM26Ndnw7mHTjODcXnO/NpdzdggFzv71CkVHBmNKxp/cy5sY3Jo2MxKiejY7VZGwzlhUD0D8EAia4VP/+V7BuNNS84AoGHXEvCmMUc/tJOsXt7kuGdddPJsZbUqy1gKEfDBwtQu0uiDQULgUj2MBp7YfHXLhvONo5yWnpMdzylbd15YXHG3QrobtWao4fQC4/AHTw4H9eA6mgkYVleXjAx22uHkCVHXtzYhGdcI8p3PalMuhK/YYVDmhW5sBPDCM2CBYnWY09Rk0Gj8kWyo2UDnsnifgjLTf7P8+guqtC7aYHK5PTCuxxsZ9BUGn8LEl8N7yKzECHvLDqnQj9pCGvpZNGxeNMtobs1R3pUrqj0gwraQ/4q8apBVmmHj1Avy9Ld2LJhHtaXyXnEHBBdrnEUf8rqBUIVJ+AugPahHelS39AAAAAElFTkSuQmCC",
-  "precio": "$7.30",
-  "categoria": "Dichanthelium boreale (Nash) Freckmann"
- },
- {
   "id": 4,
   "producto": "Texan Candyleaf",
   "descripcion": "Asteraceae",

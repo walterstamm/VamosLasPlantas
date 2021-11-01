@@ -10,28 +10,33 @@
 </header>
 
 <main>
-    <form action="/product" method="POST" enctype="multipart/form-data">
+    <form action="/product/<%=product.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
       
   
     <div class="register">Nuevo Producto</div>
     
+    <fieldset>
+      <!-- <div class="form-prodId">
+        <input type="number" id="id" value="" name="id">
+      </div> -->
+
      <div class="form-nuevosProd">
       <label for="producto">Nombre del Producto:</label>
-      <input type="text" id="producto" name="producto">
+      <input type="text" id="producto" value="<%- product.producto %>" name="producto">
     </div>
 
     <div class="form-nuevosProd">
       <label for="descripcion">Descripcion</label>
-      <input type="text" name="descripcion" id="descripcion">
+      <input type="text" value="<%- product.descripcion %>" name="descripcion" id="descripcion">
     </div>
 
     <div class="form-nuevosProd">
-      <label for="image">Imagen</label>
-      <input type="file"  name="imagen" id="imagen"  multiple>
+      <label for="imagen">Imagen</label>
+      <input type="file" value="<%- product.imagen %>" name="oldImagen" id="oldImagen"  multiple>
     </div>
     <div class="form-nuevosProd">
       <label for="categoria">Categoria</label>
-      <select name="categoria"  id="categoria">
+      <select name="categoria" value="<%- product.categoria %>" id="categoria">
           <option value="Semillas">Semillas</option>
           <option value="Decoracion">Decoracion</option>
           <option value="Jardineria">Jardineria</option>
@@ -44,7 +49,7 @@
       
     <div class="form-nuevosProd">
         <label for="precio">Precio</label>
-        <input type="number"  id="precio" name="precio" min="1">
+        <input type="number" value="<%- product.precio?product.precio.slice(1):'' %>" id="precio" name="precio" min="1">
     </div>
 
       <button type="submit">Cargar</button>

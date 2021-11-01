@@ -15,7 +15,7 @@
             <% product && product.forEach (element=> {%>             
                 <section>
                     <h1><%= element.producto %> </h1>
-                    <img src= <%= element.imagen%> width="100%" alt="Planta">
+                    <img src= "<% element.imagen%>" width="100%" alt="Planta">
                     </section> 
                     <section>
                         <div class="contenedor-caracteristicas">
@@ -63,8 +63,8 @@
                                                                     <div class="boton-eliminar">  
                                                                         
 
-                                                                        <form action="/product/product/<%= product.id %>?_method=DELETE" method="POST">
-                                                                            <button class="boton3" name="Eliminar" type="submit" ><i class="fas fa-trash-alt"></i>
+                                                                        <form action="/product/<%= element.id %>?_method=DELETE" method="POST">
+                                                                            <button name="Eliminar" type="submit" >
                                                                                 Eliminar
                                                                             </button>
                                                                         </form>

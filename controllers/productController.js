@@ -22,12 +22,12 @@ const controller={
     //el metodo file de req osea req.file esta disponible gracias a multer y la ////configuracion hecha en las routes
 
    guardarNuevo: (req,res)=>{ 
-       console.log(req.file, req.body);
+       
     req.body.imagen=getFileName(req.file, req.body.imagen);
-    if(req.body.id)productsModel.update(req.body);
-    else productsModel.save(req.body); 
-
-    res.redirect('/product');//faltaria redireccionar con el ID del nuevo producto cargado
+    if(req.body.id==undefined)productsModel.save(req.body);
+    else productsModel.update(req.body); 
+    
+    res.redirect('/product');
 },
     detalleProduct: (req, res) => {
         let productoBuscado = productsModel.find(req.params.id);
@@ -36,11 +36,21 @@ const controller={
     },
     editProduct: (req, res) => {
         let productoBuscado = productsModel.find(req.params.id);
-        return res.render('nuevosProd', {product: productoBuscado}); 
+        return res.render('editProduct', {product: productoBuscado}); 
     },
     destroy: (req, res) => {
-        productsModel.destroy(req.params.id); 
+        let id=req.params.id;
+        productsModel.destroy(id); 
         res.send("Eliminado");
+    },
+    modificarProd:(req,res)=>{
+        req.body.id = req.params.id;
+        if(req.body.imagen = req.file) req.body.imagen=getFileName(req.file, req.body.imagen) 
+        else req.body.oldImagen;
+        console.log(req.file);
+        console.log(req.body.imagen)
+        productsModel.update(req.body);
+        res.redirect('/product/' + req.params.id);
     }
 }
 

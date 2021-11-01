@@ -26,12 +26,12 @@ const upload=multer({storage});
 
 /*3*/ router.get('/:id', controller.detalleProduct);
 
-/*4*/ router.post('/products',upload.single('imagen'),controller.guardarNuevo);
+/*4*/ router.post('/',upload.single('imagen'),controller.guardarNuevo);
 
-/*5*/ router.get('/product/:id/edit', controller.editProduct);
+/*5*/ router.get('/:id/edit', controller.editProduct);
 
-/*6 router.put('/products',upload.single('imagen'), controller.modifcarProd);*/
+/*6*/ router.put('/:id',upload.single('oldImagen'), controller.modificarProd);
 
-/*7*/ router.delete('/product/:id', controller.destroy);
+/*7*/ router.delete('/:id', controller.destroy);
 
 module.exports=router;
