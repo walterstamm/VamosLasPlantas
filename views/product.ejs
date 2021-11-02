@@ -15,7 +15,7 @@
             <% product && product.forEach (element=> {%>             
                 <section>
                     <h1><%= element.producto %> </h1>
-                    <img src= "<% element.imagen%>" width="100%" alt="Planta">
+                    <img src= "/images/plantas/<%=element.imagen%>" width="100%" alt="Planta">
                     </section> 
                     <section>
                         <div class="contenedor-caracteristicas">
@@ -24,19 +24,19 @@
                                 <tr>
                                     <td class="nombre-especie"><strong>Nombre de especie</strong></td>
                                     <td class="nombre"><%= element.producto %></td>
-                                    </tr>
+                                   </tr>
                                     <tr>
                                         <td><strong>Tipo de planta</strong></td>
-                                        <td><%= element.descripcion %></td>
+                                    <td><%= element.descripcion %></td>
                                         </tr>
                                         <tr>
-                                            <td><strong>Cantidad de plantas</strong></td>
+                                      <td><strong>Cantidad de plantas</strong></td>
                                             <td>10</td>
                                             </tr>                                            
                                                 <tr>
                                                     <td><strong>Ambiente</strong></td>
                                                     <td>Interior o exterior</td>
-                                                    </tr>
+                                               </tr>
                                                     </table>
                                                     </div> 
                                                     </section>  
@@ -68,7 +68,7 @@
                                                                                 Eliminar
                                                                             </button>
                                                                         </form>
-                                                                    <% }) %> 
+   <% }) %> 
     </section>
     </main>
     <footer> 

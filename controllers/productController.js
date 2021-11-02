@@ -23,7 +23,7 @@ const controller={
 
    guardarNuevo: (req,res)=>{ 
        
-    req.body.imagen=getFileName(req.file, req.body.imagen);
+    //req.body.imagen=getFileName(req.file, req.body.imagen);
     if(req.body.id==undefined)productsModel.save(req.body);
     else productsModel.update(req.body); 
     
@@ -45,10 +45,7 @@ const controller={
     },
     modificarProd:(req,res)=>{
         req.body.id = req.params.id;
-        if(req.body.imagen = req.file) req.body.imagen=getFileName(req.file, req.body.imagen) 
-        else req.body.oldImagen;
-        console.log(req.file);
-        console.log(req.body.imagen)
+        req.body.imagen = req.file ? req.file.filename : req.body.oldImage;
         productsModel.update(req.body);
         res.redirect('/product/' + req.params.id);
     }
