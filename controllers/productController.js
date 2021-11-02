@@ -41,7 +41,10 @@ const controller={
     destroy: (req, res) => {
         let id=req.params.id;
         productsModel.destroy(id); 
-        res.send("Eliminado");
+        //retorna una vista con todos los productos
+        let product = productsModel.all();
+
+        return res.render('product', {product})
     },
     modificarProd:(req,res)=>{
         req.body.id = req.params.id;
