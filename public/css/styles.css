@@ -107,6 +107,10 @@ a {
 
 }
 
+.body-404{
+  background-image: url("/images/Como-cultivar-en-la-luna.jpg");
+}
+
 
 .categorias a {
   display: block;
