@@ -86,5 +86,12 @@
   "precio": "345",
   "id": "15",
   "imagen": "./product1635824851920.jfif"
+ },
+ {
+  "producto": "plantasPrueba",
+  "descripcion": "prueba",
+  "categoria": "Semillas",
+  "precio": "111111111",
+  "id": 16
  }
 ]
