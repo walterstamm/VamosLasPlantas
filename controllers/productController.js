@@ -5,6 +5,7 @@ const productsModel=new JsonModel('productos');
 
 const getFileName = (file, imagen) => {
     if (!file && !imagen) return '';
+    
     console.log(file.filename, imagen);
 
     return file.filename.includes("./images/plantas") ? file.filename :  "./images/plantas" + file.filename.slice(1);
@@ -23,7 +24,8 @@ const controller={
 
    guardarNuevo: (req,res)=>{ 
        
-    //req.body.imagen=getFileName(req.file, req.body.imagen);
+    
+    req.body.imagen=req.file.filename;
     if(req.body.id==undefined)productsModel.save(req.body);
     else productsModel.update(req.body); 
     
