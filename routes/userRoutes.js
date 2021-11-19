@@ -7,9 +7,9 @@ const usersController=require('../controllers/userController');
 const uploadFile = require('../middlewares/multerMiddleware');
 const validations = require ('../middlewares/validateRegisterMiddleware');
 
-router.get('/register', usersController.register);
+router.get('/', usersController.register);
 
-router.post('/register', uploadFile.single('avatar'), validations, usersController.processRegister);
+router.post('/', uploadFile.single('user_foto'),validations, usersController.processRegister);
 
 router.get('/login', usersController.login);
 

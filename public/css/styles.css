@@ -85,6 +85,12 @@
 }
 
 /* start of link styles*/
+.mensaje-alerta{
+    color: crimson;
+    display: flex;
+    align-items: center;
+    font-style: bold;
+}
 
 p{
   position: absolute;
