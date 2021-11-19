@@ -150,5 +150,17 @@
   "email": "mdobbisoni@quantcast.com",
   "password": "sCYzMBr",
   "image": "user_19.jpg"
+ },
+ {
+  "user_usuario": "juancito",
+  "user_nombre": "Juan",
+  "user_apellido": "perez",
+  "user_email": "juan@gmail.com",
+  "user_password": [
+   "555",
+   "555"
+  ],
+  "user_foto": "user-1637352982244.jpg",
+  "id": 20
  }
 ]
