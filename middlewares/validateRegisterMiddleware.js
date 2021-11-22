@@ -1,5 +1,4 @@
 const path = require('path');
-
 const {body} = require ('express-validator');
 
 module.exports = [
@@ -9,14 +8,14 @@ module.exports = [
     body ('user_password').notEmpty().withMessage('Tienes que escribir una contraseña'),
     body ('user_foto').custom((value, { req }) => {
         let file = req.file;
-        let acceptedExtensions = ['.jpg', '.png', 'gif'];
+        let acceptedExtensions = ['.jpg','.jpeg', '.png', 'gif'];
 
         if (!file) {
             throw new Error('Tenes que subir una imagen');
         } else {
             let fileExtension = path.extname(file.originalname);
             if (!acceptedExtensions.includes(fileExtension)) {
-                throw new Error('Las extensiones de archivo permitidas son ${acceptedExtensions.join(', ')]');
+                throw new Error(`Las extensiones de archivo permitidas son ${acceptedExtensions.join(', ')}`);
 
             }
         }

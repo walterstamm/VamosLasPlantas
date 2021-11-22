@@ -6,14 +6,26 @@ const usersController=require('../controllers/userController');
 
 const uploadFile = require('../middlewares/multerMiddleware');
 const validations = require ('../middlewares/validateRegisterMiddleware');
+const invitadosMiddleware = require('../middlewares/invitadosMiddleware');
+const autenticadorMiddleware = require('../middlewares/autenticadorMiddleware');
+
 
 router.get('/', usersController.register);
 
 router.post('/', uploadFile.single('user_foto'),validations, usersController.processRegister);
 
-router.get('/login', usersController.login);
+router.get('/login', invitadosMiddleware, usersController.login);
 
-router.get('/profile/:userId', usersController.profile);
+//Proceso del formulario de login 
+router.post('/login', usersController.loginProcess);
+
+router.get('/profile/:userId', autenticadorMiddleware, usersController.profile);
+
+//router.get('/userProfile', )
+
+//Logout
+router.get('/logout', usersController.logout);
+
 
 module.exports = router;
 

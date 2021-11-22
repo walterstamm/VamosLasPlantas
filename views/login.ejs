@@ -42,20 +42,25 @@
 </header>
 
 <body class = "login-body">
-    <form action="/" method="post" enctype="multipart/form-data" class= "alta-login">
+    <form method="POST" action="/user/login" class= "alta-login">
 
         <div class ="altausuario-login">
 
             <div class="bienvenido"> Bienvenido! Ingresá tus datos</div>
 
             <div class="usuario-login">
-                <label for="usuario" ></label>
-                <input type= "text" name="usuario" placeholder="Usuario"> 
+                <label for="user_email" ></label>
+                <input type= "email" name="user_email" placeholder="email"> 
+                <!-- <% if (locals.errors && errors.user_email) { %>
+                    <div class="text-danger">
+                        <%= errors.user_email.msg %> 
+                    </div> 
+                <% } %>  -->
             </div>
 
             <div class="password-login">
-                <label for="password" ></label>
-                <input type="password" name="password" placeholder="Contraseña">
+                <label for="user_password" ></label>
+                <input type="password" name="user_password" placeholder="Contraseña">
             </div>
             
             <div class="recordarcontraseña-login">

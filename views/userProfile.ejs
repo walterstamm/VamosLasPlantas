@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <%- include('./partials/head'); %>
+</head>
+<header>
+    <%- include('./partials/header'); %>
+</header>
+
+<body class = "login-body">
+    <!-- Container -->
+	<div class="container" style="margin-top: 40px;">
+		<div class="row">
+			<div class="col-md-3">
+				<h2>Hi User <%= user.user_nombre + ' ' + user_apellido %> </h2>
+				<img src="/images/<%= user.user_foto %> ">
+				<br>
+				<br>
+				<div class="alert alert-success"><%= user.user_email %> </div> 
+			</div>
+		</div>
+	</div>
+	<!-- //Container -->
+</body>
+
+<footer>
+    <%- include('./partials/footer'); %>
+</footer>
+
+</html>
