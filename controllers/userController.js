@@ -52,12 +52,13 @@ const controller = {
 
         let userCreado = User.create(userACrear);
 
-        return res.redirect ('/login');
+        return res.redirect ('/user/login');
     }, 
     
 
     login: (req, res) => {
-        return res.render('/login');    
+        console.log('Llegue')
+        return res.render('login');    
     },
 //anda bien
 
@@ -81,7 +82,7 @@ const controller = {
 				return res.redirect('/user/profile/' + req.session.userLogged.id);
 
             }
-            return res.render('user/login', {
+            return res.render('login', {
                 errors: {
                     user_email: {
                         msg: 'La contraseña es incorrecta'
@@ -90,7 +91,7 @@ const controller = {
             });
         }
 
-        return res.render('user/login', {
+        return res.render('login', {
             errors: {
                 user_email: {
                     msg: 'No se encuentra el usuario en la base de datos'
@@ -108,6 +109,7 @@ const controller = {
 
     logout: (req, res) => {
         req.session.destroy(); //borra lo que esta en session 
+        res.clearCookie('userEmail'); //esta bien el nombre?
         return res.redirect('/'); 
     }
 }

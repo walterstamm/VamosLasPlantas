@@ -9,17 +9,23 @@ const validations = require ('../middlewares/validateRegisterMiddleware');
 const invitadosMiddleware = require('../middlewares/invitadosMiddleware');
 const autenticadorMiddleware = require('../middlewares/autenticadorMiddleware');
 
+//Formulario de registro
+router.get('/', usersController.register); //falta el invitadomiddleware
 
-router.get('/', usersController.register);
-
+//Proceso del registro 
 router.post('/', uploadFile.single('user_foto'),validations, usersController.processRegister);
 
+//Form del login
 router.get('/login', invitadosMiddleware, usersController.login);
 
 //Proceso del formulario de login 
 router.post('/login', usersController.loginProcess);
 
+//Perfil del usuario
+router.get('/profile/:userId', autenticadorMiddleware, usersController.profile)
+
 router.get('/profile/:userId', autenticadorMiddleware, usersController.profile);
+
 
 //router.get('/userProfile', )
 

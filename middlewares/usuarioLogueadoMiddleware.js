@@ -4,7 +4,7 @@ function usuarioLogueadoMiddleware (req, res, next) {
     res.locals.isLogged = false; 
 
     let emailInCookie = req.cookies.user_email;
-    let userFromCookie = User.findByField('email', emailInCookie);
+    let userFromCookie = User.findByField('user_email', emailInCookie);
 
     if(userFromCookie) {
         req.session.userLogged = userFromCookie; 

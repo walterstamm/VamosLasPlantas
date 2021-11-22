@@ -1,9 +1,9 @@
-function invitadosMiddleware(req, res, netx) {
+function invitadosMiddleware(req, res, next) {
     if (req.session.userLogged) {
         console.info('corre');
-        return res.redirect('userProfile'); 
-    }
-    netx(); 
+        return res.redirect('/user/profile'); ///user/profile?
+    } 
+    next(); 
 }
 
 module.exports = invitadosMiddleware; 
