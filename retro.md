@@ -66,3 +66,20 @@ Hacer menos:
 
 Dejar de hacer:
     --> Administrar de forma erronea los tiempos.
+
+    Retrospectiva - Sprint 5 -
+
+Comenzar a hacer:
+    --> Planificar más reuniones con todo el equipo.
+
+Hacer más:
+    --> Comunicación.
+
+Continuar haciendo:
+    --> Trabajar en equipo.
+
+Hacer menos:
+    --> Demorar la división de tareas.
+
+Dejar de hacer:
+    --> Dejar para último momento el proyecto.
