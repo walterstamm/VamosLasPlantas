@@ -1,7 +1,7 @@
 const fs = require ('fs');
 
 const User = {
-    fileName: '../database/users.json',
+    fileName: './database/users.json',
     
     getData: function () {
         return JSON.parse(fs.readFileSync(this.fileName, 'utf-8'));
@@ -26,7 +26,7 @@ const User = {
         return userFound;
     },
     /*BUSCAR POR CAMPO*/
-    findByField: function (field) {
+    findByField: function (field, text) {
         let allUsers = this.findAll();
         let userFound = allUsers.find(oneUser => oneUser[field] === text);
         return userFound;

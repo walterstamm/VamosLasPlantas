@@ -1,166 +1,39 @@
 [
  {
-  "id": 1,
-  "first_name": "Lelia",
-  "last_name": "Filyushkin",
-  "email": "lfilyushkin0@ca.gov",
-  "password": "QDnCaTdRcL",
-  "image": "user_1.jpg"
- },
- {
-  "id": 2,
-  "first_name": "Jemimah",
-  "last_name": "Muck",
-  "email": "jmuck1@bravesites.com",
-  "password": "164eKgngsXo",
-  "image": "user_2.jpg"
- },
- {
-  "id": 3,
-  "first_name": "Nial",
-  "last_name": "Hirtz",
-  "email": "nhirtz2@merriam-webster.com",
-  "password": "2uBCwlCmKSd",
-  "image": "user_3.jpg"
- },
- {
-  "id": 4,
-  "first_name": "Dominga",
-  "last_name": "Norman",
-  "email": "dnorman3@ning.com",
-  "password": "NsW87pIfuc",
-  "image": "user_4.jpg"
- },
- {
   "id": 5,
-  "first_name": "Benjy",
-  "last_name": "Chetwynd",
-  "email": "bchetwynd4@youtube.com",
-  "password": "1xh8ODEE96",
-  "image": "user_5.jpg"
+  "user_usuario": "camila",
+  "user_nombre": "camila",
+  "user_apellido": "gonzalez",
+  "user_email": "camilagonzalez@gmail.com",
+  "user_password": "$2a$10$K1wGNuFRaT0AYpge6hEn7.C1tsY8ziF/qvbQMnAsWMlZ/FCgQQ0ra",
+  "confirm_password": "$2a$10$0Tn9c.D.4Q1sbrcQgp2qduSBDCstO7G1Mm99KlwYCLt/Zv61VoOPW",
+  "user_foto": "user-1637531999944.jpeg"
  },
  {
   "id": 6,
-  "first_name": "Geoff",
-  "last_name": "Perigoe",
-  "email": "gperigoe5@nationalgeographic.com",
-  "password": "vhyGc6BA8SZ",
-  "image": "user_6.jpg"
+  "user_usuario": "Agus",
+  "user_nombre": "Agustina",
+  "user_apellido": "Tornari ",
+  "user_email": "agustina.tornari@gmail.com",
+  "user_password": "$2a$10$7DV1/yMQvDblwLEg.NhyP.NtGa2wRRQSUcGi/vgZRx85/LqudNclm",
+  "user_foto": "user-1637541015698.jpeg"
  },
  {
   "id": 7,
-  "first_name": "Daveen",
-  "last_name": "Eversfield",
-  "email": "deversfield6@imdb.com",
-  "password": "v7dqVjY2b5",
-  "image": "user_7.jpg"
+  "user_usuario": "Alan",
+  "user_nombre": "Alan",
+  "user_apellido": "lopez",
+  "user_email": "alanlopez@gmail.com",
+  "user_password": "$2a$10$7FGvEn1k6WigydTN/2OPk.E2BUxUf7Nv29yMkAd1jnQ4mt86YeKvK",
+  "user_foto": "user-1637543769700.jpeg"
  },
  {
   "id": 8,
-  "first_name": "Trey",
-  "last_name": "Kubis",
-  "email": "tkubis7@imageshack.us",
-  "password": "zO5hPT0dw25",
-  "image": "user_8.jpg"
- },
- {
-  "id": 9,
-  "first_name": "Gardener",
-  "last_name": "Frake",
-  "email": "gfrake8@squarespace.com",
-  "password": "1Kt6Dsp",
-  "image": "user_9.jpg"
- },
- {
-  "id": 10,
-  "first_name": "Sibella",
-  "last_name": "Cockley",
-  "email": "scockley9@cornell.edu",
-  "password": "b8ZFSILfipN",
-  "image": "user_10.jpg"
- },
- {
-  "id": 11,
-  "first_name": "Gage",
-  "last_name": "Hovert",
-  "email": "ghoverta@sun.com",
-  "password": "rvX7ey",
-  "image": "user_11.jpg"
- },
- {
-  "id": 12,
-  "first_name": "Stanley",
-  "last_name": "Brookton",
-  "email": "sbrooktonb@pinterest.com",
-  "password": "jy5c2QmU4E",
-  "image": "user_12.jpg"
- },
- {
-  "id": 13,
-  "first_name": "Lyndel",
-  "last_name": "Tysack",
-  "email": "ltysackc@wordpress.org",
-  "password": "RUtllkAm",
-  "image": "user_13.jpg"
- },
- {
-  "id": 14,
-  "first_name": "Lowrance",
-  "last_name": "Pargent",
-  "email": "lpargentd@wordpress.com",
-  "password": "T70E6s9",
-  "image": "user_14.jpg"
- },
- {
-  "id": 15,
-  "first_name": "Karlee",
-  "last_name": "Cicccitti",
-  "email": "kcicccittie@bloglovin.com",
-  "password": "uEt50e",
-  "image": "user_15.jpg"
- },
- {
-  "id": 16,
-  "first_name": "Lion",
-  "last_name": "Files",
-  "email": "lfilesf@fotki.com",
-  "password": "Ww2oZRIeNF",
-  "image": "user_16.jpg"
- },
- {
-  "id": 17,
-  "first_name": "Veda",
-  "last_name": "Dudhill",
-  "email": "vdudhillg@vkontakte.ru",
-  "password": "zAa5Wv",
-  "image": "user_17.jpg"
- },
- {
-  "id": 18,
-  "first_name": "Renata",
-  "last_name": "Marcu",
-  "email": "rmarcuh@hud.gov",
-  "password": "MQAJbnBC",
-  "image": "user_18.jpg"
- },
- {
-  "id": 19,
-  "first_name": "Mozelle",
-  "last_name": "Dobbison",
-  "email": "mdobbisoni@quantcast.com",
-  "password": "sCYzMBr",
-  "image": "user_19.jpg"
- },
- {
-  "user_usuario": "juancito",
-  "user_nombre": "Juan",
+  "user_usuario": "Martin",
+  "user_nombre": "Martin",
   "user_apellido": "perez",
-  "user_email": "juan@gmail.com",
-  "user_password": [
-   "555",
-   "555"
-  ],
-  "user_foto": "user-1637352982244.jpg",
-  "id": 20
+  "user_email": "martinperez@gmail.com",
+  "user_password": "$2a$10$oiKV8Ia2RgVlm6qYEBHOmuFo8J4ncaXhTw7OmvozvVtwW4VJupiv.",
+  "user_foto": "user-1637544222591.jpeg"
  }
 ]
