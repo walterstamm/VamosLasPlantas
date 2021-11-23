@@ -107,9 +107,9 @@ const controller = {
         }); //cree la vista
     },
 
-    logout: (req, res) => {
+    logout: (req, res) => { 
         req.session.destroy(); //borra lo que esta en session 
-        res.clearCookie('userEmail'); //esta bien el nombre?
+        res.clearCookie('user_email');
         return res.redirect('/'); 
     }
 }

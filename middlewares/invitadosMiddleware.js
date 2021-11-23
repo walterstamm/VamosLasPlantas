@@ -1,7 +1,6 @@
 function invitadosMiddleware(req, res, next) {
     if (req.session.userLogged) {
-        console.info('corre');
-        return res.redirect('/user/profile'); ///user/profile?
+        return res.redirect('/user/profile/' + req.session.userLogged.id); ///user/profile?
     } 
     next(); 
 }

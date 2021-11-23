@@ -14,19 +14,27 @@
         </div>
     </div>
     <nav>   
-        <div class= "login-cart-register">
+        <div class= "login-cart-register">            
+            <% if(locals.isLogged) { %>
             <div class="navegador">
-                <img src="/images/avatar.png" width="30" alt="avatar">
-                <a href="/login">Ingresá</a>
-            </div>
-            <div class="navegador">
-                <img src="/images/cart.jpeg" width="30" alt="cart">
+                <img src="/images/cart.jpeg" width="20" alt="cart">
                 <a href="/cart ">Mi Carrito</a>
             </div>
             <div class="navegador">
-                <img src="/images/register.png" width="30" alt="register">
-                <a href="/register/">Registrate</a>
-            </div>
+                 <img src="/images/register.png" width="20" alt="register">
+                 <a href="/user/logout">Logout</a>
+             </div>
+             
+             <% } else { %>
+                <div class="navegador">
+                    <img src="/images/avatar.png" width="20" alt="avatar">
+                    <a href="/login">Ingresá</a>
+                </div>
+                <div class="navegador">
+                    <img src="/images/register.png" width="20" alt="register">
+                    <a href="/register/">Registrate</a>
+                </div>
+                <% } %> 
         </div>
 
 <div id="mySidenav" class="sidenav">
