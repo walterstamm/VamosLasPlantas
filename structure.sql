@@ -11,7 +11,7 @@
  Target Server Version : 100419
  File Encoding         : 65001
 
- Date: 05/12/2021 21:15:21
+ Date: 05/12/2021 21:33:09
 */
 
 SET NAMES utf8mb4;
@@ -70,16 +70,20 @@ CREATE TABLE `sales`  (
   `user_id` int NOT NULL,
   `product_id` int NOT NULL,
   `date_sales` date NOT NULL,
+  `quantity_products` tinyint NOT NULL,
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `user_id`(`user_id`) USING BTREE,
   INDEX `product_id`(`product_id`) USING BTREE,
   CONSTRAINT `user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   CONSTRAINT `product_id` FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of sales
 -- ----------------------------
+INSERT INTO `sales` VALUES (1, 1, 2, '2020-05-03', 4);
+INSERT INTO `sales` VALUES (2, 2, 2, '2021-12-05', 3);
+INSERT INTO `sales` VALUES (3, 3, 6, '2021-12-12', 5);
 
 -- ----------------------------
 -- Table structure for users
@@ -92,10 +96,13 @@ CREATE TABLE `users`  (
   `email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of users
 -- ----------------------------
+INSERT INTO `users` VALUES (1, 'Mariano', 'Suarez', 'marian@suarez.com', '123456');
+INSERT INTO `users` VALUES (2, 'Agustina ', 'Tornari', 'agus@tornari', '123456');
+INSERT INTO `users` VALUES (3, 'Walter', 'Stamm', 'walter@stamm.com', '123456');
 
 SET FOREIGN_KEY_CHECKS = 1;
