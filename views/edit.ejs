@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head'); %>
+</head>
+<body>
+    <header>
+        <%- include('./partials/header'); %>
+</header>
+<main> 
+    <h3>Puede modificar su email</h3>
+    <form method="POST" action="/user/<%=users.id%>/edit?_method=PUT">
+       <input type="text" value="<%=users.email%>" name="email">
+       <button type="submit">Modificar</button>
+       <div id="emailHelp" class="form-text text-danger">
+        <% if (locals.errors && errors.email) { %>
+          <%= errors.email.msg %>
+        <% } %>
+    </form>
+
+</main>
+
+</body>
+<footer>
+    <%- include('./partials/footer'); %>
+</footer>
+</html>

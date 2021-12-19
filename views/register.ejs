@@ -10,15 +10,12 @@
 </header>
   
     <main>
-    <form action="/register" method="POST" enctype="multipart/form-data" >
+    <form action="/user/register" method="POST">
   
       <div class="register">Registrate</div>
     
       <fieldset>
         <div class="compra-register">Comprá más rápido y llevá el control de tus pedidos, ¡en un solo lugar!</div>
-
-        <label for="user_usuario">Usuario:</label>
-        <input type="text" id="user_usuario" name="user_usuario">
 
         <label for="user_nombre">Nombre:</label>
         <input type="text" id="user_nombre" name="user_nombre" value="<%=locals.oldData ? oldData.user_nombre : null %>">
@@ -54,26 +51,10 @@
           </div>
           <% } %>
 
-         <label for="confirm_password">Confirmar contraseña:</label>
-        <input type="password" id="confirm_password" name="confirm_password">
-        <% if (locals.errors && errors.confirm_password) {%>
-          <div class="mensaje-alerta"> 
-            <%= errors.confirm_password.msg %> 
-          </div>
-          <% } %>
-
-        <label for="user_foto">Foto de Usuario:</label>
-        <input type = "file" id="user_foto" name="user_foto">
-        <% if (locals.errors && errors.user_foto) {%>
-          <div class="mensaje-alerta"> 
-            <%= errors.user_foto.msg %> 
-          </div>
-          <% } %>
 
         <button type="submit">Crear mi cuenta</button>
         <label for="terminos">"Al crear la cuenta, doy mi consentimiento de que acepto los terminos y condiciones de "MyPlants"</label>
         
-       
     </fieldset>
   </form>
 </main> 

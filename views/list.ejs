@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head'); %>
+</head>
+<body>
+    <header>
+        <%- include('./partials/header'); %>
+</header>
+<main> 
+    <% users.forEach(users => { %>
+        <tr>
+            <td> <%= users.id%></td>
+            <td> <%= users.name%></td>
+            <td> <%= users.last_name%></td>
+            <td> <%= users.email%></td>
+            <a href="<%=users.id%>/edit" class="navegador">Editar</a>
+            <a href="<%=users.id%>/delete" class="navegador">Borrar</a>
+            <br>
+        </tr>
+        <% });%>
+
+</main>
+
+</body>
+<footer>
+    <%- include('./partials/footer'); %>
+</footer>
+</html>

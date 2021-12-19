@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head'); %>
+</head>
+<body>
+    <header>
+        <%- include('./partials/header'); %>
+</header>
+<main> 
+    <h3>¿Desea eliminar usuario?</h3>
+    <form method="POST" action="/user/<%=users.id%>/delete?_method=DELETE">
+       <input type="text" value="<%=users.email%>" name="email">
+       <button type="submit">Eliminar</button>
+    </form>
+
+</main>
+
+</body>
+<footer>
+    <%- include('./partials/footer'); %>
+</footer>
+</html>

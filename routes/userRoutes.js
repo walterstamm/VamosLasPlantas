@@ -8,12 +8,14 @@ const uploadFile = require('../middlewares/multerMiddleware');
 const validations = require ('../middlewares/validateRegisterMiddleware');
 const invitadosMiddleware = require('../middlewares/invitadosMiddleware');
 const autenticadorMiddleware = require('../middlewares/autenticadorMiddleware');
+const validationCreate = require('../middlewares/validationCreateMiddleware');
+const validationUpDate = require("../middlewares/validationUpDateMiddleware"); 
 
 //Formulario de registro
-router.get('/', usersController.register); //falta el invitadomiddleware
+/*router.get('/', usersController.register); //falta el invitadomiddleware*/
 
 //Proceso del registro 
-router.post('/', uploadFile.single('user_foto'),validations, usersController.processRegister);
+/*router.post('/', uploadFile.single('user_foto'),validations, usersController.processRegister);*/
 
 //Form del login
 router.get('/login', invitadosMiddleware, usersController.login);
@@ -31,6 +33,22 @@ router.get('/profile/:userId', autenticadorMiddleware, usersController.profile);
 
 //Logout
 router.get('/logout', usersController.logout);
+
+router.get('/list', usersController.list);
+
+
+router.get('/register', usersController.create);
+
+router.post('/register',validationCreate, usersController.createProcess);
+
+
+router.get('/:id/delete', usersController.delete);
+
+router.delete('/:id/delete', usersController.destroy);
+
+router.get('/:id/edit',usersController.edit);
+
+router.put('/:id/edit',validationUpDate, usersController.update)
 
 
 module.exports = router;

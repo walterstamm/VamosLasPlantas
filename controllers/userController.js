@@ -2,59 +2,115 @@ const bcryptjs = require('bcryptjs');
 
 const { validationResult} = require('express-validator');
 
-const User = require ('../models/User');
-const JsonModel=require('../models/jsonModel');
-const userModel=new JsonModel('users');
+//const User = require ('../database/models/User');
+/*const JsonModel=require('../models/jsonModel');
+const userModel=new JsonModel('users');*/
+const {Usuario} = require ("../database/models");
+const db = require("../database/models");
+const sequelize = db.sequelize;
+/*const Users = require('../models/Usuario');*/
+const {Op} = require('sequelize'); 
 
-const controller = {
-    register: (req, res) => {
-        return res.render('register');
-    },
-
-    processRegister: (req, res) => {
-        const resultValidation = validationResult (req);
-
-        
-        if (resultValidation.errors.length > 0) {
-            return res.render('register', {
-                //mapped covierte de un array en objetos
-                errors: resultValidation.mapped(),
-                oldData: req.body
-            });
-        }
-       
-        
-    let userEnDB= User.findByField('user_email', req.body.user_email); 
-
-
-    if (userEnDB) {
-        return res.render('register', {
-            errors: {
-                user_email: {
-                    msg: 'Email ya registrado'
-                }
-            },
-            oldData: req.body
+const userController = {
+    list: function (req, res) {
+      db.Users.findAll()
+      .then(function (users) {
+          res.render("list", {
+            users: users,
+          });
         });
-    } 
-    
-    delete req.body.confirm_password
-        let userACrear = {
-            ...req.body,
-            user_password: bcryptjs.hashSync(req.body.user_password, 10),
-            user_foto: req.file.filename, 
+      },
+      edit: function (req, res) {
+        db.Users.findByPk(req.params.id)
+          .then((users) => res.render("edit", {
+            users
+          }))
+          .catch((err) => console.log(err));
+      },
+
+      update: function (req, res) {
+        const validation = validationResult(req);
+        if (validation.errors.length > 0) {
+          res.render("edit", {
+            errors: validation.mapped(),
+            oldData: req.body,
+            users: {
+              id: req.params.id,
+            },
+          });
+        } else {
+          db.Users.update({
+              email: req.body.email,
+            }, {
+              where: {
+                id: req.params.id,
+              },
+            })
+            .then(() => res.redirect("/user/list"))
+            .catch((errors) => console.log(console.log(errors)));}
+      },
+
+      delete: function (req, res) {
+        db.Users.findByPk(req.params.id)
+          .then((users) => res.render("delete", { //c:
+            users
+          }))
+          .catch((err) => console.log(err));
+      },
+
+      destroy: function (req, res) {
+        db.Users.destroy({
+            where: {
+              id: req.params.id,
+            },
+          })
+          .then(() => res.redirect("/user/list"))
+          .catch((err) => console.log(err));
+      },
+
+      create: function (req, res) {
+          res.render("register");
+      },
+      createProcess: function (req, res) {
+        const resultValidation = validationResult(req);
+        if (resultValidation.errors.length > 0) {
+          return res.render("register", {
+            errors: resultValidation.mapped(),
+            oldData: req.body,
+          });
         }
-
-        //req.body.user_foto=req.file.filename;
-        //console.log(req.body);
-        //userModel.save(req.body);
-        
-
-        let userCreado = User.create(userACrear);
-
-        return res.redirect ('/user/login');
-    }, 
+        let userInDB = db.Users.findOne({
+            where: {
+                email: req.body.user_email,
+            },
+          })
+          .then((user) => {
+            if (user) {
+              res.render("register", {
+                errors: {
+                user_email: {
+                    msg: "Este Email ya se encuentra registrado",
+                  },
+                },
+              });
+            }
+          })
+          .catch((err) => console.log(err));
     
+        let UserPassword = req.body.user_password;
+        let passwordEncry = bcryptjs.hashSync(UserPassword, 10);
+
+        db.Users.create({
+            email: req.body.user_email,
+            password: passwordEncry,
+            name: req.body.user_nombre,
+            last_name: req.body.user_apellido
+          })
+          .then(function () {
+            res.redirect("/user/login");
+          })
+          .catch((err) => console.log(err));
+      },
 
     login: (req, res) => {
         console.log('Llegue')
@@ -114,4 +170,4 @@ const controller = {
     }
 }
 
-module.exports = controller;
+module.exports = userController;

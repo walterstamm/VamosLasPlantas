@@ -1,0 +1,83 @@
+<label for="user_foto">Foto de Usuario:</label>
+        <input type = "file" id="user_foto" name="user_foto">
+        <% if (locals.errors && errors.user_foto) {%>
+          <div class="mensaje-alerta"> 
+            <%= errors.user_foto.msg %> 
+          </div>
+          <% } %>
+
+          validaciones de la imagen en el register 
+
+          DEL USERCONTROLLER
+
+              /*register: (req, res) => {
+        return res.render('register');
+    },*/
+
+    /*processRegister: (req, res) => {
+        const resultValidation = validationResult (req);
+
+        
+        if (resultValidation.errors.length > 0) {
+            return res.render('register', {
+                //mapped covierte de un array en objetos
+                errors: resultValidation.mapped(),
+                oldData: req.body
+            });
+        }
+       
+        
+    let userEnDB= User.findByField('user_email', req.body.user_email); 
+
+
+    if (userEnDB) {
+        return res.render('register', {
+            errors: {
+                user_email: {
+                    msg: 'Email ya registrado'
+                }
+            },
+            oldData: req.body
+        });
+    } 
+    
+    delete req.body.confirm_password
+        let userACrear = {
+            ...req.body,
+            user_password: bcryptjs.hashSync(req.body.user_password, 10),
+            user_foto: req.file.filename, 
+        }
+
+        //req.body.user_foto=req.file.filename;
+        //console.log(req.body);
+        //userModel.save(req.body);
+        
+
+        let userCreado = User.create(userACrear);
+
+        return res.redirect ('/user/login');
+    }, 
+    */
+
+
+
+
+
+     
+FORMULARIO DE REGISTRO  
+<label for="user_usuario">Usuario:</label>
+        <input type="text" id="user_usuario" name="user_usuario">
+
+<label for="confirm_password">Confirmar contraseña:</label>
+        <input type="password" id="confirm_password" name="confirm_password">
+        <% if (locals.errors && errors.confirm_password) {%>
+          <div class="mensaje-alerta"> 
+            <%= errors.confirm_password.msg %> 
+          </div>
+          <% } %>
+FORMULARIO DE REGISTRO 
+
+
+
+
+
