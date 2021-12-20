@@ -24,7 +24,7 @@ app.use(methodOverride('_method'));
 
 const mainRoutes=require('./routes/mainRoutes');
 const userRoutes = require('./routes/userRoutes'); 
-
+//const productRoutes = require('./routes/productRoutes');
 
 app.use(express.static('./public'));
 

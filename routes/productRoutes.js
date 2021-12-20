@@ -2,7 +2,8 @@ const express=require('express');
 const router =express.Router();
 const multer=require('multer');
 const path=require('path');
-const controller=require('../controllers/productController');
+const productController=require('../controllers/productController');
+const validationEditProd= require('../middlewares/validationEditProdMiddleware');
 
 const storage=multer.diskStorage({
     destination:(req,file,cb)=>{
@@ -20,18 +21,31 @@ const storage=multer.diskStorage({
 const upload=multer({storage});
 
 
-/*1*/ router.get('/',controller.index);
+router.get('/',productController.index);
 
-/*2*/ router.get('/nuevosProd',controller.nuevosProd);
 
-/*3*/ router.get('/:id', controller.detalleProduct);
+/*3*/ /*router.get('/:id', productController.detalleProduct); 
 
-/*4*/ router.post('/',upload.single('imagen'),controller.guardarNuevo);
 
-/*5*/ router.get('/:id/edit', controller.editProduct);
+/*7*/ /*router.delete('/:id', productController.destroy); */
 
-/*6*/ router.put('/:id',upload.single('oldImagen'), controller.modificarProd);
+//CRUD 
 
-/*7*/ router.delete('/:id', controller.destroy);
+router.get('/listProduct',productController.list)
+
+router.get('/:id/edicionProdDb', productController.editProductDb);
+
+router.put('/:id/edicionProdDb',validationEditProd, productController.modificarProdDb);
+
+router.get('/:id/deleteProd', productController.delete);
+
+router.delete('/:id/deleteProd', productController.destroy);
+
+router.get('/nuevosProd',productController.nuevosProd);
+
+router.post('/nuevosProd', productController.createNewProd);
+
+
+
 
 module.exports=router;

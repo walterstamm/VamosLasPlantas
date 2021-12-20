@@ -34,6 +34,8 @@ router.get('/profile/:userId', autenticadorMiddleware, usersController.profile);
 //Logout
 router.get('/logout', usersController.logout);
 
+
+
 router.get('/list', usersController.list);
 
 

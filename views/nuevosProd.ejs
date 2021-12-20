@@ -10,7 +10,7 @@
 </header>
 
 <main>
-    <form action="/product" method="POST" enctype="multipart/form-data">
+    <form action="/product/nuevosProd" method="POST">
       
   
     <div class="register">Nuevo Producto</div>
@@ -26,9 +26,10 @@
     </div>
 
     <div class="form-nuevosProd">
-      <label for="image">Imagen</label>
-      <input type="file"  name="imagen" id="imagen"  multiple>
+        <label for="precio">Precio</label>
+        <input type="number"  id="precio" name="precio" min="1">
     </div>
+
     <div class="form-nuevosProd">
       <label for="categoria">Categoria</label>
       <select name="categoria"  id="categoria">
@@ -40,12 +41,6 @@
           <option value="Macetas">Macetas</option>
           <option value="Herramientas">Herramientas</option>
       </select>
-    </div>
-      
-    <div class="form-nuevosProd">
-        <label for="precio">Precio</label>
-        <input type="number"  id="precio" name="precio" min="1">
-    </div>
 
       <button type="submit">Cargar</button>
           

@@ -81,3 +81,75 @@ FORMULARIO DE REGISTRO
 
 
 
+FORMULARIO DE EDICION DE PROD 
+ <div class="form-nuevosProd">
+      <label for="imagen">Imagen</label>
+      <input type="file" value="<%- product.imagen %>" name="oldImagen" id="oldImagen"  multiple>
+    </div>
+    <div class="form-nuevosProd">
+      <label for="categoria">Categoria</label>
+      <select name="categoria" value="<%- product.categoria %>" id="categoria">
+          <option value="Semillas">Semillas</option>
+          <option value="Decoracion">Decoracion</option>
+          <option value="Jardineria">Jardineria</option>
+          <option value="Plantas-Artificiales">Plantas Artificiales</option>
+          <option value="sustratos">Sustratos</option>
+          <option value="Macetas">Macetas</option>
+          <option value="Herramientas">Herramientas</option>
+      </select>
+    </div>
+    FORMULARIO DE EDICION DE PROD 
+
+?product.precio.slice(1):''
+upload.single('oldImagen')
+
+
+nuevosProd
+ <div class="form-nuevosProd">
+      <label for="image">Imagen</label>
+      <input type="file"  name="imagen" id="imagen"  multiple>
+    </div>
+    
+
+
+
+
+
+
+    const resultValidation = validationResult(req);
+        if (resultValidation.errors.length > 0) {
+          return res.render("nuevosProd", {
+            errors: resultValidation.mapped(),
+            oldData: req.body,
+          });
+        }
+        let productInDB = db.Products.findOne({
+            where: {
+                product: req.body.producto,
+            },
+          })
+          .then((product) => {
+            if (product) {
+              res.render("nuevosProd", {
+                errors: {
+                producto: {
+                    msg: "Este producto ya se encuentra en la base de datos",
+                  },
+                },
+              });
+            }
+          })
+          .catch((err) => console.log(err));
+
+
+
+
+           <!--<select name="categoria" <%= locals.errors && errors.categoria? 'is-invalid' : null %>>
+        <option selected="" disabled selected> Categorias</option>
+        <% cate.forEach(category => { %>
+        <option value="<%= category.product %>"
+            <%= locals.oldData && (category.product === oldData.categoria)? 'selected' : null %> 
+            ><%= category.product %></option>
+        <% }); %>
+    </select>
+    </div>-->

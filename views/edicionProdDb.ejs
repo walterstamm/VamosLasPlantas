@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head'); %>
+
+</head>
+<body>
+<header>
+    <%- include('./partials/header'); %>
+</header>
+
+<main>
+    <form action="/product/<%=product.id%>/edicionProdDb?_method=PUT" method="POST"> 
+    <div class="register">Nuevo Producto</div>
+    
+    <fieldset>
+      <!-- <div class="form-prodId">
+        <input type="number" id="id" value="" name="id">
+      </div> -->
+
+     <div class="form-nuevosProd">
+      <label for="producto">Nombre del Producto:</label>
+      <input type="text" id="producto" value="<%=product.product%>" name="producto">
+      <% if (locals.errors && errors.producto) { %>
+        <%= errors.producto.msg %>
+      <% } %>
+    </div>
+
+    <div class="form-nuevosProd">
+      <label for="descripcion">Descripcion</label>
+      <input type="text" value="<%=product.description%>" name="descripcion" id="descripcion">
+      <% if (locals.errors && errors.descripcion) { %>
+        <%= errors.descripcion.msg %>
+      <% } %>
+    </div>
+      
+    <div class="form-nuevosProd">
+        <label for="precio">Precio</label>
+        <input type="number" value="<%=product.price%>" id="precio" name="precio" min="1">
+        <% if (locals.errors && errors.precio) { %>
+            <%= errors.precio.msg %>
+          <% } %>
+    </div>
+
+      <button type="submit">Modificar</button>
+          
+    </fieldset>
+  </form>
+</main> 
+</body>
+<footer>
+  <%- include('./partials/footer'); %>
+</footer>
+</html>
