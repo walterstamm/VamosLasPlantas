@@ -29,16 +29,16 @@ module.exports = function(sequelize, dataTypes) {
 
     let sales = sequelize.define(alias, cols, config); 
 
-    /*sales.associate = function(models){
-        sales.hasMany(models.Product, {
-            as: 'products', 
+    sales.associate = function(models){
+        sales.belongsTo(models.Product, {
+            as: 'product', 
             foreignKey: 'product_id',
         });
-        sales.hasMany(models.Usuario, {
-            as: 'usuarios', 
+        sales.belongsTo(models.Usuario, {
+            as: 'usuario', 
             foreignKey: 'user_id',
         });
-    }*/
+    }
 
     return sales; 
 }
