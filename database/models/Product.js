@@ -14,7 +14,7 @@ module.exports = function(sequelize, dataTypes) {
             type: dataTypes.STRING
         },
         category_id: {
-            type: dataTypes.STRING
+            type: dataTypes.STRING // lo dejo?
         },
         price: {
             type: dataTypes.STRING
@@ -28,11 +28,11 @@ module.exports = function(sequelize, dataTypes) {
 
     let product = sequelize.define(alias, cols, config); 
 
-    /*product.associate = function (models){
-        product.belongsTo(models.Category,{
-            as: 'category',
+    /*product.associate = function(models){
+        product.hasMany(models.Category, {
+            as: 'categorys', 
             foreignKey: 'category_id'
-        })
+        });
     }*/
 
     return product; 

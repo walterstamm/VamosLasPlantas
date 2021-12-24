@@ -31,11 +31,11 @@ router.get('/',productController.index);
 
 //CRUD 
 
-router.get('/listProduct',productController.list)
+/*1 -- LECTURA*/ router.get('/listProduct',productController.list)
 
-router.get('/:id/edicionProdDb', productController.editProductDb);
+/*2 -- DETALLE*/ router.get('/:id/edicionProdDb', productController.editProductDb);
 
-router.put('/:id/edicionProdDb',validationEditProd, productController.modificarProdDb);
+/* -- ACTUALIZAR*/ router.put('/:id/edicionProdDb',validationEditProd, productController.modificarProdDb);
 
 router.get('/:id/deleteProd', productController.delete);
 
