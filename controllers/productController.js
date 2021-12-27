@@ -28,7 +28,8 @@ const controller = {
             });
     },
     editProductDb: function (req, res) {
-        db.Products.findByPk(req.params.id)
+        db.Products.findByPk(req.params.id /*faltara incluir la asosiacion*/
+            /*include: [{association: "category"}]*/)
             .then((product) => res.render("edicionProdDb", { product: product }))
             .catch((err) => console.log(err));
     },
@@ -95,7 +96,7 @@ const controller = {
 
     createNewProd: function (req, res) {
         db.Products.create({
-            product: req.body.producto,
+            product: req.body.producto, //nombres de col de la DB
             description: req.body.descripcion,
             price: req.body.precio,
             category_id: req.body.categoria

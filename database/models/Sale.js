@@ -28,5 +28,17 @@ module.exports = function(sequelize, dataTypes) {
     }
 
     let sales = sequelize.define(alias, cols, config); 
+
+    /*sales.associate = function(models){
+        sales.hasMany(models.Product, {
+            as: 'products', 
+            foreignKey: 'product_id',
+        });
+        sales.hasMany(models.Usuario, {
+            as: 'usuarios', 
+            foreignKey: 'user_id',
+        });
+    }*/
+
     return sales; 
 }
