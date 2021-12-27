@@ -1,14 +1,14 @@
-module.exports = function(sequelize, dataTypes) {
+module.exports = function(sequelize, DataTypes) {
     let alias = "Categorys";
-
+    
     let cols = {
         id: {
-            type: dataTypes.INTEGER,
+            type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true
         },
         nameCategory: {
-            type: dataTypes.STRING,
+            type: DataTypes.STRING,
         }
        
     }
@@ -17,13 +17,14 @@ module.exports = function(sequelize, dataTypes) {
         timestamps: false
     }
 
-    let category = sequelize.define(alias, cols, config); 
-
-    /*category.associate = function (models) {
-        category.hasMany(models.Product, {
-            as: 'products',
-            foreignKey: 'category_id'
-        })
-    }*/
-    return category; 
+    const Category = sequelize.define(alias, cols, config); 
+    
+    //     Category.associate = function (models) {
+    //         Category.hasMany(models.Product, {
+    //             foreignKey: 'category_id',
+    //         as: 'products',
+            
+    //         })
+    // }
+    return Category; 
 }

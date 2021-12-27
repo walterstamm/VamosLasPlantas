@@ -33,6 +33,8 @@ router.get('/',productController.index);
 
 router.get('/listProduct',productController.list)
 
+router.get('/nuevosProd',productController.nuevosProd);
+
 router.get('/:id/edicionProdDb', productController.editProductDb);
 
 router.put('/:id/edicionProdDb',validationEditProd, productController.modificarProdDb);
@@ -41,7 +43,6 @@ router.get('/:id/deleteProd', productController.delete);
 
 router.delete('/:id/deleteProd', productController.destroy);
 
-router.get('/nuevosProd',productController.nuevosProd);
 
 router.post('/nuevosProd', productController.createNewProd);
 

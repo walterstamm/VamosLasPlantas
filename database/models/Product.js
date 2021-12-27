@@ -1,23 +1,25 @@
-module.exports = function(sequelize, dataTypes) {
+module.exports = function(sequelize, DataTypes) {
     let alias = "Products";
-
+    
     let cols = {
         id: {
-            type: dataTypes.INTEGER,
+            type: DataTypes.INTEGER,
             autoIncrement: true,
             primaryKey: true
         },
         product: {
-            type: dataTypes.STRING
+            type: DataTypes.STRING
         },
         description: {
-            type: dataTypes.STRING
+            type: DataTypes.STRING
         },
         category_id: {
-            type: dataTypes.STRING
+            type: DataTypes.INTEGER,
+            
+
         },
         price: {
-            type: dataTypes.STRING
+            type: DataTypes.STRING
         }
        
     }
@@ -26,14 +28,14 @@ module.exports = function(sequelize, dataTypes) {
         timestamps: false
     }
 
-    let product = sequelize.define(alias, cols, config); 
-
-    /*product.associate = function (models){
-        product.belongsTo(models.Category,{
-            as: 'category',
-            foreignKey: 'category_id'
-        })
-    }*/
+    const product = sequelize.define(alias, cols, config); 
+    
+    // product.associate = function (models){
+    //     product.belongsTo(models.Category,{
+    //         foreignKey: 'category_id',
+    //         as:'category_id',
+    //     })
+    // }
 
     return product; 
 }

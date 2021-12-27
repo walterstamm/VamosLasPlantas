@@ -21,6 +21,7 @@ const controller = {
     list: function (req, res) {
         db.Products.findAll()
             .then(function (product) {
+                
                 res.render("listProduct", {
                     product: product,
                 });
@@ -63,6 +64,9 @@ const controller = {
             }))
             .catch((err) => console.log(err));
     },
+
+
+
     destroy: function (req, res) {
         db.Products.destroy({
             where: {
@@ -72,22 +76,29 @@ const controller = {
             .then(() => res.redirect("/product/listProduct"))
             .catch((err) => console.log(err));
     },
+
+
     nuevosProd: (req, res) => {
-        /*db.Categorys.findAll()
-        .then(function([cate]) {
-          res.render('nuevosProd',{cate:cate})})
+        db.Categorys.findAll()
+            .then(function(cate) {
+                
+            
+             res.render('nuevosProd',
+                 {cate:cate})})
+                     
         .catch((error) =>{
             res.send(error)
-        })*/
-        return res.render('nuevosProd')
+        })
     },
+
+
 
     createNewProd: function (req, res) {
         db.Products.create({
             product: req.body.producto,
             description: req.body.descripcion,
             price: req.body.precio,
-            category_id: 0
+            category_id: req.body.categoria
           })
           .then(function () {
             res.redirect("/product/listProduct");
