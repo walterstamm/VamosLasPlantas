@@ -83,3 +83,20 @@ Hacer menos:
 
 Dejar de hacer:
     --> Dejar para último momento el proyecto.
+
+    Retrospectiva - Sprint 6 -
+
+Comenzar a hacer:
+    --> Distribuir las tareas con mayor antelacion.
+
+Hacer más:
+    --> Reuniones.
+
+Continuar haciendo:
+    --> Crear tiempos para dedicarle al proyecto.
+
+Hacer menos:
+    --> Demorar con proyecto.
+
+Dejar de hacer:
+    --> Posponer reuniones.
