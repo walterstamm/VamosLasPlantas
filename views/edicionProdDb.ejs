@@ -11,7 +11,7 @@
 
 <main>
     <form action="/product/<%=product.id%>/edicionProdDb?_method=PUT" method="POST"> 
-    <div class="register">Nuevo Producto</div>
+    <div class="register">Editar Producto</div>
     
     <fieldset>
       <!-- <div class="form-prodId">
@@ -22,7 +22,9 @@
       <label for="producto">Nombre del Producto:</label>
       <input type="text" id="producto" value="<%=product.product%>" name="producto">
       <% if (locals.errors && errors.producto) { %>
+        <div class="mensaje-alerta"> 
         <%= errors.producto.msg %>
+        </div>
       <% } %>
     </div>
 
@@ -30,7 +32,9 @@
       <label for="descripcion">Descripcion</label>
       <input type="text" value="<%=product.description%>" name="descripcion" id="descripcion">
       <% if (locals.errors && errors.descripcion) { %>
+        <div class="mensaje-alerta"> 
         <%= errors.descripcion.msg %>
+        </div>
       <% } %>
     </div>
       
@@ -38,7 +42,9 @@
         <label for="precio">Precio</label>
         <input type="number" value="<%=product.price%>" id="precio" name="precio" min="1">
         <% if (locals.errors && errors.precio) { %>
+          <div class="mensaje-alerta"> 
             <%= errors.precio.msg %>
+            </div>
           <% } %>
     </div>
 
@@ -47,6 +53,7 @@
     </fieldset>
   </form>
 </main> 
+<script> src= '/middlewares/validationEditProdMiddleware.js'</script>
 </body>
 <footer>
   <%- include('./partials/footer'); %>

@@ -8,7 +8,7 @@ const uploadFile = require('../middlewares/multerMiddleware');
 const validations = require ('../middlewares/validateRegisterMiddleware');
 const invitadosMiddleware = require('../middlewares/invitadosMiddleware');
 const autenticadorMiddleware = require('../middlewares/autenticadorMiddleware');
-const validationCreate = require('../middlewares/validationCreateMiddleware');
+const validationRegister = require('../middlewares/validateRegisterMiddleware');
 const validationUpDate = require("../middlewares/validationUpDateMiddleware"); 
 
 //Formulario de registro
@@ -41,7 +41,7 @@ router.get('/list', usersController.list);
 
 router.get('/register', usersController.create);
 
-router.post('/register',validationCreate, usersController.createProcess);
+router.post('/register',validationRegister, usersController.createProcess);
 
 
 router.get('/:id/delete', usersController.delete);

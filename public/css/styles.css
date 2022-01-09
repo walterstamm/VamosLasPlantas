@@ -89,7 +89,8 @@
     color: crimson;
     display: flex;
     align-items: center;
-    font-style: bold;
+    font-style: italic;
+    font-weight: bolder;
 }
 
 p{
@@ -1150,17 +1151,5 @@ footer i {
 }
 
 /*------------- FOOTER (FIN)---------------------*/
-
-/*------------- VALIDACIONES (FIN)---------------------*/
-
-.mensaje-alerta {
-  color: red;
-  font-style: italic;
-  font-weight: bolder;
-}
-
-/*------------- VALIDACIONES (FIN)---------------------*/
-
-
 
 
