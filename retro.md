@@ -104,16 +104,16 @@ Dejar de hacer:
     Retrospectiva - Sprint 7 -
 
 Comenzar a hacer:
-    --> 
+    --> Más reuniones.
 
 Hacer más:
-    --> 
+    --> Tener mayor comunicación.
 
 Continuar haciendo:
-    --> 
+    --> Comprometerse con el proyecto.
 
 Hacer menos:
-    --> 
+    --> Posponer tareas.
 
 Dejar de hacer:
-    --> 
+    --> No aprovechar los tiempos
