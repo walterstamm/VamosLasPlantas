@@ -100,3 +100,20 @@ Hacer menos:
 
 Dejar de hacer:
     --> Posponer reuniones.
+
+    Retrospectiva - Sprint 7 -
+
+Comenzar a hacer:
+    --> 
+
+Hacer más:
+    --> 
+
+Continuar haciendo:
+    --> 
+
+Hacer menos:
+    --> 
+
+Dejar de hacer:
+    --> 

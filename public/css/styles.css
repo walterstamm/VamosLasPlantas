@@ -1151,5 +1151,16 @@ footer i {
 
 /*------------- FOOTER (FIN)---------------------*/
 
+/*------------- VALIDACIONES (FIN)---------------------*/
+
+.mensaje-alerta {
+  color: red;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+/*------------- VALIDACIONES (FIN)---------------------*/
+
+
 
 
