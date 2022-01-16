@@ -117,13 +117,7 @@ const userController = {
         console.log('Llegue')
         return res.render('login');    
     },
-//anda bien
-//loginProcess: function (req, res) {
-  //let userToLogin = db.Users.findByField(('user_email', req.body.user_email),{
-    //  where: {
-      //  user_email: req.body.user_email,
-     // },
-    //})
+
     loginProcess: (req, res) => {
 
        // let userInDB = User.findByField('email', req.body.email);
