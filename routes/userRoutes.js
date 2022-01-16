@@ -10,6 +10,7 @@ const invitadosMiddleware = require('../middlewares/invitadosMiddleware');
 const autenticadorMiddleware = require('../middlewares/autenticadorMiddleware');
 const validationRegister = require('../middlewares/validateRegisterMiddleware');
 const validationUpDate = require("../middlewares/validationUpDateMiddleware"); 
+const validationLogin = require("../middlewares/validationLoginUser");
 
 //Formulario de registro
 /*router.get('/', usersController.register); //falta el invitadomiddleware*/
@@ -21,7 +22,7 @@ const validationUpDate = require("../middlewares/validationUpDateMiddleware");
 router.get('/login', invitadosMiddleware, usersController.login);
 
 //Proceso del formulario de login 
-router.post('/login', usersController.loginProcess);
+router.post('/login', validationLogin, usersController.loginProcess);
 
 //Perfil del usuario
 router.get('/profile/:userId', autenticadorMiddleware, usersController.profile)

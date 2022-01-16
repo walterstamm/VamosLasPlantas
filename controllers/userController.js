@@ -2,7 +2,7 @@ const bcryptjs = require('bcryptjs');
 
 const { validationResult} = require('express-validator');
 
-//const User = require ('../database/models/User');
+const Users = require ('../database/models/Usuario');
 /*const JsonModel=require('../models/jsonModel');
 const userModel=new JsonModel('users');*/
 const {Usuario} = require ("../database/models");
@@ -10,6 +10,7 @@ const db = require("../database/models");
 const sequelize = db.sequelize;
 /*const Users = require('../models/Usuario');*/
 const {Op} = require('sequelize'); 
+const { response } = require('express');
 
 const userController = {
     list: function (req, res) {
@@ -117,12 +118,26 @@ const userController = {
         return res.render('login');    
     },
 //anda bien
-
+//loginProcess: function (req, res) {
+  //let userToLogin = db.Users.findByField(('user_email', req.body.user_email),{
+    //  where: {
+      //  user_email: req.body.user_email,
+     // },
+    //})
     loginProcess: (req, res) => {
-        let userToLogin = User.findByField('user_email', req.body.user_email); 
-       
-        if(userToLogin) { 
-            let okPassword = bcryptjs.compareSync(req.body.user_password, userToLogin.user_password); 
+        /*let userToLogin = db.Users.findByField('user_email', req.body.user_email); agus*/
+          let userToLogin = db.Users.findOne({
+            where: {
+                email: req.body.user_email
+            }
+        })
+        .then (response => {userToLogin = response; 
+        //.catch (error => res.send(error))
+        //res.send (userToLogin)
+
+
+       if(userToLogin) { 
+            let okPassword = bcryptjs.compareSync(req.body.user_password, userToLogin.user_password)
            
 
             if(okPassword) {
@@ -154,7 +169,7 @@ const userController = {
                 }
             }
         });
-    },
+    })},
 
     profile: (req, res) => { 
         console.log('donde pasa esto', req.session.userLogged); 

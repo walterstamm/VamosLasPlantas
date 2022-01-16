@@ -3,7 +3,8 @@ const router =express.Router();
 const multer=require('multer');
 const path=require('path');
 const productController=require('../controllers/productController');
-const validationEditProd= require('../middlewares/validationEditProdMiddleware');
+const validationEditProd=require('../middlewares/validationEditProdMiddleware');
+const validationCreateProd= require ('../middlewares/validationCreateProductMiddleware')
 
 const storage=multer.diskStorage({
     destination:(req,file,cb)=>{
@@ -44,7 +45,7 @@ router.get('/:id/deleteProd', productController.delete);
 router.delete('/:id/deleteProd', productController.destroy);
 
 
-router.post('/nuevosProd', productController.createNewProd);
+router.post('/nuevosProd', validationCreateProd, productController.createNewProd);
 
 
 

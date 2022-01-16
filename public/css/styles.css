@@ -19,10 +19,9 @@
   main   {
     position: relative;
     text-align: center;
-    width: 100%;
     color: #318547;
     box-sizing: content-box;
-
+    
   }
 
   .main-index  {
@@ -35,8 +34,14 @@
 
   }
 
+  .productList {
+    max-width: 80%;
+    padding-left: 11%;
+  }
+ 
   img {
     border-radius: 50%;
+    max-width: 70%;
   }
 
 .nombre-website{
@@ -115,7 +120,7 @@ a {
 }
 
 .body-404{
-  background-image: url("/images/Como-cultivar-en-la-luna.jpg");
+  background-image: url("/public/images/Como-cultivar-en-la-luna.jpg");
 }
 
 
@@ -717,6 +722,7 @@ body {
 /* ------ PRODUCT CART ---------*/ 
 .contenedor-caracteristicas {
     padding-left: 2%;
+    padding-right: 2%;
     padding-top: 3%;
     padding-bottom: 5%;
     margin-left: 2%; 
@@ -1151,5 +1157,3 @@ footer i {
 }
 
 /*------------- FOOTER (FIN)---------------------*/
-
-

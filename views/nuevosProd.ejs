@@ -18,16 +18,31 @@
      <div class="form-nuevosProd">
       <label for="producto">Nombre del Producto:</label>
       <input type="text" id="producto" name="producto">
+      <% if (locals.errors && errors.producto) {%>
+        <div class="mensaje-alerta"> 
+          <%= errors.producto.msg %> 
+        </div>
+      <% } %>
     </div>
 
     <div class="form-nuevosProd">
       <label for="descripcion">Descripcion</label>
       <input type="text" name="descripcion" id="descripcion">
+      <% if (locals.errors && errors.descripcion) {%>
+        <div class="mensaje-alerta"> 
+          <%= errors.descripcion.msg %> 
+        </div>
+      <% } %>
     </div>
 
     <div class="form-nuevosProd">
         <label for="precio">Precio</label>
         <input type="number"  id="precio" name="precio" min="1">
+        <% if (locals.errors && errors.precio) {%>
+          <div class="mensaje-alerta"> 
+            <%= errors.precio.msg %> 
+          </div>
+        <% } %>
     </div>
 
     <div class="form-nuevosProd">
@@ -47,7 +62,7 @@
     </fieldset>
   </form>
 </main> 
-<script src= '/middlewares/validationEditProdMiddleware.js'></script>
+<script src= '/middlewares/validationCreateProductMiddleware.js'></script>
 </body>
 <footer>
   <%- include('./partials/footer'); %>
