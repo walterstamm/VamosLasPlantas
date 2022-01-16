@@ -125,51 +125,53 @@ const userController = {
      // },
     //})
     loginProcess: (req, res) => {
-        /*let userToLogin = db.Users.findByField('user_email', req.body.user_email); agus*/
-          let userToLogin = db.Users.findOne({
-            where: {
-                email: req.body.user_email
-            }
-        })
-        .then (response => {userToLogin = response; 
-        //.catch (error => res.send(error))
-        //res.send (userToLogin)
+
+       // let userInDB = User.findByField('email', req.body.email);
+        // BUSCAR USUARIO EN BDD
+        let userInDB;
+        db.Users.findAll({
+         where:{ email:  req.body.user_email}
+        }).then(resultado=>{
+            userInDB = resultado;
 
 
-       if(userToLogin) { 
-            let okPassword = bcryptjs.compareSync(req.body.user_password, userToLogin.user_password)
-           
 
-            if(okPassword) {
-                delete userToLogin.user_password; //por seguridad borramos la pass
-                req.session.userLogged = userToLogin; 
-                //return res.redirect('/profile/:userId');
-    console.log(req.session, 'Texto', userToLogin, 'tipo', typeof userToLogin); 
-
-                if(req.body.remember_user) {
-					res.cookie('user_email', req.body.user_email, { maxAge: (1000 * 60) * 60 })
-				}
-
-				return res.redirect('/user/profile/' + req.session.userLogged.id);
-
-            }
-            return res.render('login', {
-                errors: {
-                    user_email: {
-                        msg: 'La contraseña es incorrecta'
-                    }
-                }
-            });
-        }
-
-        return res.render('login', {
+    if (userInDB.length == 0){
+        return res.render('login',{
             errors: {
-                user_email: {
-                    msg: 'No se encuentra el usuario en la base de datos'
+                email: {
+                    msg: 'Este email no está registrado'
                 }
-            }
+            },
+            oldData: req.body
         });
-    })},
+    }else{
+        // Chequear password
+        // console.log(userInDB[0].dataValues.password);
+        if (!bcryptjs.compareSync(req.body.user_password, userInDB[0].dataValues.password)){
+            return res.render('login',{
+                errors: {
+                    password: {
+                        msg: 'Credenciales invalidas'
+                    }
+                },
+                oldData: req.body
+            });
+        }else{
+            // Usuario OK para loguear
+            delete userInDB.password;
+            // req.session.user = userInDB;
+            req.session.user = userInDB[0].dataValues;
+            if(req.body.Login_RememberMe){
+                res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) * 60})
+            }
+
+            return res.redirect("/users/profile");
+
+        }
+    }
+})},
+
 
     profile: (req, res) => { 
         console.log('donde pasa esto', req.session.userLogged); 
