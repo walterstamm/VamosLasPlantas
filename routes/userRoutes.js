@@ -30,7 +30,7 @@ router.get('/profile/:userId', autenticadorMiddleware, usersController.profile)
 router.get('/profile/:userId', autenticadorMiddleware, usersController.profile);
 
 
-//router.get('/userProfile', )
+router.get('/userProfile',usersController.profile )
 
 //Logout
 router.get('/logout', usersController.logout);

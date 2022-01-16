@@ -67,11 +67,10 @@
                     <% } %>                
                 </div>   
 
-                <!-- <div class="password-login">
-                    <label for="user_password" ></label>
-                    <input type="password" name="user_password" placeholder="Contraseña">
-                </div> -->
-
+                <div class="password-login">
+                    
+                
+                
                 <label for="user_password">Contraseña:</label>
                     <input type="password" id="user_password" name="user_password">
                     <% if (locals.errors && errors.user_password) {%>
@@ -79,7 +78,7 @@
                         <%= errors.user_password.msg %> 
                     </div>
                     <% } %>
-                
+                </div> 
                 <div class="recordarcontraseña-login">
                 <input type = "checkbox" name = "recordarcontraseña" value= "recordarcontraseña">Recordar Contraseña
                 </div>

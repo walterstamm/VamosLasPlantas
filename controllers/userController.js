@@ -160,7 +160,7 @@ const userController = {
                 res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) * 60})
             }
 
-            return res.redirect("/users/profile");
+            return res.redirect("/register/userProfile");
 
         }
     }
@@ -168,9 +168,9 @@ const userController = {
 
 
     profile: (req, res) => { 
-        console.log('donde pasa esto', req.session.userLogged); 
+        console.log('donde pasa esto', req.session.user); 
         return res.render('userProfile', {
-            user: req.session.userLogged, 
+            user: req.session.user, 
         }); //cree la vista
     },
 
