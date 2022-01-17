@@ -1,66 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <%- include('./partials/head'); %>
+  </head>
+  <body class="register-body">
+    <header><%- include('./partials/header'); %></header>
 
-</head>
-<body class = "register-body">
-<header>
-    <%- include('./partials/header'); %>
-</header>
-  
     <main>
-    <form action="/user/register" method="POST">
-  
-      <div class="register">Registrate</div>
-    
-      <fieldset>
-        <div class="compra-register">Comprá más rápido y llevá el control de tus pedidos, ¡en un solo lugar!</div>
+      <form action="/register/register" method="POST" enctype="multipart/form-data">
+        <div class="register">Registrate</div>
 
-        <label for="user_nombre">Nombre:</label>
-        <input type="text" id="user_nombre" name="user_nombre" value="<%=locals.oldData ? oldData.user_nombre : null %>">
-        <% if (locals.errors && errors.user_nombre) {%>
-          <div class="mensaje-alerta"> 
-            <%= errors.user_nombre.msg %> 
+        <fieldset>
+          <div class="compra-register">
+            Comprá más rápido y llevá el control de tus pedidos, ¡en un solo
+            lugar!
           </div>
-        <% } %> 
 
-        <label for="user_apellido">Apellido:</label>
-        <input type="text" id="user_apellido" name="user_apellido" value="<%=locals.oldData ? oldData.user_apellido : null %>"> 
-        <% if (locals.errors && errors.user_apellido) {%>
-          <div class="mensaje-alerta"> 
-            <%= errors.user_apellido.msg %> 
-          </div>
+          <label for="user_nombre">Nombre:</label>
+          <input
+            type="text"
+            id="user_nombre"
+            name="user_nombre"
+            value="<%=locals.oldData ? oldData.user_nombre : null %>"
+          />
+          <% if (locals.errors && errors.user_nombre) {%>
+          <div class="mensaje-alerta"><%= errors.user_nombre.msg %></div>
           <% } %>
 
-
-        <label for="user_email">Email:</label>
-        <input type="email" id="user_email" name="user_email" value="<%=locals.oldData ? oldData.user_email : null %>">
-        <% if (locals.errors && errors.user_email) {%>
-          <div class="mensaje-alerta"> 
-            <%= errors.user_email.msg %> 
-          </div>
-          <% } %>
-    
-      
-       <label for="user_password">Contraseña:</label>
-        <input type="password" id="user_password" name="user_password">
-        <% if (locals.errors && errors.user_password) {%>
-          <div class="mensaje-alerta"> 
-            <%= errors.user_password.msg %> 
-          </div>
+          <label for="user_apellido">Apellido:</label>
+          <input
+            type="text"
+            id="user_apellido"
+            name="user_apellido"
+            value="<%=locals.oldData ? oldData.user_apellido : null %>"
+          />
+          <% if (locals.errors && errors.user_apellido) {%>
+          <div class="mensaje-alerta"><%= errors.user_apellido.msg %></div>
           <% } %>
 
+          <label for="user_email">Email:</label>
+          <input
+            type="email"
+            id="user_email"
+            name="user_email"
+            value="<%=locals.oldData ? oldData.user_email : null %>"
+          />
+          <% if (locals.errors && errors.user_email) {%>
+          <div class="mensaje-alerta"><%= errors.user_email.msg %></div>
+          <% } %>
 
-        <button type="submit">Crear mi cuenta</button>
-        <label for="terminos">"Al crear la cuenta, doy mi consentimiento de que acepto los terminos y condiciones de "MyPlants"</label>
-        
-    </fieldset>
-  </form>
-</main> 
-<script src= '/middlewares/validateRegisterMiddleware.js'></script>
-</body>
-<footer>
-    <%- include('./partials/footer'); %>
-</footer>
+          <label for="user_password">Contraseña:</label>
+          <input type="password" id="user_password" name="user_password" />
+          <% if (locals.errors && errors.user_password) {%>
+          <div class="mensaje-alerta"><%= errors.user_password.msg %></div>
+          <% } %>
+
+          <label for="user_foto">Foto de Usuario:</label>
+          
+          
+          <input type="file" id="user_foto" name="user_foto" />
+          <% if (locals.errors && errors.user_foto) {%>
+          <div class="mensaje-alerta"><%= errors.user_foto.msg %></div>
+          <% } %>
+
+          <button type="submit">Crear mi cuenta</button>
+          <label for="terminos"
+            >"Al crear la cuenta, doy mi consentimiento de que acepto los
+            terminos y condiciones de "MyPlants"</label
+          >
+        </fieldset>
+      </form>
+    </main>
+    <script src="/middlewares/validateRegisterMiddleware.js"></script>
+  </body>
+  <footer><%- include('./partials/footer'); %></footer>
 </html>

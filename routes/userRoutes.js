@@ -1,7 +1,6 @@
 const express=require('express');
 const router =express.Router();
-//const multer=require('multer');
-//const path=require('path');
+
 const usersController=require('../controllers/userController');
 
 const uploadFile = require('../middlewares/multerMiddleware');
@@ -15,8 +14,8 @@ const validationLogin = require("../middlewares/validationLoginUser");
 //Formulario de registro
 /*router.get('/', usersController.register); //falta el invitadomiddleware*/
 
-//Proceso del registro 
-/*router.post('/', uploadFile.single('user_foto'),validations, usersController.processRegister);*/
+//Proceso del registro
+//router.post('/', uploadFile.single('user_foto'),validations, usersController.processRegister);
 
 //Form del login
 router.get('/login', invitadosMiddleware, usersController.login);
@@ -42,7 +41,7 @@ router.get('/list', usersController.list);
 
 router.get('/register', usersController.create);
 
-router.post('/register',validationRegister, usersController.createProcess);
+router.post('/register', uploadFile.single('user_foto'), usersController.createProcess);
 
 
 router.get('/:id/delete', usersController.delete);
@@ -58,35 +57,3 @@ module.exports = router;
 
 
 
-/*const storage=multer.diskStorage({
-    destination:(req,file,cb)=>{
-        cb(null,path.resolve(__dirname,'../public/images/users'))
-    },
-    //desarrollando como va a ser el nombre de los archivos
-    //intentando tomar el valor que trae del droPDOWNlIST
-    filename:(req,file,cb)=>{
-        const newFilename='./users'+Date.now()+path.extname(file.originalname);
-        cb(null,newFilename);
-
-    }
-});
-
-const upload=multer({storage});*/
-
-
-
-//*1*/ router.get('/',controller.index);
-
-//*2*/ router.get('/nuevosUsers',controller.nuevosUsers);
-
-//*3*/ router.get('/:id', controller.detalleUsers);
-
-//*4*/ router.post('/',upload.single('imagen'),controller.guardarNuevo);
-
-//*5*/ router.get('/:id/edit', controller.editUsers);
-
-//*6*/ router.put('/:id',upload.single('oldImagen'), controller.modificarUsers);
-
-//*7*/ router.delete('/:id', controller.destroy);
-
-//module.exports=router;
