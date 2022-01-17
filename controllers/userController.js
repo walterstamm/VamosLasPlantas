@@ -72,6 +72,9 @@ const userController = {
       create: function (req, res) {
           res.render("register");
       },
+
+
+      
       createProcess: function (req, res) {
         const resultValidation = validationResult(req);
         if (resultValidation.errors.length > 0) {
