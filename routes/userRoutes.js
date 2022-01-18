@@ -3,11 +3,10 @@ const router =express.Router();
 
 const usersController=require('../controllers/userController');
 
-const uploadFile = require('../middlewares/multerMiddleware');
 const validations = require ('../middlewares/validateRegisterMiddleware');
+const uploadFile = require('../middlewares/multerMiddleware');
 const invitadosMiddleware = require('../middlewares/invitadosMiddleware');
 const autenticadorMiddleware = require('../middlewares/autenticadorMiddleware');
-const validationRegister = require('../middlewares/validateRegisterMiddleware');
 const validationUpDate = require("../middlewares/validationUpDateMiddleware"); 
 const validationLogin = require("../middlewares/validationLoginUser");
 
@@ -41,7 +40,7 @@ router.get('/list', usersController.list);
 
 router.get('/register', usersController.create);
 
-router.post('/register',uploadFile.single('user_foto'),validations, usersController.createProcess);
+router.post('/register',uploadFile.single('user_foto'),validations ,usersController.createProcess);
 
 
 router.get('/:id/delete', usersController.delete);
