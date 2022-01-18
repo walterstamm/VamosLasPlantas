@@ -18,7 +18,10 @@ module.exports = function(sequelize, dataTypes) {
         },
         password: {
             type: dataTypes.STRING
-        }
+        },
+        imageName: {
+            type: dataTypes.STRING
+        },
        
     }
 

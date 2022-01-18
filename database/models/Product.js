@@ -14,13 +14,16 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.STRING
         },
         category_id: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.INTEGER
             
 
         },
         price: {
             type: DataTypes.STRING
-        }
+        },
+        imageName: {
+            type: DataTypes.STRING
+        },
        
     }
     let config = {

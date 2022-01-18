@@ -113,6 +113,7 @@ const userController = {
             password: passwordEncry,
             name: req.body.user_nombre,
             last_name: req.body.user_apellido,
+            imageName: req.file.filename,
           })
             .then(function () {
               res.redirect("/register/login");
