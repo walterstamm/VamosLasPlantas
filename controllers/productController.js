@@ -99,7 +99,8 @@ const controller = {
             product: req.body.producto, //nombres de col de la DB
             description: req.body.descripcion,
             price: req.body.precio,
-            category_id: req.body.categoria
+            category_id: req.body.categoria,
+            imageName: req.file.filename,
           })
           .then(function () {
             res.redirect("/product/listProduct");

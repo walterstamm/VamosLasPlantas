@@ -10,7 +10,7 @@
 </header>
 
 <main>
-    <form action="/product/nuevosProd" method="POST"  >
+    <form action="/product/nuevosProd" method="POST"  enctype="multipart/form-data" >
       
   
     <div class="register">Nuevo Producto</div>
@@ -56,6 +56,12 @@
        <% }); %> 
           <% } %> 
       </select>
+      
+      <div class="form-nuevosProd">
+        <label for="image">Imagen</label>
+        <input type="file"  name="productFoto" id="imagen"  multiple>
+      </div>
+
 
       <button type="submit">Cargar</button>
           
