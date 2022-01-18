@@ -31,7 +31,7 @@ app.use(express.static('./public'));
 app.set("view engine", "ejs");
 
 app.use('/', mainRoutes);
-app.use('/user', userRoutes); 
+
 
 
 app.use((req,res,next)=>{
