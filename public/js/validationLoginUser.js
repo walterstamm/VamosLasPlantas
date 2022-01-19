@@ -1,8 +1,43 @@
-const path = require('path');
-const {body} = require ('express-validator');
+window.onload = function(){
+    let formLogin = document.querySelector('#login-form');
+    let listaErrores= document.querySelector(".errores_login");
 
-module.exports = [    
-    
-    body ('user_email').notEmpty().withMessage('Ingresá tu correo electrónico').bail().isEmail().withMessage('Debes escribir un formato de correo válido'),
-    body ('user_password').notEmpty().withMessage('Tienes que escribir una contraseña').isLength({min: 8}).withMessage('La contraseña debe tener mínimo 8 carácteres')
-]
+
+
+    let errores = [];
+
+    formLogin.addEventListener("submit", function(e){
+
+
+        if(formLogin.email.value == ""){
+            errores.push("Debe ingresar un email válido <br> ");
+            formLogin.email.classList.add("is-invalid");
+        }else{
+            formLogin.email.classList.add("is-valid");
+        }
+
+        if(formLogin.password.value == ""){
+            errores.push("Debe ingresar un password <br> ");
+            formLogin.password.classList.add("is-invalid");
+        }else{
+            formLogin.password.classList.add("is-valid");
+        }
+
+        if(errores.length > 0){
+            e.preventDefault();
+
+            listaErrores.innerHTML = "";
+            for(error of errores){
+                listaErrores.innerHTML += "<li>"+error+"</li>";
+                listaErrores.classList.add("alert-warning");
+            }
+            errores=[];
+        }else{
+            formLogin.submit();
+        }
+
+
+
+    })
+
+}
