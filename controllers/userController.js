@@ -125,11 +125,19 @@ const userController = {
   },
 
   login: (req, res) => {
-    console.log("Llegue");
+   
     return res.render("login");
   },
 
   loginProcess: (req, res) => {
+
+    const resultValidation = validationResult(req);
+          if (resultValidation.errors.length > 0) {
+            return res.render("login", {
+              errors: resultValidation.mapped(),
+              oldData: req.body,
+            });
+          }
     // let userInDB = User.findByField('email', req.body.email);
     // BUSCAR USUARIO EN BDD
     let userInDB;
