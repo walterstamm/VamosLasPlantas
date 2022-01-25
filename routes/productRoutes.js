@@ -36,5 +36,4 @@ router.post('/nuevosProd',uploadFile.single('productFoto') , validationCreatePro
 
 
 
-
 module.exports=router;

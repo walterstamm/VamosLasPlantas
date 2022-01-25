@@ -1,6 +1,8 @@
 const express =  require ("express");
 const session =  require ("express-session");
 const cookies = require('cookie-parser'); 
+const apiProductsRoutes = require('./routes/apiRoutes/apiProductsRoutes'); 
+const apiUsersRoutes = require('./routes/apiRoutes/apiUsersRoutes');
 
 const app = express ();
 const methodOverride = require('method-override');
@@ -31,6 +33,8 @@ app.use(express.static('./public'));
 app.set("view engine", "ejs");
 
 app.use('/', mainRoutes);
+app.use('/api/products', apiProductsRoutes);
+app.use('/api/users', apiUsersRoutes);
 
 
 
