@@ -13,7 +13,8 @@
 
     <main>
             <% product && product.forEach (element=> {%>             
-                <section>
+                <div  class = "productoUnidad">
+                    <section>
                     <h1><%= element.producto %> </h1>
                     <img src= "/images/plantas/<%=element.imagen%>" width="100%" alt="Planta">
                     </section> 
@@ -60,13 +61,15 @@
                                                                             Comprar ahora
                                                                         </button>
                                                                     </div> 
-                                                                    <div class="boton-eliminar">  
+
+                                                                </div>
+                                                                    <!-- <div class="boton-eliminar">  
                                                                         
 
                                                                         <form action="/product/<%= element.id %>?_method=DELETE" method="POST">
                                                                             <button name="Eliminar" type="submit" >
                                                                                 Eliminar
-                                                                            </button>
+                                                                            </button> -->
                                                                         </form>
    <% }) %> 
     </section>
