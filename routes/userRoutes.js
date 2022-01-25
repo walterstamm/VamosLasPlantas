@@ -42,7 +42,6 @@ router.get('/register', usersController.create);
 
 router.post('/register',uploadFile.single('user_foto'),validations ,usersController.createProcess);
 
-
 router.get('/:id/delete', usersController.delete);
 
 router.delete('/:id/delete', usersController.destroy);
