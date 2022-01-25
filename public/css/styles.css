@@ -44,6 +44,16 @@
     max-width: 70%;
   }
 
+
+.is-invalid{
+  background-color: #e76e6e;
+
+}
+
+.is-valid{
+  background-color: #ddffdd;
+}
+
 .nombre-website{
   font-weight: bold;
   font-size: large;

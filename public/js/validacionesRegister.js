@@ -1,12 +1,11 @@
-window.onload = function(){
-    let formLogin = document.querySelector('#login-form');
+window.addEventListener('load',()=>{
+    let formLogin = document.querySelector('#form-register');
     let inputUser=document.querySelector('#user_email');
     let inputPass=document.querySelector('#user_password');
     let listaErrores= document.querySelector(".errores_login");
 
-
-
     let errores = [];
+
 
     formLogin.addEventListener("submit", function(e){
 
@@ -25,6 +24,22 @@ window.onload = function(){
             inputPass.classList.add("is-valid");
         }
 
+        if(formLogin.user_nombre.value == ""){
+            errores.push("Debe ingresar su Nombre <br> ");
+            formLogin.user_nombre.classList.add("is-invalid");
+        }else{
+            formLogin.user_nombre.classList.add("is-valid");
+        }
+
+        
+        if(formLogin.user_apellido.value == ""){
+            errores.push("Debe ingresar su Apellido <br> ");
+            formLogin.user_apellido.classList.add("is-invalid");
+        }else{
+            formLogin.user_apellido.classList.add("is-valid");
+        }
+
+
         if(errores.length > 0){
             e.preventDefault();
 
@@ -38,8 +53,5 @@ window.onload = function(){
             formLogin.submit();
         }
 
-
-
     })
-
-}
+})
