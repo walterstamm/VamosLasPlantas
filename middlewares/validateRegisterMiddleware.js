@@ -1,7 +1,7 @@
 const path = require('path');
 const {body} = require ('express-validator');
 
-module.exports = [    
+function middle(req,res,next){ 
     body ('user_nombre').notEmpty().withMessage('Ingresá tu nombre').isLength({ min: 2 }).withMessage('Ingresá mínimo 2 carácteres'),
     body ('user_apellido').notEmpty().withMessage('Ingresá tu apellido').isLength({min: 2}).withMessage('Ingresá mínimo 2 carácteres'),
     body ('user_email').notEmpty().withMessage('Ingresá tu correo electrónico').bail().isEmail().withMessage('Debes escribir un formato de correo válido'),
@@ -20,5 +20,7 @@ module.exports = [
         }
         return true;
     })
+    next();
+};
 
-]
+module.exports=middle;
