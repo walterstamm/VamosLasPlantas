@@ -130,7 +130,9 @@ a {
 }
 
 .body-404{
-  background-image: url("/images/Como-cultivar-en-la-luna.jpg");
+  /*background-image: url("/images/BrokenPlant.png");*/
+  margin-left: auto;
+  margin-right: auto
 }
 
 
@@ -1222,3 +1224,13 @@ footer i {
 }
 /*------------- USER PROFILE (FIN)---------------------*/
 
+.banner {
+  margin-top: 0;
+  display: block;
+
+}
+
+.broken-plant {
+  width: auto;
+
+}
