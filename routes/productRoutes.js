@@ -22,7 +22,7 @@ router.get('/',validationLogin,productController.index);
 
 //CRUD 
 
-router.get('/listProduct',productController.list)
+router.get('/listProduct',usuarioSession,productController.list)
 
 router.get('/nuevosProd',adminMiddleware,usuarioSession,productController.nuevosProd);
 
