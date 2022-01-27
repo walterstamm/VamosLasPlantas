@@ -1004,7 +1004,6 @@ color: #075c3b;
 
 footer {
   text-align: center;
-  background-color: white;
   flex-direction: row;
   padding: 10px 0px;
   font-size: 10px;
@@ -1068,11 +1067,13 @@ footer i {
 
 .navbar_profile a {
   font-size: 18px;
-  color: blue;
+  color: green;
   font-weight: bolder;
   display: grid;
 }
 /*------------- USER PROFILE (FIN)---------------------*/
+
+/*------------- HEADER (INICIO)---------------------*/
 
 .banner-imagen {
   margin-top: 0;
@@ -1151,3 +1152,25 @@ footer i {
     stroke-dashoffset: -400;
   }
 }
+
+/*------------- HEADER (FIN)---------------------*/
+
+/*------------- USER PROFILE (INICIO)---------------------*/
+.login-body h2 {
+  color: green;
+  font-size: 160%;
+  font-weight: bold;
+}
+.cosas_varias {
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cosas_varias h3 {
+  color: green;
+}
+
+
+/*------------- USER PROFILE  (FIN)---------------------*/
