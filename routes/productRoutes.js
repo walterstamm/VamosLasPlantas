@@ -6,11 +6,13 @@ const validationEditProd=require('../middlewares/validationEditProdMiddleware');
 const validationCreateProd= require ('../middlewares/validationCreateProductMiddleware')
 const uploadFile = require('../middlewares/multerProduct');
 const autenticadorMiddleware = require('../middlewares/autenticadorMiddleware');
+const adminMiddleware = require('../middlewares/adminMiddleware');
+const validationLogin = require("../middlewares/validationLoginUser");
 
 
 
 
-router.get('/',productController.index);
+router.get('/',validationLogin,productController.index);
 
 
 /*3*/ /*router.get('/:id', productController.detalleProduct); 
@@ -22,13 +24,13 @@ router.get('/',productController.index);
 
 router.get('/listProduct',productController.list)
 
-router.get('/nuevosProd',autenticadorMiddleware,productController.nuevosProd);
+router.get('/nuevosProd',adminMiddleware,autenticadorMiddleware,productController.nuevosProd);
 
-router.get('/:id/edicionProdDb',autenticadorMiddleware, productController.editProductDb);
+router.get('/:id/edicionProdDb',adminMiddleware,autenticadorMiddleware, productController.editProductDb);
 
 /* -- ACTUALIZAR*/ router.put('/:id/edicionProdDb',validationEditProd, productController.modificarProdDb);
 
-router.get('/:id/deleteProd',autenticadorMiddleware, productController.delete);
+router.get('/:id/deleteProd',adminMiddleware,autenticadorMiddleware, productController.delete);
 
 
  router.delete('/:id/deleteProd', productController.destroy);

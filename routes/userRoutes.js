@@ -36,7 +36,7 @@ router.get('/logout', usersController.logout);
 
 
 
-router.get('/list', usersController.list);
+router.get('/list',adminMiddleware, usersController.list);
 
 
 router.get('/register', usersController.create);
