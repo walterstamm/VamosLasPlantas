@@ -20,4 +20,34 @@ module.exports = {
                      
                  })
              })
-   } }
+   },
+
+   paginado: async (req, res) => {
+    const pageAsNumber = Number.parseInt(req.query.page);
+    const sizeAsNumber = Number.parseInt(req.query.size);
+  
+    let page = 0;
+    if(!Number.isNaN(pageAsNumber) && pageAsNumber > 0){
+      page = pageAsNumber;
+    }
+  
+    let size = 3;
+    if(!Number.isNaN(sizeAsNumber) && !(sizeAsNumber > 3) && !(sizeAsNumber < 1)){
+      size = sizeAsNumber;
+    }
+  
+    const usersWithCount = await db.Users.findAndCountAll({
+       /* include : [
+            {association: 'Categorys'},
+            ], para que me diga el nombre de la categoria*/ 
+
+        limit: size,
+        offset: page * size
+    });
+    
+    res.json(usersWithCount.rows)
+
+   
+}
+   
+}

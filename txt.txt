@@ -173,3 +173,5 @@ APIS
     POST, PUT PATCH Y DELETE)
 
     
+
+    <script src= '/middlewares/validationCreateProductMiddleware.js'></script>

@@ -4,6 +4,7 @@ const apiUserController = require("../../controllers/apiController/apiUserContro
 
 
 router.get('/', apiUserController.lista); 
+router.get('/paginado', apiUserController.paginado); 
 
 /*router.get('/:id', productController.show); 
 router.post('/:', productController.almacen);*/

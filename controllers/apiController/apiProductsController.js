@@ -21,30 +21,34 @@ module.exports = {
                  })
              })
    },
- 
-     show: (req, res) => {
-         db.Product
-             .findByPk(req.params.id)
-             .then(product => {
-                 return res.status(200).json({ 
-                     data: product,
-                     status: 200,
- 
-                 })
-             })
-     },
-     almacen: (req, res) => {
-         db.Product
-             .creacion(req.body)
-             .then(product => {
-                 return res.status(200).json({ 
-                     data: product,
-                     status: 200,
-                     created: 'Producto creado'
- 
-                 })
-             })
-         }
+
+   paginado: async (req, res) => {
+    const pageAsNumber = Number.parseInt(req.query.page);
+    const sizeAsNumber = Number.parseInt(req.query.size);
+  
+    let page = 0;
+    if(!Number.isNaN(pageAsNumber) && pageAsNumber > 0){
+      page = pageAsNumber;
+    }
+  
+    let size = 5;
+    if(!Number.isNaN(sizeAsNumber) && !(sizeAsNumber > 5) && !(sizeAsNumber < 1)){
+      size = sizeAsNumber;
+    }
+  
+    const productsWithCount = await db.Products.findAndCountAll({
+       /* include : [
+            {association: 'Categorys'},
+            ], para que me diga el nombre de la categoria*/ 
+
+        limit: size,
+        offset: page * size
+    });
+    
+    res.json(productsWithCount.rows)
+
+   
+}
  }
 
 
