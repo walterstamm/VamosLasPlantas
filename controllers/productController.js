@@ -95,6 +95,14 @@ const controller = {
 
 
     createNewProd: function (req, res) {
+        // const resultValidation = validationResult(req);
+        //   if (resultValidation.errors.length > 0) {
+        //     return res.render("nuevosProd", {
+        //       errors: resultValidation.mapped(),
+        //       oldData: req.body,
+        //     });
+        //   }else{
+
         db.Products.create({
             product: req.body.producto, //nombres de col de la DB
             description: req.body.descripcion,
@@ -106,6 +114,7 @@ const controller = {
             res.redirect("/product/listProduct");
           })
           .catch((err) => console.log(err));
+        // }
       },
 
     index:(req,res)=>{

@@ -39,12 +39,6 @@
     padding-left: 11%;
   }
  
-  /*img {
-    border-radius: 50%;
-    max-width: 70%;
-  }*/
-
-
 .is-invalid{
   background-color: #e76e6e;
 
@@ -113,9 +107,6 @@ p{
   transform: translate(-50%);
 }
 
-/*a {
-  color: #134d22;
-}*/
 
 /* A revisar*/
 
@@ -132,7 +123,8 @@ a {
 .body-404{
   /*background-image: url("/images/BrokenPlant.png");*/
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
+  width: 100%;
 }
 
 
@@ -145,21 +137,6 @@ a {
   padding-bottom: 1em;
 
 }
-/*a::after{
-  content: "";
-  background: #90f1aa;
-  mix-blend-mode: exclusion;
-  width: calc(100% + 20px);
-  height: 0;
-  position: absolute;
-  bottom: -4px;
-  left: -10px;
-    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-}
-a:hover::after{
-  height: calc(100% + 8px)
-}
-/*REVISAR*/
 
 /* ------efectos del nombre el sitio---------*/ 
 
@@ -213,50 +190,13 @@ a:hover::after{
   text-decoration: none;
 }
 
-.navegador a:hover {
+/*.navegador a:hover {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
   background-position: 0 100%;
   background-size: auto 6px;
   background-repeat: repeat-x;
   text-decoration: none;
-}
-
-/*.navegador a{
-  display: block;
-  color: rgb(11, 75, 9);
-  text-decoration: none;
-  font-weight: bold;
-  position: relative;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-*/
-/*.navegador a:after{
-  content: "";
-  background-color: white;
-  opacity: 0.2;
-	mix-blend-mode: normal;
-  width: calc(100% + 20px);
-  height: 0;
-  position: absolute;
-  bottom: -4px;
-  left: -10px;
-	transition: all .3s cubic-bezier(0, 0.5, 1, 0.5);
-}
-
-.navegador a:hover::after{
-	height: calc(100% + 8px)
-}
-
-/* ------ fin de efectos de botones del navegador---------*/ 
-
-/* ------efectos de BARRA BUSCADOR ---------*/ 
-
-/*.search-container{
-    padding-top: 1em;
-    border-radius: 10%;
-    padding-bottom: 2em;
-  }*/
+}*/
 
 /* Styles para form Nuevos Prod*/
 
@@ -268,10 +208,10 @@ a:hover::after{
   padding: 1em;
 }
 
-
 .search-container{
   background: #fff;
   height: 20px;
+  width: 100%;
   border-radius: 30px;
   padding-top: 1.5em;
   padding-bottom: 1em;
@@ -306,7 +246,7 @@ a:hover::after{
   color: #5cbdbb;
 }
 
-@keyframes hoverShake {
+/*@keyframes hoverShake {
 0% {transform: skew(0deg,0deg);}
 25% {transform: skew(5deg, 5deg);}
 75% {transform: skew(-5deg, -5deg);}
@@ -315,58 +255,12 @@ a:hover::after{
 
 .search-container:hover{
 animation: hoverShake 0.15s linear 3;
-}
+}*/
 
 /* ------fin de efectos de BARRA BUSCADOR ---------*/ 
 
 /* ------efectos de categorias PLANTAS y ACCESORIOS---------*/ 
 
-/*
-.categorias a{
-  display: block;
-  color: rgb(23, 121, 19);
-  text-decoration: none;
-  position: relative;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  background: white
-}
-
-.categorias a::after{
-  content: "";
-
-	mix-blend-mode: exclusion;
-  width: calc(100% + 20px);
-  height: 0;
-  position: absolute;
-  bottom: -4px;
-  left: -10px;
-	transition: all .3s cubic-bezier(0.111, 0.6, 0.89, 0.48);
-}
-
-.categorias a:hover::after{
-	height: calc(100% + 8px);
-
-} 
-
-.categorias a {
-  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
-	background-position: 0 100%;
-	background-repeat: repeat-x;
-	background-size: 3px 3px;
-  color: #000;
-  text-decoration: none;
-}
-
-.categorias a:hover {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-  background-position: 0 100%;
-  background-size: auto 6px;
-  background-repeat: repeat-x;
-  text-decoration: none;
-}
-
-*/
 
 .main-index {
   -webkit-box-sizing: border-box;
@@ -952,14 +846,7 @@ h4 {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /*@media screen and (min-width: 480px) {
   
-    form {
-      max-width: 480px;
-    }
-  
-  }*/ /*lo comente xq desconfigura parte del login y register*/
-
   .user_nombre {
     border: dotted 5px red;
   }
@@ -1013,10 +900,7 @@ h4 {
     height: 3em;
 }
 
-/*.recordarcontraseña-login {
-    font-size: 15px;
-    position:static;    
-}*/
+
 .recordarcontraseña-login {
   font-size: 15px; 
   margin-bottom: 5px; 
@@ -1031,46 +915,6 @@ h4 {
     margin-bottom: 10px;
     /*text-align: right;*/
 }
-
-/*.olvidemiclave-login {
-    display: block;
-    color: rgb(23, 121, 19);
-    text-decoration: none;
-    position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    max-width: 27%;
-  }*/
-
-  /*.olvidemiclave-login::after{
-    content: "";
-    background: #90f1aa;
-      mix-blend-mode: exclusion;
-    width: calc(100% + 20px);
-    height: 0;
-    position: absolute;
-    bottom: -4px;
-    left: -10px;
-      transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  }
-
-  .olvidemiclave-login:hover::after{
-    height: calc(100% + 8px)
-}*/
-
-  
-
-/*.boton-login, .boton-borrar {
-    background-color: #093f10;
-    color: white;
-    border: none;
-    font-size: 15px;
-    padding: 5px;
-    border-radius: 5px;
-    width: 60%;
-    position: relative;
-    left: 20%;
-}*/
 
 .boton-login, .boton-borrar {
   border: 0;
@@ -1138,14 +982,13 @@ h2 {
 /*------------- LOGIN (FIN)-------------------*/
 
 /*------------- FOOTER (INICIO)--------------------*/
-/*footer {
-  text-align: center;
-  padding-top: 8%;
-  padding-bottom: 25%;
-  background-color: #7fbf90;
-  /*font-family: "Roboto", sans-serif;
-  
-}*/
+
+
+.footer_img {
+  background-image: url(/images/fondoTabla.jpg);
+  background-size: cover;
+background-position: center;
+}
 
 .pie {
 display: flex;
@@ -1161,8 +1004,7 @@ color: #075c3b;
 
 footer {
   text-align: center;
-  background-color: #7fbf90;
-  display: flex;
+  background-color: white;
   flex-direction: row;
   padding: 10px 0px;
   font-size: 10px;
@@ -1174,15 +1016,23 @@ footer {
 
 footer i {
   padding: 0.5em;
-  font-size: 15px;
+  font-size: 25px;
 }
 
 .redes-sociales,.wapp,.envios {
   width: 33%;
+  color: white;
   
+}
 
+.pie h3{
+  font-size: 25px;
+  font-weight: bold;
 
-  
+}
+
+.pie i {
+  font-size: 35px;
 }
 
 /*------------- FOOTER (FIN)---------------------*/
@@ -1224,13 +1074,80 @@ footer i {
 }
 /*------------- USER PROFILE (FIN)---------------------*/
 
-.banner {
+.banner-imagen {
   margin-top: 0;
   display: block;
+  min-height: 50%;
 
 }
 
 .broken-plant {
   width: auto;
 
+}
+
+.listProd-detalle {
+  padding: 15px 15px 15px 15px;
+  border: solid 5px green;
+}
+
+.listProd-detalle button {
+  width: 40%;
+}
+
+
+
+/* Main styles */
+/*@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+*/
+.text {
+  font-size: 45px;
+  fill: none;
+  stroke-width: 6;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+}
+
+.text:nth-child(5n + 1) {
+  stroke: #F2385A;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+.text:nth-child(5n + 2) {
+  stroke: #F5A503;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+
+.text:nth-child(5n + 3) {
+  stroke: #E9F1DF;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+
+.text:nth-child(5n + 4) {
+  stroke: #56D9CD;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+
+.text:nth-child(5n + 5) {
+  stroke: #3AA1BF;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
 }

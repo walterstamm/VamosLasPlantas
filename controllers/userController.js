@@ -177,7 +177,7 @@ const userController = {
           delete userInDB.password;
           // req.session.user = userInDB;
           req.session.user = userInDB[0].dataValues;
-          if (req.body.Login_RememberMe) {
+          if (req.body.recordarcontraseña) {
             res.cookie("userEmail", req.body.email, { maxAge: 1000 * 60 * 60 });
           }
 

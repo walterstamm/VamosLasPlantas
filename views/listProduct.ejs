@@ -11,19 +11,16 @@
  
     <h2>Listado de productos</h2>
     <% product.forEach(product => { %>
-        <tr>
-            <td> <%= product.id%></td>
-            <td> <%= product.product%></td>
-            <td> <%= product.description%></td>
-            <td> <%= product.price%></td>
-            <div class="d-grid gap-2 d-md-flex">
-                <button class="btn btn-primary" type="button">Button</button>
-                <button class="btn btn-primary" type="button">Button</button>
-              </div>
+        <div class="listProd-detalle">
+            <a> Product ID <%= product.id%></a>
+            <a> Nombre <%= product.product%></a>
+            <a> Descripcion <%= product.description%></a>
+            <a> Precio $ <%= product.price%></a>
+            
             <a href="<%=product.id%>/edicionProdDb" class="navegador">Editar</a>
             <a href="<%=product.id%>/deleteProd" class="navegador">Borrar</a>
             <br>
-        </tr>
+        </div>
         <% });%>
 
 </main>
