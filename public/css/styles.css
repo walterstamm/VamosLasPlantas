@@ -1160,15 +1160,17 @@ footer i {
   color: green;
   font-size: 160%;
   font-weight: bold;
+  padding-bottom: 15px;
 }
 .cosas_varias {
   text-align: center;
   text-decoration: none;
-  display: flex;
-  justify-content: space-around;
+  display: block;
+  justify-content: space-between;
+  padding: 19px 30px 19px 30px;
 }
 
-.cosas_varias h3 {
+.cosas_varias h5 {
   color: green;
 }
 
