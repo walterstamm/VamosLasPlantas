@@ -9,20 +9,59 @@
 </header>
 
 <body class = "login-body">
-    <!-- Container 
-	<div class="container" style="margin-top: 40px;">
-		<div class="row">
-			<div class="login_profile">
-				<h2>Hi User <%= user.name + ' ' + user.last_name %> </h2>
-				<img src="/images/avatars/<%=user.imageName%> ">
-				<br>
-				<br>
-				<div class="alert alert-success"><%= user.user_email %> </div> 
-			</div>
+    
+	<h2>Mi Cuenta <%= user.name + ' ' + user.last_name %> </h2>
+
+	<div class="cosas_varias" >
+
+		<a href="https://wa.me/541151114712" class="text-decoration-none">
+			<h3 class="service-title" ><strong>Asesoramiento y Ventas</strong></h3>
+				<!-- <div class="asesoramiento">
+						<div class="cosas_varias_icons"><i class="far fa-credit-card"></i></div> 
+					<p>Con nuestra atención personalizada vas a poder encontrar la mejor planta para tu hogar</p>
+				</div> -->
+		</a>
+		
+		<div class="envio">
+			<h3 class="service-title"><strong>Entregas a Coordinar</strong></h3>
+			<!-- <div class="cosas_varias_icons"> <i class="fas fa-gift"></i> </div> 
+			<p>Te contactaremos por WhatsApp para coordinar la entrega de tu compra</p> -->
 		</div>
+
+		<div class="post-venta" class="text-decoration-none">
+			<a href="https://wa.me/541151114712" class="text-decoration-none">
+				<h3 class="service-title"class="text-decoration-none"><strong>Post Venta</strong></h3>
+					<!-- <div class="cosas_varias_icons"><i class="fas fa-user-shield"></i></div> 
+					<p>Estamos para resolver de la mejor manera posible todos los inconvenientes que puedas tener con tus plantas</p>    
+		</div> -->
+			</a>	
+		</div>
+
 	</div>
-	 //Container -->
-</body>
+		
+		
+		<!-- <div class="asesoramiento">
+			<a href="https://wa.me/541139313909">
+			<h6 class="service-title"><strong>Asesoramiento y Ventas</strong></h6>
+			<p>Con nuestra atención personalizada vas a poder encontrar la mejor planta para tu hogar</p>
+		</div>
+	</a>
+
+		<div class="entregas">
+			<h6 class="service-title"><strong>Entregas a Coordinar</strong></h6>
+			<p>Te contactaremos por WhatsApp para coordinar la entrega de tu compra</p>
+		</div>
+	</a>
+
+	<div class="post_venta">
+		<a href="https://wa.me/541139313909"></a>
+		<h6 class="service-title"><strong>Post Venta</strong></h6>
+		<p>Estamos para resolver de la mejor manera posible todos los inconvenientes que puedas tener con tus plantas</p>
+	</div>
+</a> -->
+
+
+
 
 <footer>
     <%- include('./partials/footer'); %>

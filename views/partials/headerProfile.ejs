@@ -22,10 +22,11 @@
         </div>
         <% } %> 
         <div class = "navbar_profile"> 
-            <a href= "/product">Plantas<img src="/images/maceta.png" width="60" alt="Plantas"></a>
-            <a href = "/product">Accesorios<img src="/images/pala.png" width="60" alt="Accesorios"></a>
-            <a href = "/cart">Mi Carrito<img src="/images/carrito.png" width="60" alt="Mi Carrito"></a>
-            <a href = "/register/logout">Salir<img src="/images/sad cactus.png" width="60" alt="Salir"></a>
+
+            <a href= "/product" class="text-decoration-none">Plantas<img src="/images/maceta.png" width="60" alt="Plantas"></a>
+            <a href = "/product" class="text-decoration-none">Accesorios<img src="/images/pala.png" width="60" alt="Accesorios"></a>
+            <a href = "/cart" class="text-decoration-none">Mi Carrito<img src="/images/carrito.png" width="60" alt="Mi Carrito"></a>
+            <a href = "/register/logout" class="text-decoration-none">Salir<img src="/images/sad cactus.png" width="60" alt="Salir"></a>
             <% if(user.admin===1){ %> 
                 <h1>hola Soy el admin</h1>
                 <% } else{ %> <h1>hola , no soy el admin</h1><% } %> 
