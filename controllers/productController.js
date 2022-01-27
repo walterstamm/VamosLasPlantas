@@ -6,6 +6,8 @@ const productsModel = new JsonModel('productos');
 const db = require("../database/models");
 const sequelize = db.sequelize;
 const {Op} = require('sequelize'); 
+const req = require('express/lib/request');
+const res = require('express/lib/response');
 
 
 
@@ -122,6 +124,11 @@ const controller = {
 
         return res.render('product', {product})
     },
+
+
+    cart:(req,res)=>{
+        return res.render('cart')
+    }
     
     /*nuevosProd:(req,res)=>{
         return res.render('nuevosProd', {product: {} });

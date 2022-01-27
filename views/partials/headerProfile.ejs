@@ -22,10 +22,18 @@
         </div>
         <% } %> 
         <div class = "navbar_profile"> 
+
             <a href= "/product" class="text-decoration-none">Plantas<img src="/images/maceta.png" width="60" alt="Plantas"></a>
             <a href = "/product" class="text-decoration-none">Accesorios<img src="/images/pala.png" width="60" alt="Accesorios"></a>
-            <a href = "/cart" class="text-decoration-none">Mi Carrito<img src="/images/carrito.png" width="60" alt="Mi Carrito"></a>
-            <a href = "/register/logout" class="text-decoration-none">Salir<img src="/images/sad cactus.png" width="60" alt="Salir"></a>
+            <a href = "/product/cart" class="text-decoration-none">Mi Carrito<img src="/images/carrito.png" width="60" alt="Mi Carrito"></a>
+            <% if(user.admin===1){ %> 
+                <a href = "/product/nuevosProd" class="text-decoration-none">Nuevos Productos<img src="/images/sad cactus.png" width="60" alt="NuevosProductos"></a>
+                <a href = "/product/listProduct" class="text-decoration-none">Editar y Eliminar Productos<img src="/images/sad cactus.png" width="60" alt="EditarEliminarProductos"></a>
+                <a href = "/register/list" class="text-decoration-none">Listado de Usuarios<img src="/images/sad cactus.png" width="60" alt="ListadoDeUsuarios"></a>
+                
+                
+                <% } %> 
+                <a href = "/register/logout" class="text-decoration-none">Salir<img src="/images/sad cactus.png" width="60" alt="Salir"></a>
         </div>
     </div>
 
