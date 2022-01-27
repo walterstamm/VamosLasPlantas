@@ -22,6 +22,9 @@ module.exports = function(sequelize, dataTypes) {
         imageName: {
             type: dataTypes.STRING
         },
+        admin: {
+            type: dataTypes.TINYINT,
+        },
        
     }
 

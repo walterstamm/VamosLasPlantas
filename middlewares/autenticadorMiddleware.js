@@ -1,8 +1,8 @@
-function autenticadorMiddleware(req, res, netx) {
-    if (!req.session.userLogged) {
-        return res.redirect('/user/login'); //no es /user?
+function autenticadorMiddleware(req, res, next) {
+    if (!req.session.user) {
+        return res.redirect('/register/login'); //no es /user?
     }
-    netx(); 
+    next(); 
 }
 
 module.exports = autenticadorMiddleware; 
