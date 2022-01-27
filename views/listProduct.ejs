@@ -17,12 +17,13 @@
             <a> Descripcion <%= product.description%></a>
             <a> Precio $ <%= product.price%></a>
             
-            <a href="<%=product.id%>/edicionProdDb" class="navegador">Editar</a>
-            <a href="<%=product.id%>/deleteProd" class="navegador">Borrar</a>
+            <button type="button" class="btn btn-outline-success"><a href="<%=product.id%>/edicionProdDb" class="navegador text-decoration-none text-dark">Editar</a> </button>
+            <button type="button" class="btn btn-outline-success"><a href="<%=product.id%>/deleteProd" class="navegador text-decoration-none text-dark">Borrar</a></button>
             <br>
         </div>
         <% });%>
 
+        
 </main>
 
 </body>
