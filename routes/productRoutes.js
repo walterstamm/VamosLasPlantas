@@ -24,6 +24,8 @@ router.get('/',validationLogin,productController.index);
 
 router.get('/listProduct',usuarioSession,productController.list)
 
+router.get('/cart',autenticadorMiddleware,usuarioSession,productController.list)
+
 router.get('/nuevosProd',adminMiddleware,usuarioSession,productController.nuevosProd);
 
 router.get('/:id/edicionProdDb',adminMiddleware,usuarioSession, productController.editProductDb);
