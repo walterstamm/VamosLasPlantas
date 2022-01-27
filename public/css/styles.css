@@ -1059,6 +1059,10 @@ footer i {
   justify-content: space-between;
 }
 
+.navbar_profile img {
+  margin: auto;
+}
+
 .login_profile_menu {
   display: block;
   justify-content: space-between;
