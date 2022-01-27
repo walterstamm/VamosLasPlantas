@@ -1096,6 +1096,10 @@ footer i {
   width: 40%;
 }
 
+.listUsers {
+  padding: 15px 15px 15px 15px;
+  border: solid 5px green;
+}
 
 
 /* Main styles */
