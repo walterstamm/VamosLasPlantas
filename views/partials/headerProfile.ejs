@@ -26,6 +26,9 @@
             <a href = "/product">Accesorios<img src="/images/pala.png" width="60" alt="Accesorios"></a>
             <a href = "/cart">Mi Carrito<img src="/images/carrito.png" width="60" alt="Mi Carrito"></a>
             <a href = "/register/logout">Salir<img src="/images/sad cactus.png" width="60" alt="Salir"></a>
+            <% if(user.admin===1){ %> 
+                <h1>hola Soy el admin</h1>
+                <% } else{ %> <h1>hola , no soy el admin</h1><% } %> 
         </div>
     </div>
 
