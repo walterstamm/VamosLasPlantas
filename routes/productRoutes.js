@@ -8,7 +8,7 @@ const uploadFile = require('../middlewares/multerProduct');
 const autenticadorMiddleware = require('../middlewares/autenticadorMiddleware');
 const adminMiddleware = require('../middlewares/adminMiddleware');
 const validationLogin = require("../middlewares/validationLoginUser");
-
+const usuarioSession = require('../middlewares/usuarioSession');
 
 
 
@@ -24,13 +24,13 @@ router.get('/',validationLogin,productController.index);
 
 router.get('/listProduct',productController.list)
 
-router.get('/nuevosProd',adminMiddleware,autenticadorMiddleware,productController.nuevosProd);
+router.get('/nuevosProd',adminMiddleware,usuarioSession,productController.nuevosProd);
 
-router.get('/:id/edicionProdDb',adminMiddleware,autenticadorMiddleware, productController.editProductDb);
+router.get('/:id/edicionProdDb',adminMiddleware,usuarioSession, productController.editProductDb);
 
 /* -- ACTUALIZAR*/ router.put('/:id/edicionProdDb',validationEditProd, productController.modificarProdDb);
 
-router.get('/:id/deleteProd',adminMiddleware,autenticadorMiddleware, productController.delete);
+router.get('/:id/deleteProd',adminMiddleware,usuarioSession, productController.delete);
 
 
  router.delete('/:id/deleteProd', productController.destroy);

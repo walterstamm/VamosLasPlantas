@@ -14,11 +14,13 @@
     </div>
 </div>
 <nav>
+    <% if(locals.user){ %> 
     <div class = "login_profile_menu">   
         <div class="login_profile">
             <h2>Bienvenido <%= user.name + ' ' + user.last_name %> </h2>
             <img src="/images/avatars/<%=user.imageName%> ">
         </div>
+        <% } %> 
         <div class = "navbar_profile"> 
             <a href= "/product">Plantas<img src="/images/maceta.png" width="60" alt="Plantas"></a>
             <a href = "/product">Accesorios<img src="/images/pala.png" width="60" alt="Accesorios"></a>
